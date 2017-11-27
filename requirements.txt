@@ -1,0 +1,4 @@
+luigi
+pyyaml
+feedparser
+rdflib

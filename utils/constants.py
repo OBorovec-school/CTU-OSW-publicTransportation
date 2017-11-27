@@ -1,0 +1,4 @@
+META_FOLDER = 'META'
+LOG_FOLDER = 'log'
+RESULT_FOLDER = 'result'
+TMP_FOLDER = 'tmp'
