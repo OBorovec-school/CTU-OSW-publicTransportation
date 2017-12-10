@@ -2,3 +2,6 @@ luigi
 pyyaml
 feedparser
 rdflib
+bs4
+python-dateutil
+pytz

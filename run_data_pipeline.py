@@ -1,27 +1,48 @@
 import logging.config
 
 import luigi
+import rdflib
 import yaml
+from luigi.format import UTF8
 
-from data_pipeline.public_transp.Prague.changes.rdf_transform import PTPragueChangesRDF
-from utils.structure import *
+from data_pipeline.common.structure import *
+from data_pipeline.public_transp.Brno.html_els_rdf_transformer import PTBrnoChangesRDF
+from data_pipeline.public_transp.Prague.changes_rdf_transform import PTPragueChangesRDF
+from data_pipeline.public_transp.Prague.irreg_rdf_transform import PTPragueIrregRDF
 
 
 class DataPipeline(luigi.Task):
+
+    def __init__(self):
+        super().__init__()
+        self.logger = logging.getLogger('dp')
+        self.rdf_output = yaml.load(open("config.yml", 'r'))['data_pipeline']['rdf_output']
+
     def requires(self):
         get_tmp_folder()
-        return [PTPragueChangesRDF()]
+        return [PTPragueChangesRDF(),
+                PTPragueIrregRDF(),
+                PTBrnoChangesRDF()]
 
     def output(self):
-        return [luigi.LocalTarget(get_tmp_file('ptChangesPrague.rdf'))]
+        return [luigi.LocalTarget(get_tmp_file('ptChangesPrague.rdf'), format=UTF8),
+                luigi.LocalTarget(get_tmp_file('ptIrregPrague.rdf'), format=UTF8),
+                luigi.LocalTarget(get_tmp_file('ptChangesBrno.rdf'), format=UTF8)]
 
     def run(self):
         for i in range(len(self.input())):
-            with self.output()[i].open("w") as res_file, self.input()[i].open() as in_file:
-                res_file.write(in_file.read())
-            with self.output()[i].open("r") as res_file, open(get_result_file(os.path.basename(res_file.name)), 'a')  as final_file:
-                final_file.write(res_file.read() + "\n")
+            # Onpy copy of input if it would be needed for further steps of pipeline
+            with self.output()[i].open('w') as out_file, self.input()[i].open() as in_file:
+                out_file.write(in_file.read())
+            # merge current input graph with result file graph
+            result_file_path = get_result_file(os.path.basename(self.output()[i].path))
+            g = rdflib.Graph()
+            if os.path.isfile(result_file_path):
+                g.parse(result_file_path, format=self.rdf_output)
+            g.parse(self.input()[i].path, format=self.rdf_output)
+            g.serialize(destination=result_file_path, format=self.rdf_output)
         clear_tmp_folder()
+
 
 if __name__ == "__main__":
     init_structure()

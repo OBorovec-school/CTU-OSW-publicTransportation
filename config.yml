@@ -1,2 +1,13 @@
 logging:
-    level: DEBUG
+    level: WARN
+
+data_pipeline:
+    # Targer - set where to store datapipeline outputs
+    # Supported options:
+    #   project - location of python source project
+    #   current - location from where the script was run
+    #   any path in correct form
+    target: project
+    # RDF output format
+    # Options http://rdflib.readthedocs.io/en/stable/plugin_serializers.html
+    rdf_output: 'turtle'
