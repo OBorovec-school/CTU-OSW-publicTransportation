@@ -5,3 +5,4 @@ rdflib
 bs4
 python-dateutil
 pytz
+crontab

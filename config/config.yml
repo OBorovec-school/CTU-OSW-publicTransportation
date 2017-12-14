@@ -2,12 +2,24 @@ logging:
     level: WARN
 
 data_pipeline:
+
     # Targer - set where to store datapipeline outputs
     # Supported options:
     #   project - location of python source project
     #   current - location from where the script was run
     #   any path in correct form
     target: project
+
     # RDF output format
     # Options http://rdflib.readthedocs.io/en/stable/plugin_serializers.html
-    rdf_output: 'turtle'
+    rdf_output: turtle
+
+    # Scheduler - how often crawl new record
+    # Supported options:
+    #    weekly - Running every Sunday at midnight
+    #    daily - Running pipeline everyday at midnight
+    #    hourly - every hour
+    schedling: hourly
+
+
+

@@ -1,1 +1,0 @@
-RDF_FORMAT = 'turtle' # Options http://rdflib.readthedocs.io/en/stable/plugin_serializers.html
