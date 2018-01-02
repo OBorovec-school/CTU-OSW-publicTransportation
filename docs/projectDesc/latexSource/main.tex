@@ -1,0 +1,84 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+ 
+\usepackage{biblatex}
+\addbibresource{biblio.bib}
+
+\title{Semestral work: Checkpoint 0 \\
+    \large Ontologies and Semantic Web}
+\author{Ondřej Borovec}
+\date{October 2017}
+
+\begin{document}
+
+\maketitle
+
+\section{Motivation}
+
+Public transportation system plays an important role in regular city life. According to the DPP\footnote{Dopravni podnik hlavniho mesta Prahy - \url{http://www.dpp.cz/}} more than 1,2 million passengers used Prague metro one day\footnote{\url{http://www.dpp.cz/prazske-metro-v-den-prepravniho-pruzkumu-prepravilo-1-272-143-cestujicich/}} so the total number of passengers of Prague public transportation system after including also all kinds of surface transportation is much higher. And all these people may be unpleasantly affected by any incident which cause delays because they may miss a meeting, miss their next connection or just stay longer time during a hot day in an overheated bus.
+
+There are many possible causalities which may cause an irregularity of public transportation system, starting with a broken engine or just a driver who overslept. But the main reasons are, in general, related to some traffic accidents, traffic jams or road closures. Out of the last mentioned, you cannot easily predict such situation and if we would try to, it is a task for ML approach instead of ontology. But using and ontology we can put together more information which can help us to understand why such problem happened. In your case we would like to know what are the root reasons of delays in public transportation.
+
+It is possible to find many source of information which are related to particular public transportation system of a city. For this semestral work we decided to focus at Prague and Brno and in section \ref{sec:dataSources} are listed data sources which contain useful information related to this topic. Then in section \ref{sec:useCases} we describe like such combined information can be used to study the transportation systems or how it can be useful to regular passengers. The last section \ref{sec:stateArt} is dedicated to the state of the art of ontologies related to public transportation and 	research which has been done in this field.
+
+\section{\label{sec:dataSources}Data sources}
+
+In this section, there are listed data sources of information related to Prague public transportation system. Every source has a short description and also information content description, which for spacing reason placed to appendix \ref{app:infoContent}.
+
+All data sources may be combined using common fields as timestamp and location of an event/incident/update. Out of these common features each of them contains more information which are highlighted in related subsections. 
+
+\subsection{\label{sec:dataSources-dopInf}Dopravniinfo.cz\footnote{\url{http://www.dopravniinfo.cz}}}
+This is a project of Czech Department of transportation\footnote{\url{http://www.rsd.cz/}} to inform about problems related to any kind of transportation in the Czech Republic. It has user friendly web application and also mobile application which is convenient to users. But, more importantly, there is a machine readable feed\footnote{url{http://kbss.felk.cvut.cz/dopravni-info.zip}} for purposes of CTU students which contains the same information as the applications. Every feed has a pre-defined structure in xml format (schema descriptions\footnote{\url{http://registr.dopravniinfo.cz/docs/x-format/cz-ndic_ddr-common-v3.2.5-en-html/format.html}}).
+
+Each record contains only general information about a limitation on Czech roads. Useful information is clear classification of such situations 18 different classes (e.g. accidents, road closure, oversize-load transportation, ...). 
+
+
+\subsection{\label{sec:dataSources-pcrDN}Policie ČR - dopravni nehody\footnote{\url{http://pcr.jdvm.cz/pcr/}}}
+
+Police of the Czech Republic provides information about every incident that happened on our roads. There is a poor form to filter events which does not show any incidents if the result list is longer then 100 records and also records are in form of pdf so special mining technique is needed. But every pdf contains a lot of information related to traffic incidents. Such information can be used for incidents classifications and severity estimation.
+
+
+\subsection{\label{sec:dataSources-opd}Prague Open Data\footnote{\url{http://opendata.praha.eu/}}}
+Prague is publishing a lot of data related to daily life. One of such data sourses is rss feed related to public transportation system and its singularity\footnote{\url{http://opendata.praha.eu/dataset/dpp-mimoradne-udalosti}},  changes\footnote{\url{http://opendata.praha.eu/dataset/dpp-zmeny-v-doprave}} and planned changes\footnote{\url{http://opendata.praha.eu/dataset/ropid-planovane-vyluky}}. Another important source of information for this work is actual geo of each line of Prague integrated public transportation system\footnote{\url{http://opendata.praha.eu/dataset/ipr-prazska_integrovana_doprava_-_trasy__aktualni_stav}}.
+
+\subsection{\label{sec:dataSources-brno-pt}Dopravni podnik mesta Brna\footnote{\url{http://dpmb.cz/cs}}}
+Information about public transpiration irregularities are not so rich as from Prague, but still some are published on this site\footnote{\url{http://dpmb.cz/cs/vsechna-omezeni-dopravy}}.
+
+\section{Integration options}
+
+The most straight forward integration option is based on time stamps and location. It is the easiest for combinatin of data source \ref{sec:dataSources-dopInf} and data source \ref{sec:dataSources-pcrDN} where the both source contain the exact timing and location description and also the first mentioned contains a classification. Then we know, that only events classified as a type of accident may have an adequate record in the second source. To use the same features to link these data sources to data source \ref{sec:dataSources-opd} about Prague public transportation system we would have to use more complicated solution using standard routes of each line and analyze if an event location lies on that.
+
+But for the purpose of this semestral work we need a different integration features then just time and location. The best candidate is public transportation irregularity classification - both, Prague and Brno, are using similar classification but not exactly the same.
+
+
+
+\section{\label{sec:useCases}Use cases}
+
+Information is powerful tool and you can use it in many way. We would like to connect information about traffic accidents with Prague public transportation lines which can be affected by them. After this first step it is possible to link also information about made changes due to such irregularities. A s a result we have an information what types of traffic accidents have what kind of disruptive effect on public transportation system.
+
+Below are listed some use cases how could be such information used.
+
+\subsection{Common public irregularity information system}
+When we are able to access all irregularities from one point it is much easier then to remember all the sited when it can be found based on location (city) in which we are.
+
+\subsection{Research about reasons of public transportation adjustments}
+We know if a bus or tram line had to change, but using only data source \ref{sec:dataSources-opd} there is not way to find out why that happened. The knowledge what are the reasons for such changed can be useful, but for such research we would need data.
+
+\subsection{Delay reasoning}
+Everybody hates when a public transportation in which he is or which he wants to take has a delay. Mostly we do not know why it faces such complications but for may people it would be easier to accept such situation if they know more information and reason behind that. There may be a mobile application which after searching of a connection can return a reason why it was delayed. 
+
+
+
+\section{\label{sec:stateArt}State of the art}
+There is a lot of potential for ontologies in the field of transportation. We can points out a solution from \cite{houda2010public} which aim to help users with their travel planning giving them information about special offers, possible combinations of different transport modes and potential advantages on their path. The is also \cite{de2013transportation} which is focused at ontology to generate personalized user interfaces for transportation interactive systems. 
+
+The study about transport disruption ontology \cite{corsar2015transport} is focused at the very similar problematic as this semestral work. As so it will be useful source of inspiration and idea for the best solution.
+
+\appendix
+\include{appendix}
+
+\printbibliography
+\end{document}

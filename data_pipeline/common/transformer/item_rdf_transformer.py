@@ -3,11 +3,10 @@ import pickle
 
 import luigi
 import rdflib
-import yaml
 from luigi.format import UTF8
 from rdflib import Namespace
 
-from data_pipeline import RDF_FORMAT
+from data_pipeline.common.config import DPConfig
 from data_pipeline.common.structure import get_tmp_file
 
 logger = logging.getLogger('dp')
@@ -20,22 +19,25 @@ class ItemToRDFTransformer(luigi.Task):
     NAMESPACE_PREFIX = NotImplementedError
     LUIGI_OUTPUT_FILE = NotImplementedError
 
-    def __init__(self):
-        super().__init__()
+    unique_param = luigi.Parameter()
+
+    def __init__(self, unique_param):
+        super().__init__(unique_param)
         self.logger = logging.getLogger('dp')
         self.unparseble_logger = logging.getLogger('unparseble')
-        self.rdf_output = yaml.load(open("config.yml", 'r'))['data_pipeline']['rdf_output']
+        self.rdf_output = DPConfig.get_rdf_type()
 
     def requires(self):
         raise NotImplementedError
 
     def output(self):
-        return luigi.LocalTarget(get_tmp_file(self.LUIGI_OUTPUT_FILE), format=UTF8)
+        output_file_name = self.LUIGI_OUTPUT_FILE + '_' + self.unique_param
+        return luigi.LocalTarget(get_tmp_file(output_file_name), format=UTF8)
 
     def run(self):
         g = rdflib.Graph()
         if self.output().exists():
-            g.parse(self.output().path, format=RDF_FORMAT)
+            g.parse(self.output().path, format=self.rdf_output)
         n = Namespace(self.NAMESPACE)
         g.bind(self.NAMESPACE_PREFIX, n)
         with self.input().open() as fin:

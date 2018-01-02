@@ -3,12 +3,12 @@ import hashlib
 from bs4 import BeautifulSoup
 from dateutil import parser
 from rdflib import URIRef
-from rdflib.namespace import XSD
+from rdflib.namespace import XSD, FOAF
 
 from data_pipeline.common.transformer.item_rdf_transformer import ItemToRDFTransformer
 from data_pipeline.common.utils import *
-from data_pipeline.public_transp.Prague.irreg_crawler import PTPragueIrregularityCrawler
 from data_pipeline.public_transp.Prague import PT_PRAGUE_IRREGULARITY_NAME_SPACE
+from data_pipeline.public_transp.Prague.irreg_crawler import PTPragueIrregularityCrawler
 
 
 class PTPragueIrregRDF(ItemToRDFTransformer):
@@ -18,7 +18,7 @@ class PTPragueIrregRDF(ItemToRDFTransformer):
     LUIGI_OUTPUT_FILE = 'PTPragueIrregRDF'
 
     def requires(self):
-        return PTPragueIrregularityCrawler()
+        return PTPragueIrregularityCrawler(self.unique_param)
 
     def parse_item_to_graph(self, item, g, n):
         id = hashlib.md5(str(item).encode('utf-8')).hexdigest()
@@ -31,10 +31,13 @@ class PTPragueIrregRDF(ItemToRDFTransformer):
         # Parsing from content_encode part
         content = item.get('content', item.get('conetent_encoded'))[0]
         affected_lines = get_element_nonroot_xml(content.value, 'aff_lines').split(',')
-        affected_types = soup = BeautifulSoup(get_element_nonroot_xml(content.value, 'aff_line_types'), "lxml").text.split(',')
+        affected_types = BeautifulSoup(get_element_nonroot_xml(content.value, 'aff_line_types'),
+                                              "lxml").text.split(',')
         categories = get_element_nonroot_xml(content.value, 'emergency_types').split(',')
-        from_time = parser.parse(get_element_nonroot_xml(content.value, 'time_start')).replace(tzinfo=publish_date.tzinfo)
-        to_time = parser.parse(get_element_nonroot_xml(content.value, 'time_final_stop')).replace(tzinfo=publish_date.tzinfo)
+        from_time = parser.parse(get_element_nonroot_xml(content.value, 'time_start')).replace(
+            tzinfo=publish_date.tzinfo)
+        to_time = parser.parse(get_element_nonroot_xml(content.value, 'time_final_stop')).replace(
+            tzinfo=publish_date.tzinfo)
 
         record = n[id]
         g.add((record, RDF.type, FOAF.TrafficChange))

@@ -19,7 +19,7 @@ data_pipeline:
     #    weekly - Running every Sunday at midnight
     #    daily - Running pipeline everyday at midnight
     #    hourly - every hour
-    schedling: hourly
+    scheduling: daily
 
 
 

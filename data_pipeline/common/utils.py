@@ -1,6 +1,5 @@
 import rdflib
 from rdflib import RDF, Literal
-from rdflib.namespace import FOAF
 
 
 def get_element_nonroot_xml(xml_text, el_name):

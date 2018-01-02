@@ -5,4 +5,5 @@ rdflib
 bs4
 python-dateutil
 pytz
-crontab
+python-daemon
+schedule

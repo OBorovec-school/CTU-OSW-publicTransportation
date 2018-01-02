@@ -38,3 +38,9 @@ Align your datasets with the integration ontology, extend the integration ontolo
 * Cp00 - 'doc/projectDescription'
 * Cp01 - Python code and README.md in 'data_pipeline' and parsed data in 'sample_data' folder
 * Cp02 - TBD    
+
+## Checkpoint 0
+
+I decided to focus at public transportation in Prague and Brno, combining theirs iregularities with reasoning from other sources. To see all report, pls follow this [link](docs/projectDesc/projectDesc.pdf)
+
+## Checkpoint 1

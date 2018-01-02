@@ -30,6 +30,14 @@ handlers:
         backupCount: 5
         encoding: utf8
 
+    dp_pid:
+        class: logging.handlers.RotatingFileHandler
+        formatter: simple
+        filename: log/pid.log
+        maxBytes: 10485760 # 10MB
+        backupCount: 5
+        encoding: utf8
+
     unparseble:
         class: logging.handlers.RotatingFileHandler
         formatter: simple
@@ -43,6 +51,12 @@ loggers:
         handlers: [dp]
     unparseble:
         handlers: [unparseble]
+        propagate: False
+    dp_pid:
+        handlers: [dp_pid]
+        propagate: False
+        level: INFO
+
 
 root:
     handlers: [runtime]

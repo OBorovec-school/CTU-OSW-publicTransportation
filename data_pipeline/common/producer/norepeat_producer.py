@@ -14,8 +14,10 @@ class NoRepeatProducer(luigi.Task):
     META_FILE = NotImplementedError
     LUIGI_OUTPUT_FILE = NotImplementedError
 
-    def __init__(self):
-        super().__init__()
+    unique_param = luigi.Parameter()
+
+    def __init__(self, unique_param):
+        super().__init__(unique_param)
         self.logger = logging.getLogger('dp')
         self.last_entries = set()
         if os.path.isfile(get_meta_file(self.META_FILE)):
@@ -25,7 +27,8 @@ class NoRepeatProducer(luigi.Task):
         return []
 
     def output(self):
-        return luigi.LocalTarget(get_tmp_file(self.LUIGI_OUTPUT_FILE), format=luigi.format.Nop)
+        output_file_name = self.LUIGI_OUTPUT_FILE + '_' + self.unique_param
+        return luigi.LocalTarget(get_tmp_file(output_file_name), format=luigi.format.Nop)
 
     def run(self):
         self.logger.info('Running: ' + self.NAME)

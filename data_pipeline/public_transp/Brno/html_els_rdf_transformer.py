@@ -17,6 +17,9 @@ class PTBrnoChangesRDF(ItemToRDFTransformer):
     NAMESPACE_PREFIX = 'brnoChanges'
     LUIGI_OUTPUT_FILE = 'PTBrnoChangesRDF'
 
+    def requires(self):
+        return ChangeWebCrawler(self.unique_param)
+
     def parse_item_to_graph(self, item, g, n):
         id = hashlib.md5(str(item).encode('utf-8')).hexdigest()
         main_info = BeautifulSoup(item[0], "lxml")
@@ -62,6 +65,3 @@ class PTBrnoChangesRDF(ItemToRDFTransformer):
             g.add((record, FOAF.possibleSolution, Literal(sug_solution, datatype=XSD.string)))
         elif main_category == 'Výluka v MHD':
             pass
-
-    def requires(self):
-        return ChangeWebCrawler()

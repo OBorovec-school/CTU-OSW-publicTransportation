@@ -7,4 +7,3 @@ class PTPragueIrregularityCrawler(RSSProducer):
     LUIGI_OUTPUT_FILE = 'PTPragueIrregularityCrawler'
     NAME = 'PTPragueIrregularityCrawler'
     META_FILE = 'PTPragueIrregularityCrawler'
-    LUIGI_OUTPUT_FILE = 'PTPragueIrregularityCrawler'

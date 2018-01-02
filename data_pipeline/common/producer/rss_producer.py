@@ -1,10 +1,6 @@
-import logging
-
 import feedparser
 
 from data_pipeline.common.producer.norepeat_producer import NoRepeatProducer
-
-logger = logging.getLogger('dp')
 
 
 class RSSProducer(NoRepeatProducer):
