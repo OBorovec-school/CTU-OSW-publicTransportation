@@ -66,3 +66,13 @@ Luigi has many outputs also so semi-steps of  a pipeline, but to make it simple,
     * http://www.dpp.cz/rss/mimoradne-udalosti/
 * Brno public transportation irregularity:
     * http://dpmb.cz/cs/vsechna-omezeni-dopravy
+    
+### How to run it
+
+* Option 1: run python script with python scheduler
+
+```python run_data_pipeline.py```
+
+* Option 2: add follow command to crontab with your scheduling options, for special identification is recommended to use timestamp
+
+```luigi --module data_pipeline.pipeline DataPipeline --unique-param <speial identification>```
