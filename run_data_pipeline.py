@@ -8,7 +8,6 @@ import time
 from data_pipeline.common.config import DPConfig
 from data_pipeline.common.luigid import run_luigid, luigid_running
 from data_pipeline.common.structure import get_log_folder
-from data_pipeline.pipeline import run_pipeline
 from data_pipeline import run_init
 
 

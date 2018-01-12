@@ -43,6 +43,10 @@ class DPConfig:
         return cls.conf['data_pipeline'].get('scheduling', 'daily')
 
     @classmethod
+    def get_luigid(cls):
+        return cls.conf['data_pipeline'].get('luigid', True)
+
+    @classmethod
     def set_root_dir(cls, working_dir_opt):
         if working_dir_opt == 'project':
             cls.root_dir = os.path.join(os.path.dirname(os.path.realpath(__file__)), "..", "..")

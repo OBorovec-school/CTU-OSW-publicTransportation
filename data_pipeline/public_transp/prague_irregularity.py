@@ -3,12 +3,19 @@ import hashlib
 from bs4 import BeautifulSoup
 from dateutil import parser
 from rdflib import URIRef
-from rdflib.namespace import XSD, FOAF
+from rdflib.namespace import XSD
 
+from data_pipeline.common.producer.rss_producer import RSSProducer
 from data_pipeline.common.transformer.item_rdf_transformer import ItemToRDFTransformer
 from data_pipeline.common.utils import *
-from data_pipeline.public_transp.Prague import PT_PRAGUE_IRREGULARITY_NAME_SPACE
-from data_pipeline.public_transp.Prague.irreg_crawler import PTPragueIrregularityCrawler
+from data_pipeline.public_transp import PT_PRAGUE_IRREGULARITY_NAME_SPACE, PT_PRAGUE_IRREGULARITY_URL
+
+
+class PTPragueIrregularityCrawler(RSSProducer):
+    RSS_URL = PT_PRAGUE_IRREGULARITY_URL
+    LUIGI_OUTPUT_FILE = 'PTPragueIrregularityCrawler'
+    NAME = 'PTPragueIrregularityCrawler'
+    META_FILE = 'PTPragueIrregularityCrawler'
 
 
 class PTPragueIrregRDF(ItemToRDFTransformer):
@@ -40,12 +47,12 @@ class PTPragueIrregRDF(ItemToRDFTransformer):
             tzinfo=publish_date.tzinfo)
 
         record = n[id]
-        g.add((record, RDF.type, FOAF.TrafficChange))
-        g.add((record, FOAF.title, Literal(title, datatype=XSD.string)))
-        g.add((record, FOAF.published, Literal(publish_date, datatype=XSD.datetime)))
-        g.add((record, FOAF.link, URIRef(link)))
-        add_bag_to_graph(g, record, FOAF.affectedLines, affected_lines, XSD.string)
-        add_bag_to_graph(g, record, FOAF.affectedTypes, affected_types, XSD.string)
-        add_bag_to_graph(g, record, FOAF.classification, categories, XSD.string)
-        g.add((record, FOAF.starts, Literal(from_time, datatype=XSD.datetime)))
-        g.add((record, FOAF.ends, Literal(to_time, datatype=XSD.datetime)))
+        g.add((record, RDF.type, n.TrafficChange))
+        g.add((record, n.title, Literal(title, datatype=XSD.string)))
+        g.add((record, n.published, Literal(publish_date, datatype=XSD.datetime)))
+        g.add((record, n.link, URIRef(link)))
+        add_bag_to_graph(g, record, n.affectedLines, affected_lines, XSD.string)
+        add_bag_to_graph(g, record, n.affectedTypes, affected_types, XSD.string)
+        add_bag_to_graph(g, record, n.classification, categories, XSD.string)
+        g.add((record, n.starts, Literal(from_time, datatype=XSD.datetime)))
+        g.add((record, n.ends, Literal(to_time, datatype=XSD.datetime)))

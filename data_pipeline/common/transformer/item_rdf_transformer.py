@@ -9,9 +9,6 @@ from rdflib import Namespace
 from data_pipeline.common.config import DPConfig
 from data_pipeline.common.structure import get_tmp_file
 
-logger = logging.getLogger('dp')
-unparseble_logging = logging.getLogger('unparseble')
-
 
 class ItemToRDFTransformer(luigi.Task):
     NAME = NotImplementedError
@@ -45,8 +42,8 @@ class ItemToRDFTransformer(luigi.Task):
                 try:
                     self.parse_item_to_graph(item, g, n)
                 except Exception as e:
-                    logger.warning('Could not parse item with content: ' + str(e))
-                    unparseble_logging.error(str(item))
+                    self.logger.warning('Could not parse item with content: ' + str(e))
+                    self.unparseble_logger.error(str(item))
         g.serialize(destination=self.output().path, format=self.rdf_output)
 
     def parse_item_to_graph(self, item, g, n):

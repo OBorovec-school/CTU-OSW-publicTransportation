@@ -59,13 +59,20 @@ Luigi has many outputs also so semi-steps of  a pipeline, but to make it simple,
 * results/ - folder with merged rdf files
 
 ### Information sources
- At this moment just public transportation irregularities of Prague and Brno are collected because they are vita for other checkpoint of that semeser work.
+ At this moment just public transportation irregularities of Prague and Brno are collected because they are vita for other checkpoint of that semester work.
  
-* Prague public transportation irregularity:
-    * http://www.dpp.cz/rss/doprava/
-    * http://www.dpp.cz/rss/mimoradne-udalosti/
-* Brno public transportation irregularity:
-    * http://dpmb.cz/cs/vsechna-omezeni-dopravy
+* Public transportation irregularity:
+    * Prague 
+        * http://www.dpp.cz/rss/doprava/
+        * http://www.dpp.cz/rss/mimoradne-udalosti/
+    * Brno
+        * http://dpmb.cz/cs/vsechna-omezeni-dopravy
+    * Pislen
+        * http://www.pmdp.cz/zmeny-v-doprave.xml
+* Traffic info:
+    * Dopravni informace (more [here](http://portal.dopravniinfo.cz/rss-informace#))
+        * http://www.dopravniinfo.cz/DataServices/RSSpraha.ashx
+        * http://www.dopravniinfo.cz/DataServices/RSSbrno.ashx
     
 ### How to run it
 

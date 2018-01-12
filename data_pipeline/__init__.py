@@ -1,10 +1,11 @@
 import logging
 import sys
 
-from data_pipeline import pipeline
 from data_pipeline.common.config import logging_init, DPConfig
 from data_pipeline.common.structure import get_log_folder
 
+
+BASE_NAMESPACE = 'http://publictransportation.cz/'
 
 def run_init():
     conf_path = None

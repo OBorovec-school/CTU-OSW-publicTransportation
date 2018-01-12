@@ -1,0 +1,135 @@
+@prefix BrnoDi: <http://publictransportation.cz/brno/ti_di/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://publictransportation.cz/brno/ti_di/03198769cf727c2b5bfa4c4b4e97cbd3> a BrnoDi:TrafficInfo ;
+    BrnoDi:classification "Dopravní uzavírky a omezení"^^xsd:string ;
+    BrnoDi:description "uzavřeno práce na inženýrských sítích , Úplná uzavírka provozu ulice Matulkova z důvodu rekonstrukce kanalizace. Průjezd křižovatkami zůstane zachován., Vydal: ÚMČ Brno Královo Pole"^^xsd:string ;
+    BrnoDi:internalId "5337085"^^xsd:string ;
+    BrnoDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-599364,-599278,-1157767,-1158026> ;
+    BrnoDi:published "2017-09-19T06:34:19+00:00"^^xsd:datetime ;
+    BrnoDi:title "ulice Matulkova, Brno-Královo Pole, v katastru obce Brno: Dopravní uzavírky a omezení"^^xsd:string .
+
+<http://publictransportation.cz/brno/ti_di/061d5d5ecde1511ce0462dfb2c8c34a5> a BrnoDi:TrafficInfo ;
+    BrnoDi:classification "Dopravní uzavírky a omezení"^^xsd:string ;
+    BrnoDi:description "uzavřeno práce na inženýrských sítích , Úplná uzavírka provozu na ulici Tylova z důvodu rekonstrukce kanalizace a vodovodu. Průjezd křižovatkami zůstane zachován., Vydal: ÚMČ Brno Královo Pole"^^xsd:string ;
+    BrnoDi:internalId "5422237"^^xsd:string ;
+    BrnoDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-598985,-598866,-1156498,-1156532> ;
+    BrnoDi:published "2017-10-23T08:42:10+00:00"^^xsd:datetime ;
+    BrnoDi:title "ulice Tylova, Brno-Královo Pole, Brno: Dopravní uzavírky a omezení"^^xsd:string .
+
+<http://publictransportation.cz/brno/ti_di/15386a77b90083865a4a21d682bc6e77> a BrnoDi:TrafficInfo ;
+    BrnoDi:classification "Omezení provozu a zákazy"^^xsd:string ;
+    BrnoDi:description "omezení  , Krátkodobé úplné uzavírky po dobu navezení a složení stavebního materiálu komunikace Březová v místech před objektem č.o.91., Vydal: ÚMČ Brno Jundrov"^^xsd:string ;
+    BrnoDi:internalId "5297470"^^xsd:string ;
+    BrnoDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-602516,-602380,-1158267,-1158377> ;
+    BrnoDi:published "2017-06-22T07:29:34+00:00"^^xsd:datetime ;
+    BrnoDi:title "ulice Březová, Brno-Jundrov: Omezení provozu a zákazy"^^xsd:string .
+
+<http://publictransportation.cz/brno/ti_di/39f9552b34d931f0737547270acbb32f> a BrnoDi:TrafficInfo ;
+    BrnoDi:classification "Práce na silnici"^^xsd:string ;
+    BrnoDi:description "stavební práce zúžené jízdní pruhy , Částečná uzavírka silnice I/43 u mostu ev.č. 43-002 z důvodu výstaby přejezdu středního dělícího pásu. V obou jízdních pásech bude uzavřena část levého jízdního pruhu - doprava bude vedena v zúžených jízdních pruzích., Vydal: Krajský úřad Jihomoravského kraje"^^xsd:string ;
+    BrnoDi:internalId "5456646"^^xsd:string ;
+    BrnoDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-598742,-598696,-1156542,-1156637> ;
+    BrnoDi:published "2018-01-03T07:18:46+00:00"^^xsd:datetime ;
+    BrnoDi:title "silnice I/43 (ulice Sportovní), Brno-Královo Pole: Práce na silnici"^^xsd:string .
+
+<http://publictransportation.cz/brno/ti_di/3bfcb486cd6d080dd7b54f31386b73d0> a BrnoDi:TrafficInfo ;
+    BrnoDi:classification "Dopravní uzavírky a omezení"^^xsd:string ;
+    BrnoDi:description "uzavřeno, práce na silnici  , Valchařská, (včetně slepé části MK); Objížďka - DZ: Provazníkova - Karlova - ul. Selská; Pro tranzitní dopravu: ul. Provazníkova - Žarošická - Jedovnická - Ochoz u Brna - Kanice - Řicmanice - Bílovice nad Svitavou, Vydal: Magistrát města Brna"^^xsd:string ;
+    BrnoDi:internalId "5340894"^^xsd:string ;
+    BrnoDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-595793,-595324,-1158725,-1158867> ;
+    BrnoDi:published "2017-09-14T07:03:03+00:00"^^xsd:datetime ;
+    BrnoDi:title "místní komunikace, Brno: Dopravní uzavírky a omezení"^^xsd:string .
+
+<http://publictransportation.cz/brno/ti_di/40718954eb25cc7623ad186ba1d480b9> a BrnoDi:TrafficInfo ;
+    BrnoDi:classification "Práce na silnici"^^xsd:string ;
+    BrnoDi:description "práce na silnici  , Na ul. Banskobystrická je pro stavbu polyfunkčního objektu v nároží ul. Medlánecká x Bankobystrická povolen v délce cca 35m celoplošný zábor chodníku, ve vozovce je potom vyhrazen koridor pro pěší. Vozidla okolo tohoto záboru jezdí částečně ve vozovce, částečně po tramvajovém tělese."^^xsd:string ;
+    BrnoDi:internalId "5431674"^^xsd:string ;
+    BrnoDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-599577,-599573,-1154860,-1154873> ;
+    BrnoDi:published "2017-11-08T14:16:35+00:00"^^xsd:datetime ;
+    BrnoDi:title "ulice Banskobystrická, mezi křižovatkami ulic Terezy Novákové a Koláčkova, Brno-Řečkovice a Mokrá Hora, Brno: Práce na silnici"^^xsd:string .
+
+<http://publictransportation.cz/brno/ti_di/5a44a095ca716fa212e6a97bce2fc8f6> a BrnoDi:TrafficInfo ;
+    BrnoDi:classification "Dopravní uzavírky a omezení"^^xsd:string ;
+    BrnoDi:description "uzavřeno stavební práce , ulice Francouzská z důvodu opravy komunikace v termínu od 4.12.2017 do 18.12.2017 - celá ulice Francouzská, od 19.12.2017 do 31.3.2018 - úsek Přadlácká - Hvězdová, od 1.4.2018 do 30.6.2018 - úsek Přadlácká - Hvězdová včetně křižovatky Přadlácká x Francouzská, Vydal: ÚMČ Brno Sever"^^xsd:string ;
+    BrnoDi:internalId "5445063"^^xsd:string ;
+    BrnoDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-597542,-596777,-1160080,-1160129> ;
+    BrnoDi:published "2017-12-05T09:59:59+00:00"^^xsd:datetime ;
+    BrnoDi:title "ulice Francouzská, Brno-sever: Dopravní uzavírky a omezení"^^xsd:string .
+
+<http://publictransportation.cz/brno/ti_di/68aa43f89009fc60e3bc17e1262a7a77> a BrnoDi:TrafficInfo ;
+    BrnoDi:classification "Dopravní uzavírky a omezení"^^xsd:string ;
+    BrnoDi:description "uzavřeno práce na inženýrských sítích , Z důvodu realizace akce: \"Brno, Bayerova II, oprava kanalizace a drobná rekonstrukce na kanalizační síti\" bude uzavřena ul. Bayerova v úseku od křižovatky s ul. Kotlářská po křižovatku s ul. Hoppova. Uzavírka je rozdělena do několika etap.  , Vydal: Magistrát města Brna"^^xsd:string ;
+    BrnoDi:internalId "5336060"^^xsd:string ;
+    BrnoDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-598498,-598477,-1159276,-1159360> ;
+    BrnoDi:published "2017-09-27T08:35:20+00:00"^^xsd:datetime ;
+    BrnoDi:title "ulice Bayerova, Brno-střed, Brno: Dopravní uzavírky a omezení"^^xsd:string .
+
+<http://publictransportation.cz/brno/ti_di/6dc29e0162acc77b901cc7e77c5219c0> a BrnoDi:TrafficInfo ;
+    BrnoDi:classification "Dopravní uzavírky a omezení"^^xsd:string ;
+    BrnoDi:description """uzavřeno práce na inženýrských sítích , uzavírka mítsní komunikace III. tř. Vymazalova v k. ú. Židenice v ce
+lém úseku , ulice Vymazalova v celém úseku; Objížďka - bez rozlišení: objízdná trasa: Kalcekého - Rokycanova - Filipínského - Vojanova - Karáskovo náměstí, Vydal: ÚMČ Brno Židenice"""^^xsd:string ;
+    BrnoDi:internalId "5410227"^^xsd:string ;
+    BrnoDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-595792,-595669,-1160642,-1160692> ;
+    BrnoDi:published "2017-10-11T10:20:03+00:00"^^xsd:datetime ;
+    BrnoDi:title "ulice Vymazalova, Brno-Židenice: Dopravní uzavírky a omezení"^^xsd:string .
+
+<http://publictransportation.cz/brno/ti_di/981a3f639e61ac2f0b13b8afffb63ddd> a BrnoDi:TrafficInfo ;
+    BrnoDi:classification "Dopravní uzavírky a omezení"^^xsd:string ;
+    BrnoDi:description "uzavřeno stavební práce , uzavírka ulice Buzkovy v celém úseku včetně křižovatky s ul. Skorkovského (II. etapa prací), ul. Buzkova včetně křižovatky s ul. Skorkovského; Objížďka - bez rozlišení: Nezamyslova - Krásného - Potácelova (Dykova - Otakara Ševčíka silnice I. tř.) - Táborská a Skorkovského - Tovačovského - Strakatého - Nezamyslova, Vydal: ÚMČ Brno Židenice"^^xsd:string ;
+    BrnoDi:internalId "5418156"^^xsd:string ;
+    BrnoDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-595786,-595770,-1161130,-1161408> ;
+    BrnoDi:published "2017-10-16T09:07:58+00:00"^^xsd:datetime ;
+    BrnoDi:title "ulice Buzkova, mezi křižovatkami ulic Nezamyslova a Táborská, Brno-Židenice, Brno: Dopravní uzavírky a omezení"^^xsd:string .
+
+<http://publictransportation.cz/brno/ti_di/9d7bca213a5d89e9974278f6778b90f3> a BrnoDi:TrafficInfo ;
+    BrnoDi:classification "Práce na silnici"^^xsd:string ;
+    BrnoDi:description "práce na inženýrských sítích  , uzavírka ul. Koliště v křižovatce s ul. Milady Horákové, Vydal: Magistrát města Brna"^^xsd:string ;
+    BrnoDi:internalId "5441436"^^xsd:string ;
+    BrnoDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-597956,-597950,-1160262,-1160265> ;
+    BrnoDi:published "2017-11-28T11:19:49+00:00"^^xsd:datetime ;
+    BrnoDi:title "ulice Milady Horákové, ulice Koliště, Brno-střed: Práce na silnici"^^xsd:string .
+
+BrnoDi:b025ac4785d535c7e0d0574377b3a6f3 a BrnoDi:TrafficInfo ;
+    BrnoDi:classification "Dopravní uzavírky a omezení"^^xsd:string ;
+    BrnoDi:description "uzavřeno stavební práce , uzavírka ul. Tenorova v  celém úseku ; Objížďka - bez rozlišení: Objízdná trasa je vedena po místních komunikacích Viniční - Líšeňská a v opačném směru Viniční - Hrozňatova - Gajdošova, Vydal: ÚMČ Brno Židenice"^^xsd:string ;
+    BrnoDi:internalId "5431475"^^xsd:string ;
+    BrnoDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-594948,-594794,-1160770,-1161020> ;
+    BrnoDi:published "2017-12-15T08:19:44+00:00"^^xsd:datetime ;
+    BrnoDi:title "ulice Tenorova, Brno-Židenice: Dopravní uzavírky a omezení"^^xsd:string .
+
+BrnoDi:c52a4e6438dadb67998fdb1a0f480dab a BrnoDi:TrafficInfo ;
+    BrnoDi:classification "Dopravní uzavírky a omezení"^^xsd:string ;
+    BrnoDi:description "zúžená vozovka na jeden jízdní pruh stavební práce , Z důvodu stavebních prací na domě je provoz na ul. Vídeňská 16 omezen svedením do jednoho jízdního pruhu. , Vydal: Magistrát města Brna"^^xsd:string ;
+    BrnoDi:internalId "5459530"^^xsd:string ;
+    BrnoDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-599212,-599208,-1161769,-1161787> ;
+    BrnoDi:published "2018-01-10T11:46:22+00:00"^^xsd:datetime ;
+    BrnoDi:title "ulice Vídeňská, Brno-střed: Dopravní uzavírky a omezení"^^xsd:string .
+
+BrnoDi:cbe40aa488e623dc98f384d30f5e810d a BrnoDi:TrafficInfo ;
+    BrnoDi:classification "Práce na silnici"^^xsd:string ;
+    BrnoDi:description "stavební práce zúžené jízdní pruhy , Částečná uzavírka silnice I/43 u mostu ev.č. 43-002 z důvodu výstaby přejezdu středního dělícího pásu. V obou jízdních pásech bude uzavřena část levého jízdního pruhu - doprava bude vedena v zúžených jízdních pruzích., Vydal: Krajský úřad Jihomoravského kraje"^^xsd:string ;
+    BrnoDi:internalId "5456645"^^xsd:string ;
+    BrnoDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-598725,-598674,-1156552,-1156658> ;
+    BrnoDi:published "2018-01-03T07:18:19+00:00"^^xsd:datetime ;
+    BrnoDi:title "silnice I/43 (ulice Sportovní), Brno-Královo Pole: Práce na silnici"^^xsd:string .
+
+BrnoDi:d4772962d641048255c5b710bfad82e6 a BrnoDi:TrafficInfo ;
+    BrnoDi:classification "Práce na silnici"^^xsd:string ;
+    BrnoDi:description "práce na silnici  , Dopravní opatření na silnici I/42 Brno - velký městský okruh v souvislosti s rekonstrukcí ul. Valchařské, v Brně-Maloměřicích, která je dlouhodobě úplně uzavřena. V křižovatce Provazníkova, Tomkovo náměstí, Dukelská třída je pro individuální dopravu uzavřen levý odbočovací pruh křižovatky. , Uzavřeno levé odbočení směr Dukelská třída pro individuální dopravu. ; Objížďka - bez rozlišení, Směr Dukelská třída: je vedena závlekem nejprve v přímém směru přes Husovický tunel, výjezdová rampa směr Lesná, pravým odbočením na Merhautovu ul. směr centrum, dále levým odbočením na Provazníkovu ul. s následným napojením zpět na silnici I/42 a pravým odbočením na Dukelskou třídu.   , Vydal: Krajský úřad Jihomoravského kraje"^^xsd:string ;
+    BrnoDi:internalId "5340129"^^xsd:string ;
+    BrnoDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-595866,-595850,-1158891,-1158900> ;
+    BrnoDi:published "2017-09-13T07:01:24+00:00"^^xsd:datetime ;
+    BrnoDi:title "silnice I/42 (ulice Provazníkova), Brno-sever, Brno: Práce na silnici"^^xsd:string .
+
+BrnoDi:fbc05e47cbf35cd0fde7113932050f73 a BrnoDi:TrafficInfo ;
+    BrnoDi:classification "Dopravní uzavírky a omezení"^^xsd:string ;
+    BrnoDi:description "uzavřeno oprava povrchu vozovky , Prodloužení uzavírky provozu ulice Poděbrova- část z důvodu opravy komunikace., Vydal: ÚMČ Brno Královo Pole"^^xsd:string ;
+    BrnoDi:internalId "5439125"^^xsd:string ;
+    BrnoDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-598548,-598407,-1157854,-1158404> ;
+    BrnoDi:published "2017-11-29T07:30:57+00:00"^^xsd:datetime ;
+    BrnoDi:title "ulice Poděbradova, Brno-Královo Pole: Dopravní uzavírky a omezení"^^xsd:string .
+

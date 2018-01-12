@@ -1,0 +1,18 @@
+@prefix pilsenChanges: <http://publictransportation.cz/pilsen/changes/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://publictransportation.cz/pilsen/changes/41dd9526c681f1b42d717e114c32eb4b> pilsenChanges:link <http://www.pmdp.cz/informace-o-preprave/zmeny-v-doprave/doc/dlouhodobe-prelozeni-zastavek-u-pietasu-a-sokolska-obe-smer-lobzy-od-9-1-2018-2255/trafficitem.htm> ;
+    pilsenChanges:published "2018-01-05T07:45:00+00:00"^^xsd:datetime ;
+    pilsenChanges:title "Dlouhodobé přeložení zastávek \"U Pietasu\" a \"Sokolská\"  (obě směr Lobzy) od 9. 1. 2018"^^xsd:string .
+
+<http://publictransportation.cz/pilsen/changes/573f05194b185e93be1378bb6de2c905> pilsenChanges:link <http://www.pmdp.cz/informace-o-preprave/zmeny-v-doprave/doc/zmeny-na-trolejbusovych-a-autobusovych-linkach-od-2-1-2018-zahajeni-odbavovani-v-nove-zastavce-belanka-2251/trafficitem.htm> ;
+    pilsenChanges:published "2017-12-19T11:53:00+00:00"^^xsd:datetime ;
+    pilsenChanges:title "Změny na trolejbusových a autobusových linkách od 2. 1. 2018, zahájení odbavování v nové zastávce \"Belánka\""^^xsd:string .
+
+pilsenChanges:bb24f2b0e035441d298443b993ef34fe pilsenChanges:link <http://www.pmdp.cz/informace-o-preprave/zmeny-v-doprave/doc/uzavirka-mikulasske-ulice-pod-zeleznicnimi-mosty-od-23-1-2017-do-cca-zari-2018-odklon-linek-12-35-57-n2-a-n5-1984/trafficitem.htm> ;
+    pilsenChanges:published "2017-01-23T13:54:00+00:00"^^xsd:datetime ;
+    pilsenChanges:title "Uzavírka Mikulášské ulice pod železničními mosty od 23. 1. 2017 do cca září 2018 - odklon linek 12, 35, 57, N2 a N5"^^xsd:string .
+

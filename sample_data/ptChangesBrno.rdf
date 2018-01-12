@@ -1,192 +1,116 @@
 @prefix brnoChanges: <http://publictransportation.cz/brno/changes/> .
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://publictransportation.cz/brno/changes/292ba8d0e82d672da9910584b7b5c118> a ns1:TrafficChange ;
-    ns1:affecedStop "Bílovice nad Svitavou-Žižkova"^^xsd:string ;
-    ns1:affectedLines [ a rdf:Bag ;
+<http://publictransportation.cz/brno/changes/1601a8fb372be7cf062af3909293c34e> a brnoChanges:TrafficChange ;
+    brnoChanges:affecedStop "Starý Lískovec-smyčka"^^xsd:string ;
+    brnoChanges:affectedLines [ a rdf:Bag ;
+            rdf:li "8"^^xsd:string ] ;
+    brnoChanges:classification [ a rdf:Bag ;
+            rdf:li "Mimořádná událost v MHD"^^xsd:string,
+                "Porucha vozidla"^^xsd:string ] ;
+    brnoChanges:delay_amount "5 min"^^xsd:string ;
+    brnoChanges:dirrection "do centra"^^xsd:string ;
+    brnoChanges:ends "2018-04-01T04:45:00"^^xsd:datetime ;
+    brnoChanges:possibleSolution "Cestující převezme záložní tramvaj se zpožděním 7 minut."^^xsd:string ;
+    brnoChanges:reason "Porucha vozidla"^^xsd:string ;
+    brnoChanges:starts "2018-04-01T04:40:00"^^xsd:datetime ;
+    brnoChanges:title "Porucha vozidla - Zastávka Starý Lískovec-smyčka "^^xsd:string .
+
+<http://publictransportation.cz/brno/changes/292ba8d0e82d672da9910584b7b5c118> a brnoChanges:TrafficChange ;
+    brnoChanges:affecedStop "Bílovice nad Svitavou-Žižkova"^^xsd:string ;
+    brnoChanges:affectedLines [ a rdf:Bag ;
             rdf:li "75"^^xsd:string ] ;
-    ns1:classification [ a rdf:Bag ;
+    brnoChanges:classification [ a rdf:Bag ;
             rdf:li "Mimořádná událost v MHD"^^xsd:string,
                 "Neprůjezdná komunikace"^^xsd:string ] ;
-    ns1:delay_amount "AKTUALIZACE 15:10: Zastávka Bílovice nad Svitavou-Žižkova oba směry; Doprava uvolněna, linka 75 jede v celé trase až do Bílovic, k železniční stanici."^^xsd:string ;
-    ns1:dirrection "oba směry"^^xsd:string ;
-    ns1:ends "2017-12-15T15:10:00"^^xsd:datetime ;
-    ns1:possibleSolution "Odklízení rozsypaného materiálu z komunikace za asistence hasičů."^^xsd:string ;
-    ns1:reason "Neprůjezdná komunikace"^^xsd:string ;
-    ns1:starts "2017-12-15T14:15:00"^^xsd:datetime ;
-    ns1:title "Neprůjezdná komunikace - Zastávka Bílovice nad Svitavou-Žižkova "^^xsd:string .
+    brnoChanges:delay_amount "AKTUALIZACE 15:10: Zastávka Bílovice nad Svitavou-Žižkova oba směry; Doprava uvolněna, linka 75 jede v celé trase až do Bílovic, k železniční stanici."^^xsd:string ;
+    brnoChanges:dirrection "oba směry"^^xsd:string ;
+    brnoChanges:ends "2017-12-15T15:10:00"^^xsd:datetime ;
+    brnoChanges:possibleSolution "Odklízení rozsypaného materiálu z komunikace za asistence hasičů."^^xsd:string ;
+    brnoChanges:reason "Neprůjezdná komunikace"^^xsd:string ;
+    brnoChanges:starts "2017-12-15T14:15:00"^^xsd:datetime ;
+    brnoChanges:title "Neprůjezdná komunikace - Zastávka Bílovice nad Svitavou-Žižkova "^^xsd:string .
 
-<http://publictransportation.cz/brno/changes/3651c9af63de86a6b3c4e4f5754aa3f8> a ns1:TrafficChange ;
-    ns1:affecedStop "Obřany-sídliště"^^xsd:string ;
-    ns1:affectedLines [ a rdf:Bag ;
+<http://publictransportation.cz/brno/changes/55a911b7f7037253365c5e4b68116728> a brnoChanges:TrafficChange ;
+    brnoChanges:affecedStop "Výstaviště - vstup G2"^^xsd:string ;
+    brnoChanges:affectedLines [ a rdf:Bag ;
+            rdf:li "1"^^xsd:string ] ;
+    brnoChanges:classification [ a rdf:Bag ;
+            rdf:li "Mimořádná událost v MHD"^^xsd:string,
+                "Porucha vozidla"^^xsd:string ] ;
+    brnoChanges:delay_amount "5 - 10 min"^^xsd:string ;
+    brnoChanges:dirrection "do centra"^^xsd:string ;
+    brnoChanges:ends "2018-11-01T06:15:00"^^xsd:datetime ;
+    brnoChanges:possibleSolution "Vadná tramvaj zdržela také některé vozy vyjíždějící z vozovny Pisárky na linky 2, 6, 8, 10 a 12."^^xsd:string ;
+    brnoChanges:reason "Porucha vozidla"^^xsd:string ;
+    brnoChanges:starts "2018-11-01T05:57:00"^^xsd:datetime ;
+    brnoChanges:title "Porucha vozidla - Zastávka Výstaviště - vstup G2 "^^xsd:string .
+
+<http://publictransportation.cz/brno/changes/6b444301f9176fe290b034340661313f> a brnoChanges:TrafficChange ;
+    brnoChanges:affecedStop "Obřany-sídliště"^^xsd:string ;
+    brnoChanges:affectedLines [ a rdf:Bag ;
             rdf:li "57"^^xsd:string ] ;
-    ns1:classification [ a rdf:Bag ;
+    brnoChanges:classification [ a rdf:Bag ;
             rdf:li "Mimořádná událost v MHD"^^xsd:string,
                 "Porucha vozidla"^^xsd:string ] ;
-    ns1:delay_amount "5 min"^^xsd:string ;
-    ns1:dirrection "do centra"^^xsd:string ;
-    ns1:ends "2017-01-12T07:27:00"^^xsd:datetime ;
-    ns1:possibleSolution "Cestující převezme se zpožděním záložní autobus."^^xsd:string ;
-    ns1:reason "Porucha vozidla"^^xsd:string ;
-    ns1:starts "2017-01-12T06:49:00"^^xsd:datetime ;
-    ns1:title "Porucha vozidla - Zastávka Obřany-sídliště "^^xsd:string .
+    brnoChanges:delay_amount "8 min"^^xsd:string ;
+    brnoChanges:dirrection "Vranov"^^xsd:string ;
+    brnoChanges:ends "2017-12-19T05:51:00"^^xsd:datetime ;
+    brnoChanges:possibleSolution "Z Tomkova náměstí řazen záložní autobus."^^xsd:string ;
+    brnoChanges:reason "Porucha vozidla"^^xsd:string ;
+    brnoChanges:starts "2017-12-19T05:43:00"^^xsd:datetime ;
+    brnoChanges:title "Porucha vozidla - Zastávka Obřany-sídliště "^^xsd:string .
 
-<http://publictransportation.cz/brno/changes/45a32cb5d6b436efca5a4efd8f6b7463> a ns1:TrafficChange ;
-    ns1:affecedStop "Královo Pole-nádraží"^^xsd:string ;
-    ns1:affectedLines [ a rdf:Bag ;
-            rdf:li "41"^^xsd:string ] ;
-    ns1:classification [ a rdf:Bag ;
-            rdf:li "Mimořádná událost v MHD"^^xsd:string,
-                "Neprůjezdná komunikace"^^xsd:string ] ;
-    ns1:delay_amount "5-10 min"^^xsd:string ;
-    ns1:dirrection "z centra"^^xsd:string ;
-    ns1:ends "2017-06-12T08:15:00"^^xsd:datetime ;
-    ns1:possibleSolution "Spoj linky 41 › Globus v 7:52 jede se zpožděním 5-10 minut."^^xsd:string ;
-    ns1:reason "Neprůjezdná komunikace"^^xsd:string ;
-    ns1:starts "2017-06-12T07:52:00"^^xsd:datetime ;
-    ns1:title "Neprůjezdná komunikace - Zastávka Královo Pole-nádraží "^^xsd:string .
-
-<http://publictransportation.cz/brno/changes/6b444301f9176fe290b034340661313f> a ns1:TrafficChange ;
-    ns1:affecedStop "Obřany-sídliště"^^xsd:string ;
-    ns1:affectedLines [ a rdf:Bag ;
-            rdf:li "57"^^xsd:string ] ;
-    ns1:classification [ a rdf:Bag ;
+<http://publictransportation.cz/brno/changes/902d3205103299dc86c171f78a005559> a brnoChanges:TrafficChange ;
+    brnoChanges:affecedStop "Ústřední hřbitov - smyčka"^^xsd:string ;
+    brnoChanges:affectedLines [ a rdf:Bag ;
+            rdf:li "5"^^xsd:string ] ;
+    brnoChanges:classification [ a rdf:Bag ;
             rdf:li "Mimořádná událost v MHD"^^xsd:string,
                 "Porucha vozidla"^^xsd:string ] ;
-    ns1:delay_amount "8 min"^^xsd:string ;
-    ns1:dirrection "Vranov"^^xsd:string ;
-    ns1:ends "2017-12-19T05:51:00"^^xsd:datetime ;
-    ns1:possibleSolution "Z Tomkova náměstí řazen záložní autobus."^^xsd:string ;
-    ns1:reason "Porucha vozidla"^^xsd:string ;
-    ns1:starts "2017-12-19T05:43:00"^^xsd:datetime ;
-    ns1:title "Porucha vozidla - Zastávka Obřany-sídliště "^^xsd:string .
+    brnoChanges:delay_amount "5 min"^^xsd:string ;
+    brnoChanges:dirrection "do centra"^^xsd:string ;
+    brnoChanges:ends "2018-03-01T15:01:00"^^xsd:datetime ;
+    brnoChanges:possibleSolution "Použijte následující spoj."^^xsd:string ;
+    brnoChanges:reason "Porucha vozidla"^^xsd:string ;
+    brnoChanges:starts "2018-03-01T14:56:00"^^xsd:datetime ;
+    brnoChanges:title "Porucha vozidla - Zastávka Ústřední hřbitov - smyčka "^^xsd:string .
 
-<http://publictransportation.cz/brno/changes/8be32cfdf8f8e494c796cbb280466dcc> a ns1:TrafficChange ;
-    ns1:affecedStop "Výstaviště - hlavní vstup"^^xsd:string ;
-    ns1:affectedLines [ a rdf:Bag ;
-            rdf:li "26"^^xsd:string ] ;
-    ns1:classification [ a rdf:Bag ;
+<http://publictransportation.cz/brno/changes/98b3d6ba9596963ec39eb866b4449814> a brnoChanges:TrafficChange ;
+    brnoChanges:affecedStop "Újezd u Brna-městský úřad"^^xsd:string ;
+    brnoChanges:affectedLines [ a rdf:Bag ;
+            rdf:li "40"^^xsd:string ] ;
+    brnoChanges:classification [ a rdf:Bag ;
             rdf:li "Mimořádná událost v MHD"^^xsd:string,
                 "Porucha vozidla"^^xsd:string ] ;
-    ns1:delay_amount "10 min"^^xsd:string ;
-    ns1:dirrection "z centra"^^xsd:string ;
-    ns1:ends "2017-08-12T11:31:00"^^xsd:datetime ;
-    ns1:possibleSolution "Použijte následující spoj."^^xsd:string ;
-    ns1:reason "Porucha vozidla"^^xsd:string ;
-    ns1:starts "2017-08-12T11:17:00"^^xsd:datetime ;
-    ns1:title "Porucha vozidla - Zastávka Výstaviště - hlavní vstup "^^xsd:string .
+    brnoChanges:delay_amount "15 min"^^xsd:string ;
+    brnoChanges:dirrection "do centra"^^xsd:string ;
+    brnoChanges:ends "2017-12-14T09:22:00"^^xsd:datetime ;
+    brnoChanges:possibleSolution "Spoj zajištěn záložním autobusem se zpožděním 15 minut."^^xsd:string ;
+    brnoChanges:reason "Porucha vozidla"^^xsd:string ;
+    brnoChanges:starts "2017-12-14T09:07:00"^^xsd:datetime ;
+    brnoChanges:title "Porucha vozidla - Zastávka Újezd u Brna-městský úřad "^^xsd:string .
 
-<http://publictransportation.cz/brno/changes/8c16c223b5e5c0f0bbfc8205bac6b4de> a ns1:TrafficChange ;
-    ns1:affectedLines [ a rdf:Bag ;
+<http://publictransportation.cz/brno/changes/9d6931ebf6f2f8264b6b57a702a046bf> a brnoChanges:TrafficChange ;
+    brnoChanges:affectedLines [ a rdf:Bag ;
+            rdf:li "82"^^xsd:string ] ;
+    brnoChanges:classification [ a rdf:Bag ;
+            rdf:li "Dopravní informace"^^xsd:string ] ;
+    brnoChanges:ends "2017-12-15T18:00:00"^^xsd:datetime ;
+    brnoChanges:starts "2017-08-12T08:00:00"^^xsd:datetime ;
+    brnoChanges:title "Obsluha zastávky Výstaviště linkou 82"^^xsd:string .
+
+brnoChanges:d87f9111f847a94c2cda9ece57d3cbed a brnoChanges:TrafficChange ;
+    brnoChanges:affectedLines [ a rdf:Bag ;
             rdf:li " 57"^^xsd:string,
                 " 75"^^xsd:string,
                 "4"^^xsd:string ] ;
-    ns1:classification [ a rdf:Bag ;
+    brnoChanges:classification [ a rdf:Bag ;
             rdf:li "Výluka v MHD"^^xsd:string ] ;
-    ns1:ends "2018-10-31T23:00:00"^^xsd:datetime ;
-    ns1:starts "2017-10-09T23:00:00"^^xsd:datetime ;
-    ns1:title "Výluka v ulici Valchařské"^^xsd:string .
-
-<http://publictransportation.cz/brno/changes/98b3d6ba9596963ec39eb866b4449814> a ns1:TrafficChange ;
-    ns1:affecedStop "Újezd u Brna-městský úřad"^^xsd:string ;
-    ns1:affectedLines [ a rdf:Bag ;
-            rdf:li "40"^^xsd:string ] ;
-    ns1:classification [ a rdf:Bag ;
-            rdf:li "Mimořádná událost v MHD"^^xsd:string,
-                "Porucha vozidla"^^xsd:string ] ;
-    ns1:delay_amount "15 min"^^xsd:string ;
-    ns1:dirrection "do centra"^^xsd:string ;
-    ns1:ends "2017-12-14T09:22:00"^^xsd:datetime ;
-    ns1:possibleSolution "Spoj zajištěn záložním autobusem se zpožděním 15 minut."^^xsd:string ;
-    ns1:reason "Porucha vozidla"^^xsd:string ;
-    ns1:starts "2017-12-14T09:07:00"^^xsd:datetime ;
-    ns1:title "Porucha vozidla - Zastávka Újezd u Brna-městský úřad "^^xsd:string .
-
-<http://publictransportation.cz/brno/changes/9d6931ebf6f2f8264b6b57a702a046bf> a ns1:TrafficChange ;
-    ns1:affectedLines [ a rdf:Bag ;
-            rdf:li "82"^^xsd:string ] ;
-    ns1:classification [ a rdf:Bag ;
-            rdf:li "Dopravní informace"^^xsd:string ] ;
-    ns1:ends "2017-12-15T18:00:00"^^xsd:datetime ;
-    ns1:starts "2017-08-12T08:00:00"^^xsd:datetime ;
-    ns1:title "Obsluha zastávky Výstaviště linkou 82"^^xsd:string .
-
-brnoChanges:a150a273427f0dcf4c0d25b4db177eb2 a ns1:TrafficChange ;
-    ns1:affecedStop "Slatina-nádraží"^^xsd:string ;
-    ns1:affectedLines [ a rdf:Bag ;
-            rdf:li "75"^^xsd:string ] ;
-    ns1:classification [ a rdf:Bag ;
-            rdf:li "Mimořádná událost v MHD"^^xsd:string,
-                "Porucha vozidla"^^xsd:string ] ;
-    ns1:delay_amount "10 min"^^xsd:string ;
-    ns1:dirrection "do centra"^^xsd:string ;
-    ns1:ends "2017-01-12T07:39:00"^^xsd:datetime ;
-    ns1:possibleSolution "Cestující převezme se zpožděním záložní autobus."^^xsd:string ;
-    ns1:reason "Porucha vozidla"^^xsd:string ;
-    ns1:starts "2017-01-12T06:57:00"^^xsd:datetime ;
-    ns1:title "Porucha vozidla - Zastávka Slatina-nádraží "^^xsd:string .
-
-brnoChanges:ae80f4865fa7e5410ac70a221d96962f a ns1:TrafficChange ;
-    ns1:affecedStop "Královo Pole-nádraží"^^xsd:string ;
-    ns1:affectedLines [ a rdf:Bag ;
-            rdf:li "30"^^xsd:string ] ;
-    ns1:classification [ a rdf:Bag ;
-            rdf:li "Mimořádná událost v MHD"^^xsd:string,
-                "Ostatní událost"^^xsd:string ] ;
-    ns1:delay_amount "7 min"^^xsd:string ;
-    ns1:dirrection "Bystrc"^^xsd:string ;
-    ns1:ends "2017-11-12T07:57:00"^^xsd:datetime ;
-    ns1:possibleSolution "Od zastávky Přívrat (7:57) řazen záložní autobus"^^xsd:string ;
-    ns1:reason "Ostatní událost"^^xsd:string ;
-    ns1:starts "2017-11-12T07:49:00"^^xsd:datetime ;
-    ns1:title "Ostatní událost - Zastávka Královo Pole-nádraží "^^xsd:string .
-
-brnoChanges:ae833e364db5bbffe6a53fca8813b8ff a ns1:TrafficChange ;
-    ns1:affecedStop "Modřice-Olympia"^^xsd:string ;
-    ns1:affectedLines [ a rdf:Bag ;
-            rdf:li "49"^^xsd:string ] ;
-    ns1:classification [ a rdf:Bag ;
-            rdf:li "Mimořádná událost v MHD"^^xsd:string,
-                "Porucha vozidla"^^xsd:string ] ;
-    ns1:delay_amount "5 min"^^xsd:string ;
-    ns1:dirrection "do centra"^^xsd:string ;
-    ns1:ends "2017-10-12T07:36:00"^^xsd:datetime ;
-    ns1:possibleSolution "Cestující převezme se zpožděním záložní autobus."^^xsd:string ;
-    ns1:reason "Porucha vozidla"^^xsd:string ;
-    ns1:starts "2017-10-12T07:31:00"^^xsd:datetime ;
-    ns1:title "Porucha vozidla - Zastávka Modřice-Olympia "^^xsd:string .
-
-brnoChanges:cb362652915d6cabcd79161f8cf9c030 a ns1:TrafficChange ;
-    ns1:affecedStop "Starý Lískovec-smyčka"^^xsd:string ;
-    ns1:affectedLines [ a rdf:Bag ;
-            rdf:li "8"^^xsd:string ] ;
-    ns1:classification [ a rdf:Bag ;
-            rdf:li "Mimořádná událost v MHD"^^xsd:string,
-                "Porucha vozidla"^^xsd:string ] ;
-    ns1:delay_amount "5 min"^^xsd:string ;
-    ns1:dirrection "do centra"^^xsd:string ;
-    ns1:ends "2017-11-12T11:14:00"^^xsd:datetime ;
-    ns1:possibleSolution "Od zastávky Hlavní nádraží (10:54) řazen záložní autobus"^^xsd:string ;
-    ns1:reason "Porucha vozidla"^^xsd:string ;
-    ns1:starts "2017-11-12T10:38:00"^^xsd:datetime ;
-    ns1:title "Porucha vozidla - Zastávka Starý Lískovec-smyčka "^^xsd:string .
-
-brnoChanges:e6c60648cec009a299f6c542f1b1251d a ns1:TrafficChange ;
-    ns1:affecedStop "Modřice-smyčka"^^xsd:string ;
-    ns1:affectedLines [ a rdf:Bag ;
-            rdf:li "2"^^xsd:string ] ;
-    ns1:classification [ a rdf:Bag ;
-            rdf:li "Mimořádná událost v MHD"^^xsd:string,
-                "Porucha vozidla"^^xsd:string ] ;
-    ns1:delay_amount "10 min"^^xsd:string ;
-    ns1:dirrection "do centra"^^xsd:string ;
-    ns1:ends "2017-01-12T05:53:00"^^xsd:datetime ;
-    ns1:possibleSolution "Náhradní dopravu nelze zajistit. Děkujeme za pochopení. Použijte následující spoj."^^xsd:string ;
-    ns1:reason "Porucha vozidla"^^xsd:string ;
-    ns1:starts "2017-01-12T05:20:00"^^xsd:datetime ;
-    ns1:title "Porucha vozidla - Zastávka Modřice-smyčka "^^xsd:string .
+    brnoChanges:ends "2018-10-31T23:00:00"^^xsd:datetime ;
+    brnoChanges:starts "2017-10-09T23:00:00"^^xsd:datetime ;
+    brnoChanges:title "Výluka v ulici Valchařské"^^xsd:string .
 

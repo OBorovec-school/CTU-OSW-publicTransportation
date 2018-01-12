@@ -1,5 +1,4 @@
 import hashlib
-import logging
 from collections import defaultdict
 from datetime import datetime
 
@@ -7,14 +6,18 @@ import rdflib
 from bs4 import BeautifulSoup
 from dateutil import parser
 from rdflib import Literal, URIRef
-from rdflib.namespace import FOAF, RDF, XSD
+from rdflib.namespace import RDF, XSD
 
+from data_pipeline.common.producer.rss_producer import RSSProducer
 from data_pipeline.common.transformer.item_rdf_transformer import ItemToRDFTransformer
-from data_pipeline.public_transp.Prague import PT_PRAGUE_CHANGES_NAME_SPACE
-from data_pipeline.public_transp.Prague.changes_crawler import PTPragueChangesCrawler
+from data_pipeline.public_transp import PT_PRAGUE_CHANGES_NAME_SPACE, PT_PRAGUE_CHANGES_URL
 
-logger = logging.getLogger('dp')
-unparseble_logging = logging.getLogger('unparseble')
+
+class PTPragueChangesCrawler(RSSProducer):
+    RSS_URL = PT_PRAGUE_CHANGES_URL
+    LUIGI_OUTPUT_FILE = 'PTPragueChangesCrawler'
+    NAME = 'PTPragueChangesCrawler'
+    META_FILE = 'PTPragueChangesCrawler'
 
 
 class PTPragueChangesRDF(ItemToRDFTransformer):
@@ -47,31 +50,31 @@ class PTPragueChangesRDF(ItemToRDFTransformer):
         affects_on_lines = self.__parse_affects(full_text_description, affected_lines)
 
         record = n[id]
-        g.add((record, RDF.type, FOAF.TrafficChange))
-        g.add((record, FOAF.title, Literal(title, datatype=XSD.string)))
-        g.add((record, FOAF.published, Literal(publish_date, datatype=XSD.datetime)))
-        g.add((record, FOAF.link, URIRef(link)))
-        # g.add((record, FOAF.fullTextDescHTML, Literal(item.get('description', None))))
-        # g.add((record, FOAF.fullTextDesc, Literal(BeautifulSoup(item.get
+        g.add((record, RDF.type, n.TrafficChange))
+        g.add((record, n.title, Literal(title, datatype=XSD.string)))
+        g.add((record, n.published, Literal(publish_date, datatype=XSD.datetime)))
+        g.add((record, n.link, URIRef(link)))
+        # g.add((record, n.fullTextDescHTML, Literal(item.get('description', None))))
+        # g.add((record, n.fullTextDesc, Literal(BeautifulSoup(item.get
         affects = rdflib.BNode()
         g.add((affects, RDF.type, RDF.Bag))
-        g.add((record, FOAF.affect, affects))
+        g.add((record, n.affect, affects))
         for line in affected_lines:
             affect = rdflib.BNode()
             g.add((affects, RDF.li, affect))
-            g.add((affect, FOAF.line, Literal(line, datatype=XSD.string)))
+            g.add((affect, n.line, Literal(line, datatype=XSD.string)))
             if line in affects_on_lines:
-                g.add((affect, FOAF.reason, Literal(affects_on_lines[line], datatype=XSD.string)))
+                g.add((affect, n.reason, Literal(affects_on_lines[line], datatype=XSD.string)))
         categs = rdflib.BNode()
         g.add((categs, RDF.type, RDF.Bag))
-        g.add((record, FOAF.catgory, categs))
+        g.add((record, n.catgory, categs))
         for category in categories:
             g.add((categs, RDF.li, Literal(category, datatype=XSD.string)))
         duration = rdflib.BNode()
-        g.add((record, FOAF.duration, duration))
-        g.add((duration, FOAF.from_date, Literal(from_date, datatype=XSD.datetime)))
+        g.add((record, n.duration, duration))
+        g.add((duration, n.from_date, Literal(from_date, datatype=XSD.datetime)))
         if to_date is not None:
-            g.add((duration, FOAF.to_date, Literal(to_date, datatype=XSD.datetime)))
+            g.add((duration, n.to_date, Literal(to_date, datatype=XSD.datetime)))
 
     def __get_element_nonroot_xml(self, xml_text, el_name):
         return xml_text.split('<' + str(el_name) + '>')[1].split('</' + str(el_name) + '>')[0]

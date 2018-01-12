@@ -21,5 +21,8 @@ data_pipeline:
     #    hourly - every hour
     scheduling: daily
 
+    # Use luigid server for visualization and tracking (True/False)
+    luigid: True
+
 
 
