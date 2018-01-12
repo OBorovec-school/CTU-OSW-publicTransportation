@@ -5,10 +5,12 @@ import subprocess
 
 import time
 
+import sys
+
 from data_pipeline.common.config import DPConfig
 from data_pipeline.common.luigid import run_luigid, luigid_running
 from data_pipeline.common.structure import get_log_folder
-from data_pipeline import run_init
+from data_pipeline.pipeline import run_init
 
 
 def run():
@@ -34,7 +36,10 @@ def schedule_tasks(schedule_opt):
 
 
 if __name__ == '__main__':
-    run_init()
+    conf_path = None
+    if len(sys.argv) == 2:
+        conf_path = sys.argv[1]
+    run_init(conf_path)
     logging.getLogger('dp').info('Pinging to Luigid server.')
     if not luigid_running():
         run_luigid(get_log_folder())

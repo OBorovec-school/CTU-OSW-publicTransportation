@@ -6,6 +6,7 @@ from time import strftime, gmtime
 from data_pipeline.common.config import logging_init, DPConfig
 from data_pipeline.common.luigid import luigid_running
 from data_pipeline.common.sink.text_rdf_merge import TextRDFMerge
+from data_pipeline.common.structure import get_log_folder
 from data_pipeline.public_transp.brno_changes import PTBrnoChangesRDF
 from data_pipeline.public_transp.pilsen_changes import PTPilsenChangesRDF
 from data_pipeline.public_transp.prague_changes import PTPragueChangesRDF
@@ -24,14 +25,14 @@ class DataPipeline(TextRDFMerge):
                (TIBrnoDIRDF, 'tiBrno.rdf')]
 
 
-if __name__ == "__main__":
-    logging_init()
-
-    conf_path = None
-    if len(sys.argv) == 2:
-        conf_path = sys.argv[1]
+def run_init(conf_path):
     DPConfig.load(conf_path)
+    get_log_folder()
+    logging_init()
+    logging.getLogger().setLevel(DPConfig.get_logging_level())
 
+if __name__ == "__main__":
+    run_init(None)
     logger = logging.getLogger('dp')
     logging.getLogger().setLevel(DPConfig.get_logging_level())
     logger.info('Test run')

@@ -73,6 +73,10 @@ Luigi has many outputs also so semi-steps of  a pipeline, but to make it simple,
     * Dopravni informace (more [here](http://portal.dopravniinfo.cz/rss-informace#))
         * http://www.dopravniinfo.cz/DataServices/RSSpraha.ashx
         * http://www.dopravniinfo.cz/DataServices/RSSbrno.ashx
+        
+### Current pipeline visualization
+
+![Pipelien](docs/imgs/pipeline_viz.PNG)
     
 ### How to run it
 
