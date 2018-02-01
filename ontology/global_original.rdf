@@ -1,0 +1,251 @@
+@prefix : <http://onto.fel.cvut.cz/ontologies/transportation#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix doc-el: <http://kbss.felk.cvut.cz/ontologies/2014/documentation-elements.owl/> .
+@prefix documentation: <http://onto.fel.cvut.cz/resource/2014/documentation/> .
+@prefix transportation: <http://onto.fel.cvut.cz/ontologies/transportation/> .
+@base <http://onto.fel.cvut.cz/ontologies/transportation> .
+
+<http://onto.fel.cvut.cz/ontologies/transportation> rdf:type owl:Ontology ;
+                                                     owl:imports <http://onto.fel.cvut.cz/ontologies/ufo> ;
+                                                     dc:date "2017-11-10" ;
+                                                     dc:format "text/turtle" ;
+                                                     dc:creator "Miroslav Blasko" ;
+                                                     rdfs:comment "Transporation Ontology provides consensual knowledge model of private and public transportation domain. The ontology should be compliant with extensions covering topics such as construction (e.g. car typology/components, aircraft typology/components), operation (e.g. time-tables, flight plans), safety (e.g. occurrence/accident reports), infrastructure (e.g. roads, flight routes, cycling routes)." ;
+                                                     dc:title "Transportation Ontology (TO)" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://onto.fel.cvut.cz/ontologies/voc/has_usage
+<http://onto.fel.cvut.cz/ontologies/voc/has_usage> rdf:type owl:AnnotationProperty ;
+                                                   rdfs:label "example of usage"@en .
+
+
+###  http://purl.org/dc/elements/1.1/description
+dc:description rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://onto.fel.cvut.cz/ontologies/transportation/has-mode-of-transport
+transportation:has-mode-of-transport rdf:type owl:ObjectProperty ;
+                                     rdfs:domain transportation:transportation-event ;
+                                     rdfs:range transportation:mode-of-transport ;
+                                     rdfs:label "has mode of transport"@en .
+
+
+###  http://onto.fel.cvut.cz/ontologies/transportation/has-related-agent
+transportation:has-related-agent rdf:type owl:ObjectProperty ;
+                                 rdfs:domain transportation:event ;
+                                 rdfs:range transportation:agent ;
+                                 rdfs:comment "has related agent"@en ;
+                                 rdfs:label "mĂˇ souvisejĂ­cĂ­ho agenta"@cs .
+
+
+###  http://onto.fel.cvut.cz/ontologies/transportation/has-sub-event
+transportation:has-sub-event rdf:type owl:ObjectProperty ;
+                             owl:inverseOf transportation:is-part-of-event ;
+                             rdfs:domain transportation:event ;
+                             rdfs:range transportation:event ;
+                             rdfs:label "has subevent"@en ,
+                                        "mĂˇ podudĂˇlost"@cs .
+
+
+###  http://onto.fel.cvut.cz/ontologies/transportation/is-organized-by-agent
+transportation:is-organized-by-agent rdf:type owl:ObjectProperty ;
+                                     rdfs:subPropertyOf transportation:has-related-agent ;
+                                     rdfs:label "is organized by agent"@en ,
+                                                "je organizovĂˇna agentem"@cs .
+
+
+###  http://onto.fel.cvut.cz/ontologies/transportation/is-part-of-event
+transportation:is-part-of-event rdf:type owl:ObjectProperty ;
+                                rdfs:label "is part of event"@en ,
+                                           "je ÄŤastĂ­ udĂˇlosti"@cs .
+
+
+###  http://onto.fel.cvut.cz/ontologies/transportation/is-participated-by-agent
+transportation:is-participated-by-agent rdf:type owl:ObjectProperty ;
+                                        rdfs:subPropertyOf transportation:has-related-agent ;
+                                        rdfs:label "is participated by agent"@en ,
+                                                   "je ĂşÄŤastnenĂˇ agentem"@cs .
+
+
+###  http://onto.fel.cvut.cz/ontologies/transportation/is-realization-of
+transportation:is-realization-of rdf:type owl:ObjectProperty ;
+                                 owl:inverseOf transportation:isPresentedByEvent ;
+                                 rdfs:domain transportation:event ;
+                                 rdfs:range transportation:plan ;
+                                 rdfs:label "is realisation of"@en ,
+                                            "je realizovĂˇnĂ­"@cs .
+
+
+###  http://onto.fel.cvut.cz/ontologies/transportation/isPresentedByEvent
+transportation:isPresentedByEvent rdf:type owl:ObjectProperty ;
+                                  rdfs:label "is presented by event"@en ,
+                                             "je prezentovĂˇn udĂˇlosti"@cs .
+
+
+###  http://onto.fel.cvut.cz/ontologies/transportation/occurs-in-spatial-region
+transportation:occurs-in-spatial-region rdf:type owl:ObjectProperty ;
+                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                        rdfs:domain transportation:event ;
+                                        rdfs:range transportation:spatial-region ;
+                                        rdfs:label "dejÄ› se na mĂ­ste"@cs ,
+                                                   "occurs in space"@en .
+
+
+###  http://onto.fel.cvut.cz/ontologies/transportation/occurs-in-temporal-region
+transportation:occurs-in-temporal-region rdf:type owl:ObjectProperty ;
+                                         rdfs:domain transportation:event ;
+                                         rdfs:range transportation:temporal-region ;
+                                         rdfs:label "dejÄ› se v ÄŤase"@cs ,
+                                                    "occurs in time"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://onto.fel.cvut.cz/ontologies/transportation/agent
+transportation:agent rdf:type owl:Class ;
+                     rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/ufo/Agent> ;
+                     <http://onto.fel.cvut.cz/ontologies/voc/has_usage> "Horse providing transportation service" ,
+                                                                        "Human driver of a bus" ,
+                                                                        "Organization" ,
+                                                                        "Person" ;
+                     dc:description "Entity capable of having intentions (capability of dealing with objects or states of the world), beliefs and desires." ;
+                     rdfs:label "Agent"@cs ,
+                                "Agent"@en .
+
+
+###  http://onto.fel.cvut.cz/ontologies/transportation/event
+transportation:event rdf:type owl:Class ;
+                     rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/ufo/Event> ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty transportation:occurs-in-temporal-region ;
+                                       owl:someValuesFrom transportation:temporal-region
+                                     ] ;
+                     <http://onto.fel.cvut.cz/ontologies/voc/has_usage> "Actual happening of train moving from a station" ,
+                                                                        "Transportation from point A to point B" ;
+                     dc:description "Entity of related to transportation which consist of temporal parts (i.e. it is not fully present at any moment)." ;
+                     rdfs:label "Event"@en ,
+                                "UdĂˇlost"@cs .
+
+
+###  http://onto.fel.cvut.cz/ontologies/transportation/mode-of-transport
+transportation:mode-of-transport rdf:type owl:Class ;
+                                 rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/ufo/Entity> ;
+                                 rdfs:label "Mode of transport"@en .
+
+
+###  http://onto.fel.cvut.cz/ontologies/transportation/plan
+transportation:plan rdf:type owl:Class ;
+                    rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/ufo/Entity> ;
+                    rdfs:label "Plan"@en .
+
+
+###  http://onto.fel.cvut.cz/ontologies/transportation/planned-event
+transportation:planned-event rdf:type owl:Class ;
+                             rdfs:subClassOf transportation:event ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty transportation:is-realization-of ;
+                                               owl:someValuesFrom transportation:plan
+                                             ] ;
+                             rdfs:label "Planned event"@en .
+
+
+###  http://onto.fel.cvut.cz/ontologies/transportation/spatial-point
+transportation:spatial-point rdf:type owl:Class ;
+                             rdfs:subClassOf transportation:spatial-region ;
+                             <http://onto.fel.cvut.cz/ontologies/voc/has_usage> "location of accident beeing at GPS coordinates 50Â°05'30.4\"N 14Â°23'28.1\"E" ;
+                             dc:description "Zero-dimensional spatial region is one point in space." ;
+                             rdfs:label "Bod v prostoru"@cs ,
+                                        "Point in space"@en .
+
+
+###  http://onto.fel.cvut.cz/ontologies/transportation/spatial-region
+transportation:spatial-region rdf:type owl:Class ;
+                              rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/ufo/Entity> ;
+                              <http://onto.fel.cvut.cz/ontologies/voc/has_usage> "Area of Prague's main train station" ,
+                                                                                 "Place that is occupied by a road" ;
+                              rdfs:label "ProstorovĂ˝ region"@cs ,
+                                         "Spatial region"@en .
+
+
+###  http://onto.fel.cvut.cz/ontologies/transportation/temporal-interval
+transportation:temporal-interval rdf:type owl:Class ;
+                                 rdfs:subClassOf transportation:temporal-region ;
+                                 <http://onto.fel.cvut.cz/ontologies/voc/has_usage> "13.2.2014 from 5:00 p.m. to 8:00 pm" ;
+                                 dc:description "One dimensional termporal region that is without gaps and breaks." ;
+                                 rdfs:label "Temporal interval"@en ,
+                                            "ÄŚasovĂ˝ interval"@cs .
+
+
+###  http://onto.fel.cvut.cz/ontologies/transportation/temporal-point
+transportation:temporal-point rdf:type owl:Class ;
+                              rdfs:subClassOf transportation:temporal-region ;
+                              <http://onto.fel.cvut.cz/ontologies/voc/has_usage> "12.2.2013 at 5:00 pm" ,
+                                                                                 "start of some concrete cultural event" ;
+                              dc:description "Zero dimensional temporal region representing one moment in time." ;
+                              rdfs:label "Bod v ÄŤase"@cs ,
+                                         "Temporal point"@en .
+
+
+###  http://onto.fel.cvut.cz/ontologies/transportation/temporal-region
+transportation:temporal-region rdf:type owl:Class ;
+                               rdfs:subClassOf <http://onto.fel.cvut.cz/ontologies/ufo/Entity> ;
+                               <http://onto.fel.cvut.cz/ontologies/voc/has_usage> "Each first day of the month from 8:00 a.m. to 4 p.m." ,
+                                                                                  "Every Monday at 5:00" ;
+                               rdfs:label "Temporal region"@en ,
+                                          "ÄŚasovĂ˝ region"@cs .
+
+
+###  http://onto.fel.cvut.cz/ontologies/transportation/transportation-event
+transportation:transportation-event rdf:type owl:Class ;
+                                    rdfs:subClassOf transportation:planned-event ,
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty transportation:is-realization-of ;
+                                                      owl:allValuesFrom transportation:transportation-plan
+                                                    ] ;
+                                    rdfs:label "PĹ™epravnĂ­ udĂˇlost"@cs ,
+                                               "Transportation event"@en .
+
+
+###  http://onto.fel.cvut.cz/ontologies/transportation/transportation-plan
+transportation:transportation-plan rdf:type owl:Class ;
+                                   rdfs:subClassOf transportation:plan ;
+                                   rdfs:label "PlĂˇn transportu"@cs ,
+                                              "Transportation plan"@en .
+
+
+###  http://onto.fel.cvut.cz/ontologies/transportation/unplanned-event
+transportation:unplanned-event rdf:type owl:Class ;
+                               rdfs:subClassOf transportation:event ;
+                               rdfs:label "Unplanned event"@en .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( transportation:agent
+                transportation:event
+                transportation:spatial-region
+                transportation:temporal-region
+                transportation:transportation-plan
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi

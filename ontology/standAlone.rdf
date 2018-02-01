@@ -1,0 +1,141 @@
+@prefix : <http://oborovec.cz/ontologies/public_transportation/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix doc-el: <http://kbss.felk.cvut.cz/ontologies/2014/documentation-elements.owl/> .
+@prefix pt: <http://oborovec.cz/ontologies/public_transportation/> .
+@prefix ptEvent: <http://oborovec.cz/ontologies/public_transportation/event/> .
+@prefix ptIrreg: <http://oborovec.cz/ontologies/public_transportation/event/irregularity> .
+@base <http://oborovec.cz/ontologies/public_transportation> .
+
+<http://oborovec.cz/ontologies/pt> rdf:type owl:Ontology ;
+                                                     dc:date "2018-30-01" ;
+                                                     dc:format "text/turtle" ;
+                                                     dc:creator "Ondrej Borovec" ;
+                                                     rdfs:comment "Public transporation Ontology provides consensual knowledge model of public transportation from main cities of the Czech republic plus information about related incidents and warnings." ;
+                                                     dc:title "Public transportation in CZ" .
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( pt:event
+                pt:effect
+                pt:notification
+                pt:recommendation
+                ptEvent:accident
+                ptEvent:planned-pt-irregularity
+                ptEvent:unplanned-pt-irregularity
+              )
+] .
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://oborovec.cz/ontologies/public_transportation/event
+pt:event rdf:type owl:Class ;
+                     rdfs:subClassOf
+                        [ a owl:Restriction ;
+                          owl:onProperty pt:has-an-effect ;
+                          owl:someValuesFrom pt:effect
+                        ];
+                     dc:description "Entity of related to transportation which consist of temporal effect." ;
+                     rdfs:label "Udalost"@cs ,
+                                "Event"@en .
+
+###  http://oborovec.cz/ontologies/public_transportation/event/accident
+ptEvent:accident rdf:type owl:Class ;
+                     rdfs:subClassOf pt:event ,
+                        [ a owl:Restriction ;
+                          owl:onProperty pt:accident-affects ;
+                          owl:someValuesFrom ptIrreg:unplanned
+                        ];
+                     dc:description "Entity of a traffic accident." ;
+                     rdfs:label "Nehoda"@cs ,
+                                "Accident"@en .
+
+###  http://oborovec.cz/ontologies/public_transportation/irregularity
+ptEvent:irregularity rdf:type owl:Class ;
+                     rdfs:subClassOf pt:event ,
+                        [ a owl:Restriction ;
+                          owl:onProperty ptEvent:has-solution ;
+                          owl:someValuesFrom pt:recommendation
+                        ];;
+                     rdfs:label "Vyjimka"@cs ,
+                                "Irregularity"@en .
+
+
+###  http://oborovec.cz/ontologies/public_transportation/event/irregularity/planned
+ptIrreg:planned rdf:type owl:Class ;
+                     rdfs:subClassOf pt:irregularity ;
+                     dc:description "Entity of an planned public traffic irregularity." ;
+                     rdfs:label "Planovana vyjimka"@cs ,
+                                "Planned Irregularity"@en .
+
+###  http://oborovec.cz/ontologies/public_transportation/event/unplanned
+ptIrreg:unplanned rdf:type owl:Class ;
+                     rdfs:subClassOf pt:irregularity ;
+                     dc:description "Entity of an unplanned public traffic irregularity." ;
+                     rdfs:label "Neplanovana vyjimka"@cs ,
+                                "Unplanned irregularity"@en .
+
+###  http://oborovec.cz/ontologies/public_transportation/effect
+pt:effect rdf:type owl:Class ;
+                     rdfs:subClassOf ;
+                     dc:description "Entity of an effect of affected modes of transportation at a location and at a time with a duration." ;
+                     rdfs:label "Efect"@cs ,
+                                "Effect"@en .
+
+
+###  http://oborovec.cz/ontologies/public_transportation/notification
+pt:notification rdf:type owl:Class ;
+                     rdfs:subClassOf
+                        [ a owl:Restriction ;
+                          owl:onProperty pt:notification_affects ;
+                          owl:someValuesFrom ptIrreg:planned
+                        ];
+                     dc:description "Entity of a notification about a planned irregularity." ;
+                     rdfs:label "Upozorneni"@cs ,
+                                "Notification"@en .
+
+
+###  http://oborovec.cz/ontologies/public_transportation/recommendation
+pt:recommendation rdf:type owl:Class ;
+                     dc:description "Entity of a suggested solution to minimize potential troubles fr public transportation passengers." ;
+                     rdfs:label "Doporuceni pro cestujic"@cs ,
+                                "Recommendation for passengers"@en .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://oborovec.cz/ontologies/public_transportation/has-an-effect
+pt:has-an-effect rdf:type owl:ObjectProperty ;
+                                     rdfs:domain pt:event ;
+                                     rdfs:range pt:effect ;
+                                     rdfs:label "ma vliv"@cs ,
+                                                "has an effect"@en .
+
+###  http://oborovec.cz/ontologies/public_transportation/accident-causes
+pt:accident-causes rdf:type owl:ObjectProperty ;
+                                     rdfs:domain ptEvent:accident ;
+                                     rdfs:range ptIrreg:unplanned ;
+                                     rdfs:label "zpusocuje"@cs ,
+                                                "cases"@en .
+
+###  http://oborovec.cz/ontologies/public_transportation/has-solution
+ptEvent:has-solution rdf:type owl:ObjectProperty ;
+                                     rdfs:domain ptEvent:irregularity ;
+                                     rdfs:range pt:recommendation ;
+                                     rdfs:label "ma reseni"@cs ,
+                                                "has solution"@en .
+
+###  http://oborovec.cz/ontologies/public_transportation/notification-affects
+pt:accident_affects rdf:type owl:ObjectProperty ;
+                                     rdfs:domain pt:notification ;
+                                     rdfs:range ptIrreg:planned ;
+                                     rdfs:label "zpusobuje"@cs ,
+                                                "causes"@en .
