@@ -1,6 +1,7 @@
 # Sample data
 
-* This sample was created on 13.1. 2018
+* This sample was created on 30.1. 2018
+* Had yo be in form of xml instead of turtle (turtle wa not possible to import to GraphDB)
 
 ## Content
 

@@ -1,361 +1,516 @@
-@prefix pragueDi: <http://publictransportation.cz/prague/ti_di/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-<http://publictransportation.cz/prague/ti_di/047d22ba177910c47781c9685afdc55d> a pragueDi:TrafficInfo ;
-    pragueDi:classification "Práce na silnici"^^xsd:string ;
-    pragueDi:description "práce na silnici  , Umístění stavebního jeřábu - rekonstrukce Negrelliho viaduktu - Štvanice, Komunikace mezi Negrelliho viaduktem a tenisovým areálem, Vydal: ÚMČ Praha 07"^^xsd:string ;
-    pragueDi:internalId "5449433"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-741285,-741284,-1042205,-1042222> ;
-    pragueDi:published "2017-12-27T08:15:25+00:00"^^xsd:datetime ;
-    pragueDi:title "místní komunikace, Praha 7: Práce na silnici"^^xsd:string .
-
-<http://publictransportation.cz/prague/ti_di/0ec2c941d3bef7903fb3654e5af42bf6> a pragueDi:TrafficInfo ;
-    pragueDi:classification "Dopravní uzavírky a omezení"^^xsd:string ;
-    pragueDi:description "uzavřeno oprava povrchu vozovky , Rekonstrukce komunikace dle vydaného stavebního povolení (místní komunikace Cukrovarská - Jizerská - náměstí 25. března - Otavská), Vydal: ÚMČ Praha 18"^^xsd:string ;
-    pragueDi:internalId "5301797"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-734694,-734416,-1036921,-1037209> ;
-    pragueDi:published "2017-06-28T07:04:28+00:00"^^xsd:datetime ;
-    pragueDi:title "místní komunikace, Praha-Čakovice: Dopravní uzavírky a omezení"^^xsd:string .
-
-<http://publictransportation.cz/prague/ti_di/0f659bef3f17697796ab47f5c0fd3532> a pragueDi:TrafficInfo ;
-    pragueDi:classification "Omezení provozu a zákazy"^^xsd:string ;
-    pragueDi:description "omezení práce na silnici , oprava vozovky"^^xsd:string ;
-    pragueDi:internalId "5420317"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-732922,-731436,-1042352,-1042913> ;
-    pragueDi:published "2017-10-19T13:19:16+00:00"^^xsd:datetime ;
-    pragueDi:title "ulice Ocelkova,  v úseku Broumarská - Cíglerova, Praha: Omezení provozu a zákazy"^^xsd:string .
-
-<http://publictransportation.cz/prague/ti_di/190a97ac2a2d34dca74b10a0cf5102f9> a pragueDi:TrafficInfo ;
-    pragueDi:classification "Dopravní uzavírky a omezení"^^xsd:string ;
-    pragueDi:description "uzavřeno stavební práce , uzavírka ul. Na Bendovce; Objížďka - bez rozlišení: objízdná trasa po ostatních místních komunikacích, Vydal: ÚMČ Praha 08"^^xsd:string ;
-    pragueDi:internalId "5457250"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-742429,-742329,-1038044,-1038060> ;
-    pragueDi:published "2018-01-05T09:59:21+00:00"^^xsd:datetime ;
-    pragueDi:title "ulice Na Bendovce, Praha 8: Dopravní uzavírky a omezení"^^xsd:string .
-
-<http://publictransportation.cz/prague/ti_di/1c6c90491112523274aacc924e54895f> a pragueDi:TrafficInfo ;
-    pragueDi:classification "Dopravní uzavírky a omezení"^^xsd:string ;
-    pragueDi:description "uzavřeno práce na inženýrských sítích , Úplná uzavírka komunikace Na Korálově (v úseku mezi ul.  K Rozvodně a ul. Za Křížkem)., Vydal: ÚMČ Praha 05"^^xsd:string ;
-    pragueDi:internalId "5456447"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-748617,-748612,-1050333,-1050356> ;
-    pragueDi:published "2018-01-03T13:00:39+00:00"^^xsd:datetime ;
-    pragueDi:title "ulice Na Korálově, Praha-Slivenec: Dopravní uzavírky a omezení"^^xsd:string .
-
-<http://publictransportation.cz/prague/ti_di/20705d4957e4374570cc4852694f2de4> a pragueDi:TrafficInfo ;
-    pragueDi:classification "Práce na silnici"^^xsd:string ;
-    pragueDi:description "stavební práce zúžená vozovka na jeden jízdní pruh , půdní nástavba- omezení jízdního pruhu + části chodníku před objektem č. 34, Vydal: Magistrát Hl. města Prahy"^^xsd:string ;
-    pragueDi:internalId "5293598"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-741431,-741391,-1044463,-1044467> ;
-    pragueDi:published "2017-07-03T08:31:50+00:00"^^xsd:datetime ;
-    pragueDi:title "ulice Slezská, Praha 2, Praha: Práce na silnici"^^xsd:string .
-
-<http://publictransportation.cz/prague/ti_di/22a5aa86cc944bf58f674c5e93e53fdd> a pragueDi:TrafficInfo ;
-    pragueDi:classification "Parkování"^^xsd:string ;
-    pragueDi:description "50% obsazeno  ,"^^xsd:string ;
-    pragueDi:internalId "5456326"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-736980,-736955,-1045801,-1045850> ;
-    pragueDi:published "2018-01-12T00:37:55+00:00"^^xsd:datetime ;
-    pragueDi:title "P+R Skalka: Parkování"^^xsd:string .
-
-<http://publictransportation.cz/prague/ti_di/2bae7fb17f1ce65390c1911313344cf8> a pragueDi:TrafficInfo ;
-    pragueDi:classification "Dopravní uzavírky a omezení"^^xsd:string ;
-    pragueDi:description "uzavřeno, práce na silnici  , rekonstrukce komunikace"^^xsd:string ;
-    pragueDi:internalId "5453757"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-741480,-741190,-1038079,-1038166> ;
-    pragueDi:published "2018-01-05T10:47:56+00:00"^^xsd:datetime ;
-    pragueDi:title "ulice Pod Čimickým hájem, Praha 8: Dopravní uzavírky a omezení"^^xsd:string .
-
-<http://publictransportation.cz/prague/ti_di/2c03f2f914875fa08fbce5b4ccae159c> a pragueDi:TrafficInfo ;
-    pragueDi:classification "Parkování"^^xsd:string ;
-    pragueDi:description "10% obsazeno  ,"^^xsd:string ;
-    pragueDi:internalId "5456311"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-748410,-748334,-1046394,-1046420> ;
-    pragueDi:published "2018-01-12T00:32:55+00:00"^^xsd:datetime ;
-    pragueDi:title "P+R Nové Butovice: Parkování"^^xsd:string .
-
-<http://publictransportation.cz/prague/ti_di/2c576e873648cb000c07977dcd14ae87> a pragueDi:TrafficInfo ;
-    pragueDi:classification "Práce na silnici"^^xsd:string ;
-    pragueDi:description "práce na silnici neprůjezdný jeden jízdní pruh , obnova vodovodních řadů-zábor v pravém jízdním pruhu, směr centrum"^^xsd:string ;
-    pragueDi:internalId "5432606"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-740614,-740362,-1045612,-1045656> ;
-    pragueDi:published "2017-12-08T15:56:33+00:00"^^xsd:datetime ;
-    pragueDi:title "ulice Vršovická, mezi křižovatkami ulic Moskevská a Oblouková, Praha 10, Praha: Práce na silnici"^^xsd:string .
-
-<http://publictransportation.cz/prague/ti_di/3615789d50b3635b6997793a54d53b85> a pragueDi:TrafficInfo ;
-    pragueDi:classification "Práce na silnici"^^xsd:string ;
-    pragueDi:description "práce na inženýrských sítích levý jízdní pruh uzavřen , výstavba splaškové kanalizace, zábor části levého jízdního pruhu ve směru k Rozvadovské spojce, doprava vedena po zbylé části komunikace v jednom jízdním pruhu, Vydal: Magistrát Hl. města Prahy"^^xsd:string ;
-    pragueDi:internalId "5426832"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-751047,-751045,-1045007,-1045098> ;
-    pragueDi:published "2017-11-03T10:54:24+00:00"^^xsd:datetime ;
-    pragueDi:title "ulice Jeremiášova, Praha 13: Práce na silnici"^^xsd:string .
-
-<http://publictransportation.cz/prague/ti_di/3a3204c73594af088be4036a4fcddf16> a pragueDi:TrafficInfo ;
-    pragueDi:classification "Dopravní uzavírky a omezení"^^xsd:string ;
-    pragueDi:description "neprůjezdný pravý jízdní pruh práce na silnici ,"^^xsd:string ;
-    pragueDi:internalId "5459564"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-743947,-743946,-1044630,-1044650> ;
-    pragueDi:published "2018-01-11T10:35:02+00:00"^^xsd:datetime ;
-    pragueDi:title "ulice Svornosti, mezi křižovatkami ulic Na bělidle a Vrázova, Praha 5: Dopravní uzavírky a omezení"^^xsd:string .
-
-<http://publictransportation.cz/prague/ti_di/3a467eec2289a670b4379659fdf07b24> a pragueDi:TrafficInfo ;
-    pragueDi:classification "Práce na silnici"^^xsd:string ;
-    pragueDi:description "práce na vodovodním potrubí  ,"^^xsd:string ;
-    pragueDi:internalId "5459538"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-738991,-738917,-1043316,-1043426> ;
-    pragueDi:published "2018-01-10T12:02:21+00:00"^^xsd:datetime ;
-    pragueDi:title "ulice Na vápence, mezi křižovatkami ulic Jeseniova a Jilmová, Praha 3,: Práce na silnici"^^xsd:string .
-
-<http://publictransportation.cz/prague/ti_di/44f19880147ee26b3dc7a0f692f93a34> a pragueDi:TrafficInfo ;
-    pragueDi:classification "Parkování"^^xsd:string ;
-    pragueDi:description "10% obsazeno  ,"^^xsd:string ;
-    pragueDi:internalId "5459772"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-736184,-736137,-1045119,-1045180> ;
-    pragueDi:published "2018-01-12T00:37:55+00:00"^^xsd:datetime ;
-    pragueDi:title "P+R Hostivař: Parkování"^^xsd:string .
-
-<http://publictransportation.cz/prague/ti_di/4c9e98d6f2d92137d08e7ffcc848e2ff> a pragueDi:TrafficInfo ;
-    pragueDi:classification "Dopravní uzavírky a omezení"^^xsd:string ;
-    pragueDi:description "uzavřeno stavební práce , , Vydal: ÚMČ Praha 03"^^xsd:string ;
-    pragueDi:internalId "5428944"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-740287,-740265,-1043469,-1043476> ;
-    pragueDi:published "2017-11-06T08:49:47+00:00"^^xsd:datetime ;
-    pragueDi:title "místní komunikace, Komenského náměstí, Praha 3: Dopravní uzavírky a omezení"^^xsd:string .
-
-<http://publictransportation.cz/prague/ti_di/52d026ed4bb366fd48d0fab07578d982> a pragueDi:TrafficInfo ;
-    pragueDi:classification "Dopravní uzavírky a omezení"^^xsd:string ;
-    pragueDi:description "uzavřeno stavební práce , ; Objížďka - bez rozlišení, objížďka: objízdná trasa po ostatních místních komunikacích, Vydal: ÚMČ Praha 08"^^xsd:string ;
-    pragueDi:internalId "5339572"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-739761,-739749,-1038742,-1038745> ;
-    pragueDi:published "2017-11-06T08:44:51+00:00"^^xsd:datetime ;
-    pragueDi:title "ulice Mašínova, Praha 8: Dopravní uzavírky a omezení"^^xsd:string .
-
-<http://publictransportation.cz/prague/ti_di/57e565fa0be8044d49676b2fbd4f7bba> a pragueDi:TrafficInfo ;
-    pragueDi:classification "Parkování"^^xsd:string ;
-    pragueDi:description "10% obsazeno  ,"^^xsd:string ;
-    pragueDi:internalId "5457136"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-752651,-752634,-1045314,-1045350> ;
-    pragueDi:published "2018-01-12T00:37:55+00:00"^^xsd:datetime ;
-    pragueDi:title "P+R Zličín: Parkování"^^xsd:string .
-
-<http://publictransportation.cz/prague/ti_di/5daa3e973f6cbb3de2488f4aec4d61e0> a pragueDi:TrafficInfo ;
-    pragueDi:classification "Dopravní uzavírky a omezení"^^xsd:string ;
-    pragueDi:description "uzavřeno stavební práce , ; Objížďka - bez rozlišení: ulice: Brusinková, Heřmánková, K Průhonicům, Ke kovárně, Ke stráni, Nad mostem, Vydal: ÚMČ Praha 11"^^xsd:string ;
-    pragueDi:internalId "5330963"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-733649,-733582,-1051480,-1051674> ;
-    pragueDi:published "2017-11-21T13:17:43+00:00"^^xsd:datetime ;
-    pragueDi:title "ulice K Čestlicům, Praha-Křeslice: Dopravní uzavírky a omezení"^^xsd:string .
-
-<http://publictransportation.cz/prague/ti_di/62cf6efd036d0b6628d1d11467b19d60> a pragueDi:TrafficInfo ;
-    pragueDi:classification "Práce na silnici"^^xsd:string ;
-    pragueDi:description "práce na silnici jeden jízdní pruh uzavřen , Uzavírka části ulice Dělnická v úseku mezi ul. Osadní a Komunardů ve směru od ulice Argentinská - přípojky vody a kanalizace, Jedná se o uzavírku pouze ve směru od ul. Argentinská k ul. Komunardů, v opačném směru je provoz zachován. Objížďka přes ul. Argentinská , Jateční., Vydal: ÚMČ Praha 07"^^xsd:string ;
-    pragueDi:internalId "5456807"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-740731,-740697,-1041531,-1041535> ;
-    pragueDi:published "2018-01-09T09:06:33+00:00"^^xsd:datetime ;
-    pragueDi:title "ulice Dělnická, Praha 7, Praha: Práce na silnici"^^xsd:string .
-
-<http://publictransportation.cz/prague/ti_di/636810e29aa1998a344b34613b11deab> a pragueDi:TrafficInfo ;
-    pragueDi:classification "Dopravní uzavírky a omezení"^^xsd:string ;
-    pragueDi:description "uzavřeno práce na inženýrských sítích , Rekonstrukce vodovodu, kanalizace, tramvajové trati a povrchů vozovek a chodníků, komunikace uzavřena, doprava vedena po objízdné trase, Vydal: Magistrát Hl. města Prahy"^^xsd:string ;
-    pragueDi:internalId "5453300"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-739040,-738523,-1040355,-1041401> ;
-    pragueDi:published "2018-01-05T08:38:26+00:00"^^xsd:datetime ;
-    pragueDi:title "ulice Zenklova, Praha 8, Praha: Dopravní uzavírky a omezení"^^xsd:string .
-
-<http://publictransportation.cz/prague/ti_di/652fa12c7627c3be8cf92ea6cd859038> a pragueDi:TrafficInfo ;
-    pragueDi:classification "Dopravní uzavírky a omezení"^^xsd:string ;
-    pragueDi:description "práce na silnici, zúžení vozovky na jeden jízdní pruh  , práce na inženýrských sítích"^^xsd:string ;
-    pragueDi:internalId "5457672"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-745053,-744958,-1042016,-1042069> ;
-    pragueDi:published "2018-01-05T10:59:49+00:00"^^xsd:datetime ;
-    pragueDi:title "ulice Patočkova mezi ul. Střešovická - U Brusnice, Praha 6, Praha: Dopravní uzavírky a omezení"^^xsd:string .
-
-<http://publictransportation.cz/prague/ti_di/6b48fc70b9e51fa82dd0b4a431a20bb5> a pragueDi:TrafficInfo ;
-    pragueDi:classification "Práce na silnici"^^xsd:string ;
-    pragueDi:description "práce na silnici omezení ,"^^xsd:string ;
-    pragueDi:internalId "5332256"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-742219,-742127,-1043721,-1043853> ;
-    pragueDi:published "2017-12-29T22:36:29+00:00"^^xsd:datetime ;
-    pragueDi:title "ulice Politických vězňů, Praha 1: Práce na silnici"^^xsd:string .
-
-<http://publictransportation.cz/prague/ti_di/753482b332764b23f2df66783c425a21> a pragueDi:TrafficInfo ;
-    pragueDi:classification "Parkování"^^xsd:string ;
-    pragueDi:description "10% obsazeno  ,"^^xsd:string ;
-    pragueDi:internalId "5456312"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-731400,-731160,-1042039,-1042074> ;
-    pragueDi:published "2018-01-12T00:32:55+00:00"^^xsd:datetime ;
-    pragueDi:title "P+R Černý Most: Parkování"^^xsd:string .
-
-<http://publictransportation.cz/prague/ti_di/79861ed55daf0ce0f59f5db1ff38660d> a pragueDi:TrafficInfo ;
-    pragueDi:classification "Parkování"^^xsd:string ;
-    pragueDi:description "20% obsazeno  ,"^^xsd:string ;
-    pragueDi:internalId "5456316"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-741057,-741056,-1040803,-1040887> ;
-    pragueDi:published "2018-01-12T00:37:56+00:00"^^xsd:datetime ;
-    pragueDi:title "P+R Holešovice: Parkování"^^xsd:string .
-
-<http://publictransportation.cz/prague/ti_di/8d2d56824b48854013b8d5eb2cd0ec2a> a pragueDi:TrafficInfo ;
-    pragueDi:classification "Práce na silnici"^^xsd:string ;
-    pragueDi:description """stavební práce uzavřeno , Uzavírka pro vozidla, ulice Vodičkova (ve směru jízdy Lazarská – Karlovo náměstí), umístění výkopů, ZS, ohrady, kontejnerů – rekonstrukce kanalizace. 
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:pragueDi="http://publictransportation.cz/prague/ti_di/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/7ffae7f1c50763db8e74a837c041db62">
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Práce na silnici</pragueDi:classification>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5468013</pragueDi:internalId>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ulice Jeremiášova, Praha 13, Praha: Práce na silnici</pragueDi:title>
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-751047,-751045,-1045012,-1045098"/>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">práce na inženýrských sítích levý jízdní pruh uzavřen , výstavby splaškové kanalizace zábor části levého jízdního pruhu ve směru k Rozvadovské spojce, doprava vedena po zbylé části komunikace v jednom jízdním pruhu, Vydal: Magistrát Hl. města Prahy</pragueDi:description>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-31T05:52:49+00:00</pragueDi:published>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/ccc1679370dc81ab31d98e3547fc9515">
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-745114,-744792,-1041948,-1042078"/>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ulice Patočkova mezi ul. U Brusnice - Střešovická, Praha 6, Praha: Dopravní uzavírky a omezení</pragueDi:title>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5457671</pragueDi:internalId>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dopravní uzavírky a omezení</pragueDi:classification>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">práce na silnici, zúžení vozovky na jeden jízdní pruh  , oprava uličních vpustí včetně přípojek</pragueDi:description>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-05T10:56:08+00:00</pragueDi:published>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/ab389016def3dda114010d492eb2b58f">
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">omezení práce na vodovodním potrubí ,</pragueDi:description>
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-739612,-739558,-1043169,-1043180"/>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5468713</pragueDi:internalId>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ulice Koněvova č. p. 149/108, u křiž s ul. Zelenky-Hajského, ve směru z centra, Praha 3: Omezení provozu a zákazy</pragueDi:title>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Omezení provozu a zákazy</pragueDi:classification>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-02-01T07:28:07+00:00</pragueDi:published>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/4986a36a1a6398235f2c01a494bb9b57">
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-745127,-744863,-1041955,-1042103"/>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-26T10:08:15+00:00</pragueDi:published>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Práce na silnici</pragueDi:classification>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">práce na inženýrských sítích zúžené jízdní pruhy , Výstavba a oprava havarijního stavu uličních vpustí a ražené části kanalizace v rámci přípravných prací před zahájením rekonstrukce povrchů komunikace Patočkova -záboru pravého jízdního pruhu ve směru do centra a levého jízdního pruhu ve směru z centra, doprava vedena po zbylé části komunikace v každém směru zachován jeden jízdní pruh., Vydal: Magistrát Hl. města Prahy</pragueDi:description>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ulice Patočkova, Praha 6: Práce na silnici</pragueDi:title>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5466597</pragueDi:internalId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/ae595deddcb88b2356c13afbb55fd403">
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5456313</pragueDi:internalId>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-02-01T20:02:29+00:00</pragueDi:published>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-732532,-732435,-1042254,-1042261"/>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parkování</pragueDi:classification>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P+R Rajská zahrada: Parkování</pragueDi:title>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">30% obsazeno  ,</pragueDi:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/88dcba7a14d37e3752f3ed7c4aa0797b">
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">práce na silnici neprůjezdná komunikace ,</pragueDi:description>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5231830</pragueDi:internalId>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-31T07:27:29+00:00</pragueDi:published>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Práce na silnici</pragueDi:classification>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ulice Vinohradská, mezi křižovatkami ulic Legerova a Wilsonova, Praha 1, Praha: Práce na silnici</pragueDi:title>
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-742231,-742129,-1043975,-1044030"/>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/448a2b7ca9eb21d09f9cef1c8fd00bf5">
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ulice Na Bendovce, mezi křižovatkami ulic K Farkám a Bohnická, Praha 8, Praha: Dopravní uzavírky a omezení</pragueDi:title>
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-742641,-742527,-1037992,-1038024"/>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5457249</pragueDi:internalId>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uzavřeno, práce na silnici  , oprava komunikace</pragueDi:description>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-05T11:27:01+00:00</pragueDi:published>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dopravní uzavírky a omezení</pragueDi:classification>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/8abb5ef2b781513011df94b9e54af766">
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">práce na vodovodním potrubí neprůjezdný pravý jízdní pruh ,</pragueDi:description>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ulice Štěpánská - ulice Žitná, Praha: Práce na silnici</pragueDi:title>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-31T07:34:07+00:00</pragueDi:published>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5460369</pragueDi:internalId>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Práce na silnici</pragueDi:classification>
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-742740,-742715,-1044159,-1044188"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/8d2d56824b48854013b8d5eb2cd0ec2a">
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5452297</pragueDi:internalId>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2017-12-19T10:19:37+00:00</pragueDi:published>
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-742939,-742879,-1043939,-1044050"/>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Práce na silnici</pragueDi:classification>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ulice Vodičkova, Praha: Práce na silnici</pragueDi:title>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stavební práce uzavřeno , Uzavírka pro vozidla, ulice Vodičkova (ve směru jízdy Lazarská – Karlovo náměstí), umístění výkopů, ZS, ohrady, kontejnerů – rekonstrukce kanalizace. 
 Objížďka: Lazarská – Spálená – Karlovo náměstí.
-, Vydal: ÚMČ Praha 01"""^^xsd:string ;
-    pragueDi:internalId "5452297"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-742939,-742879,-1043939,-1044050> ;
-    pragueDi:published "2017-12-19T10:19:37+00:00"^^xsd:datetime ;
-    pragueDi:title "ulice Vodičkova, Praha: Práce na silnici"^^xsd:string .
+, Vydal: ÚMČ Praha 01</pragueDi:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/0ec2c941d3bef7903fb3654e5af42bf6">
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-734694,-734416,-1036921,-1037209"/>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">místní komunikace, Praha-Čakovice: Dopravní uzavírky a omezení</pragueDi:title>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5301797</pragueDi:internalId>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dopravní uzavírky a omezení</pragueDi:classification>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2017-06-28T07:04:28+00:00</pragueDi:published>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uzavřeno oprava povrchu vozovky , Rekonstrukce komunikace dle vydaného stavebního povolení (místní komunikace Cukrovarská - Jizerská - náměstí 25. března - Otavská), Vydal: ÚMČ Praha 18</pragueDi:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/636810e29aa1998a344b34613b11deab">
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dopravní uzavírky a omezení</pragueDi:classification>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5453300</pragueDi:internalId>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-05T08:38:26+00:00</pragueDi:published>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ulice Zenklova, Praha 8, Praha: Dopravní uzavírky a omezení</pragueDi:title>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uzavřeno práce na inženýrských sítích , Rekonstrukce vodovodu, kanalizace, tramvajové trati a povrchů vozovek a chodníků, komunikace uzavřena, doprava vedena po objízdné trase, Vydal: Magistrát Hl. města Prahy</pragueDi:description>
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-739040,-738523,-1040355,-1041401"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/e474ba068d66aeb73e0aefeaca2150b6">
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-08T10:00:23+00:00</pragueDi:published>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5455254</pragueDi:internalId>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dopravní uzavírky a omezení</pragueDi:classification>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ulice Keplerova, mezi křižovatkami ulic Jelení a Pohořelec, Praha 1, směr z centra: Dopravní uzavírky a omezení</pragueDi:title>
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-745146,-744895,-1042128,-1042666"/>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vozovka uzavřena  , Rekonstrukce komunikace. Jednosměrný provoz do centra,ve směru z centra po objízdné trase ul.U Brusnice,ul.Patočkova,ul.Myslbekova a ul.Dlabačov.</pragueDi:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/190a97ac2a2d34dca74b10a0cf5102f9">
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-742429,-742329,-1038044,-1038060"/>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dopravní uzavírky a omezení</pragueDi:classification>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ulice Na Bendovce, Praha 8: Dopravní uzavírky a omezení</pragueDi:title>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uzavřeno stavební práce , uzavírka ul. Na Bendovce; Objížďka - bez rozlišení: objízdná trasa po ostatních místních komunikacích, Vydal: ÚMČ Praha 08</pragueDi:description>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-05T09:59:21+00:00</pragueDi:published>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5457250</pragueDi:internalId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/f828b5a6432f213e53249ad7f0f2e72b">
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P+R Zličín II: Parkování</pragueDi:title>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5456531</pragueDi:internalId>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-752570,-752541,-1045475,-1045547"/>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-02-01T20:02:27+00:00</pragueDi:published>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parkování</pragueDi:classification>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">méně než 40 volných parkovacích míst 40% obsazeno ,</pragueDi:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/5daa3e973f6cbb3de2488f4aec4d61e0">
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-733649,-733582,-1051480,-1051674"/>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dopravní uzavírky a omezení</pragueDi:classification>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2017-11-21T13:17:43+00:00</pragueDi:published>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ulice K Čestlicům, Praha-Křeslice: Dopravní uzavírky a omezení</pragueDi:title>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5330963</pragueDi:internalId>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uzavřeno stavební práce , ; Objížďka - bez rozlišení: ulice: Brusinková, Heřmánková, K Průhonicům, Ke kovárně, Ke stráni, Nad mostem, Vydal: ÚMČ Praha 11</pragueDi:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/91dcbb76c994765beb49118e646ce833">
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5468335</pragueDi:internalId>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dopravní uzavírky a omezení</pragueDi:classification>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uzavřeno práce na vodovodním potrubí ,</pragueDi:description>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-31T07:39:58+00:00</pragueDi:published>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ulice Mikovcova, mezi křižovatkami ulic Legerova a Bělehradská, Praha 2: Dopravní uzavírky a omezení</pragueDi:title>
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-742326,-742226,-1044312,-1044321"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/a38a6e969c56d762b16d1b9bdb793162">
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ulice Na zlatě, Praha 13, Praha: Dopravní uzavírky a omezení</pragueDi:title>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2017-10-09T08:14:25+00:00</pragueDi:published>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5410240</pragueDi:internalId>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uzavřeno  , trvalá uzavírka úseku komunikace Na zlatě z důvodu demolice mostovky.</pragueDi:description>
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-748441,-748440,-1046360,-1046399"/>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dopravní uzavírky a omezení</pragueDi:classification>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/02b30f28f12dc23e2083ff5417e81cb7">
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-738506,-738466,-1043635,-1043801"/>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5467563</pragueDi:internalId>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uzavřeno práce na plynovém potrubí ,</pragueDi:description>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-29T09:51:12+00:00</pragueDi:published>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ulice Malešická - ulice Na Viktorce, Praha 3: Dopravní uzavírky a omezení</pragueDi:title>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dopravní uzavírky a omezení</pragueDi:classification>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/44084faec2a1df19cbd5d0446a512189">
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-739565,-739550,-1043180,-1043238"/>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uzavřeno havárie vodovodního potrubí ,</pragueDi:description>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ulice Zelenky-Hajského, mezi křižovatkami ulic Roháčova  a  Koněvova , Praha 3: Dopravní uzavírky a omezení</pragueDi:title>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5468337</pragueDi:internalId>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dopravní uzavírky a omezení</pragueDi:classification>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-31T07:43:31+00:00</pragueDi:published>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/48ac77f2b397fcc7075669d45ae82f7d">
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-744062,-743992,-1044826,-1044827"/>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">práce na silnici, levý jízdní pruh uzavřen  ,</pragueDi:description>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5467898</pragueDi:internalId>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-30T06:48:50+00:00</pragueDi:published>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dopravní uzavírky a omezení</pragueDi:classification>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ulice Vltavská, mezi křižovatkami ulic Nádražní a Svornosti, Praha 5: Dopravní uzavírky a omezení</pragueDi:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/3757f48f26745bb2bdc63c96626720c4">
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-739987,-739964,-1041605,-1041657"/>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-02-01T05:54:25+00:00</pragueDi:published>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">práce na silnici  , Uzavírka Bubenského nábřeží pod Libeňským mostem z důvodu opravy havarijního stavu mostu, objížďka ul. Jankovcova do areálu Přístavu Holešovice, Vydal: ÚMČ Praha 07</pragueDi:description>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Práce na silnici</pragueDi:classification>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5468494</pragueDi:internalId>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">místní komunikace, Praha 7: Práce na silnici</pragueDi:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/d453b64c1afd84820d6a88af48664360">
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-742647,-742625,-1037849,-1037971"/>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ulice K Farkám, Praha 8: Dopravní uzavírky a omezení</pragueDi:title>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-12T08:21:54+00:00</pragueDi:published>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uzavřeno stavební práce , uzavírka ul. K Farkám, P8; Objížďka - bez rozlišení, objížďka: objízdná trasa po ostatních místních komunikacích, Vydal: ÚMČ Praha 08</pragueDi:description>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dopravní uzavírky a omezení</pragueDi:classification>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5459590</pragueDi:internalId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/61e993b370294fc535db255834ebd1b9">
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-738662,-738594,-1039234,-1039258"/>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-02-01T19:57:01+00:00</pragueDi:published>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">30% obsazeno  ,</pragueDi:description>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P+R Ládví: Parkování</pragueDi:title>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parkování</pragueDi:classification>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5463671</pragueDi:internalId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/721b85d3d9e534388d20c9b878704eb9">
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uzavřeno práce na inženýrských sítích , 
 
-<http://publictransportation.cz/prague/ti_di/921326024deb33b9fe364d6fc4698fab> a pragueDi:TrafficInfo ;
-    pragueDi:classification "Dopravní uzavírky a omezení"^^xsd:string ;
-    pragueDi:description "uzavřeno stavební práce , ; Objížďka - bez rozlišení: ulice: Brusinková, Heřmánková, K Průhonicům, Ke kovárně, Ke stráni, Nad mostem, Vydal: ÚMČ Praha 11"^^xsd:string ;
-    pragueDi:internalId "5330956"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-733822,-733728,-1051486,-1051758> ;
-    pragueDi:published "2017-11-21T13:18:26+00:00"^^xsd:datetime ;
-    pragueDi:title "ulice K Průhonicům, Praha-Křeslice: Dopravní uzavírky a omezení"^^xsd:string .
 
-<http://publictransportation.cz/prague/ti_di/925b24264de329cbc4a8992f5301d69c> a pragueDi:TrafficInfo ;
-    pragueDi:classification "Dopravní uzavírky a omezení"^^xsd:string ;
-    pragueDi:description "neprůjezdný levý jízdní pruh práce na silnici , 24B. etapa uzavírka pruhu v souvislosti opravy Nuselského mostu"^^xsd:string ;
-    pragueDi:internalId "5234816"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-742487,-742438,-1045418,-1045424> ;
-    pragueDi:published "2017-05-23T21:22:19+00:00"^^xsd:datetime ;
-    pragueDi:title "ulice Sekaninova, u ul. Svatoplukova, Praha 2: Dopravní uzavírky a omezení"^^xsd:string .
-
-<http://publictransportation.cz/prague/ti_di/92654f507bdb1a978ae1d0340b834ea9> a pragueDi:TrafficInfo ;
-    pragueDi:classification "Práce na silnici"^^xsd:string ;
-    pragueDi:description """práce na údržbě mostu uzavřeno , ulice: U Seřadiště
-v úseku: Bartoškova – Nad Vinným potokem (most přes Botič); Objížďka - Objížďka: Nařizuje se vyznačení objížďky po trase Bartoškova, V Horkách, Kloboučnická, Nuselská, U Plynárny, Nad Vinným potokem"""^^xsd:string ;
-    pragueDi:internalId "5456110"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-740803,-740789,-1046048,-1046052> ;
-    pragueDi:published "2018-01-03T07:14:07+00:00"^^xsd:datetime ;
-    pragueDi:title "ulice U seřadiště, Praha 10: Práce na silnici"^^xsd:string .
-
-<http://publictransportation.cz/prague/ti_di/94ec93b7f24ffdce46781ac0b3b776c5> a pragueDi:TrafficInfo ;
-    pragueDi:classification "Dopravní uzavírky a omezení"^^xsd:string ;
-    pragueDi:description "uzavřeno stavební práce , ; Objížďka - bez rozlišení: ulice: Brusinková, Heřmánková, K Průhonicům, Ke kovárně, Ke stráni, Nad mostem, Vydal: ÚMČ Praha 11"^^xsd:string ;
-    pragueDi:internalId "5330955"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-733749,-733608,-1051572,-1051596> ;
-    pragueDi:published "2017-11-21T13:17:59+00:00"^^xsd:datetime ;
-    pragueDi:title "ulice Na Vlasačce, Praha-Křeslice: Dopravní uzavírky a omezení"^^xsd:string .
-
-<http://publictransportation.cz/prague/ti_di/96d2932ce412f7abfe5f54c813759dc7> a pragueDi:TrafficInfo ;
-    pragueDi:classification "Práce na silnici"^^xsd:string ;
-    pragueDi:description "práce na silnici jeden jízdní pruh uzavřen , obnova vodovodních řadů-zábor v pravém jízdním pruhu, směr z centra"^^xsd:string ;
-    pragueDi:internalId "5432608"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-740608,-740519,-1045654,-1045668> ;
-    pragueDi:published "2017-12-08T15:56:58+00:00"^^xsd:datetime ;
-    pragueDi:title "ulice Vršovická, mezi křižovatkami ulic Oblouková a Na louži, Praha 10, Praha: Práce na silnici"^^xsd:string .
-
-<http://publictransportation.cz/prague/ti_di/998cdf1f90ce7ce1c417c2598d8bdbfd> a pragueDi:TrafficInfo ;
-    pragueDi:classification "Parkování"^^xsd:string ;
-    pragueDi:description "10% obsazeno  ,"^^xsd:string ;
-    pragueDi:internalId "5456323"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-738704,-738660,-1049749,-1049836> ;
-    pragueDi:published "2018-01-12T00:37:56+00:00"^^xsd:datetime ;
-    pragueDi:title "P+R Chodov: Parkování"^^xsd:string .
-
-pragueDi:a38a6e969c56d762b16d1b9bdb793162 a pragueDi:TrafficInfo ;
-    pragueDi:classification "Dopravní uzavírky a omezení"^^xsd:string ;
-    pragueDi:description "uzavřeno  , trvalá uzavírka úseku komunikace Na zlatě z důvodu demolice mostovky."^^xsd:string ;
-    pragueDi:internalId "5410240"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-748441,-748440,-1046360,-1046399> ;
-    pragueDi:published "2017-10-09T08:14:25+00:00"^^xsd:datetime ;
-    pragueDi:title "ulice Na zlatě, Praha 13, Praha: Dopravní uzavírky a omezení"^^xsd:string .
-
-pragueDi:aebc326552c01d23fe77a213ce2e64a5 a pragueDi:TrafficInfo ;
-    pragueDi:classification "Parkování"^^xsd:string ;
-    pragueDi:description "10% obsazeno  ,"^^xsd:string ;
-    pragueDi:internalId "5459773"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-735672,-735590,-1039667,-1039773> ;
-    pragueDi:published "2018-01-12T00:37:55+00:00"^^xsd:datetime ;
-    pragueDi:title "P+R Letňany: Parkování"^^xsd:string .
-
-pragueDi:b1961128a2edff1d38ad6fff5ab5bacb a pragueDi:TrafficInfo ;
-    pragueDi:classification "Parkování"^^xsd:string ;
-    pragueDi:description "10% obsazeno  ,"^^xsd:string ;
-    pragueDi:internalId "5459888"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-731023,-730983,-1042032,-1042050> ;
-    pragueDi:published "2018-01-12T00:37:56+00:00"^^xsd:datetime ;
-    pragueDi:title "P+R Černý Most II: Parkování"^^xsd:string .
-
-pragueDi:b6b5610ce6a866f2a55ae03804d7e251 a pragueDi:TrafficInfo ;
-    pragueDi:classification "Práce na silnici"^^xsd:string ;
-    pragueDi:description "práce na silnici havárie vodovodního potrubí neprůjezdný levý jízdní pruh,"^^xsd:string ;
-    pragueDi:internalId "5459040"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-743807,-743806,-1044544,-1044571> ;
-    pragueDi:published "2018-01-11T10:34:42+00:00"^^xsd:datetime ;
-    pragueDi:title "Hořejší nábřeží, mezi křižovatkami ulic Na bělidle a Nábřežní, Praha 5: Práce na silnici"^^xsd:string .
-
-pragueDi:c61240b7fb41f9c5ab4a254c1b48a55d a pragueDi:TrafficInfo ;
-    pragueDi:classification "Parkování"^^xsd:string ;
-    pragueDi:description "10% obsazeno  ,"^^xsd:string ;
-    pragueDi:internalId "5456325"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-738662,-738594,-1039234,-1039258> ;
-    pragueDi:published "2018-01-12T00:37:55+00:00"^^xsd:datetime ;
-    pragueDi:title "P+R Ládví: Parkování"^^xsd:string .
-
-pragueDi:ccc1679370dc81ab31d98e3547fc9515 a pragueDi:TrafficInfo ;
-    pragueDi:classification "Dopravní uzavírky a omezení"^^xsd:string ;
-    pragueDi:description "práce na silnici, zúžení vozovky na jeden jízdní pruh  , oprava uličních vpustí včetně přípojek"^^xsd:string ;
-    pragueDi:internalId "5457671"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-745114,-744792,-1041948,-1042078> ;
-    pragueDi:published "2018-01-05T10:56:08+00:00"^^xsd:datetime ;
-    pragueDi:title "ulice Patočkova mezi ul. U Brusnice - Střešovická, Praha 6, Praha: Dopravní uzavírky a omezení"^^xsd:string .
-
-pragueDi:ce1785ceb49209b9f19df59dca8907a1 a pragueDi:TrafficInfo ;
-    pragueDi:classification "Parkování"^^xsd:string ;
-    pragueDi:description "méně než 40 volných parkovacích míst 30% obsazeno ,"^^xsd:string ;
-    pragueDi:internalId "5456324"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-748452,-748429,-1053501,-1053543> ;
-    pragueDi:published "2018-01-12T00:37:55+00:00"^^xsd:datetime ;
-    pragueDi:title "P+R Radotín: Parkování"^^xsd:string .
-
-pragueDi:df625936e57ecf7fbedda5897e3cacde a pragueDi:TrafficInfo ;
-    pragueDi:classification "Parkování"^^xsd:string ;
-    pragueDi:description "20% obsazeno  ,"^^xsd:string ;
-    pragueDi:internalId "5456313"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-732532,-732435,-1042254,-1042261> ;
-    pragueDi:published "2018-01-12T00:37:56+00:00"^^xsd:datetime ;
-    pragueDi:title "P+R Rajská zahrada: Parkování"^^xsd:string .
-
-pragueDi:e474ba068d66aeb73e0aefeaca2150b6 a pragueDi:TrafficInfo ;
-    pragueDi:classification "Dopravní uzavírky a omezení"^^xsd:string ;
-    pragueDi:description "vozovka uzavřena  , Rekonstrukce komunikace. Jednosměrný provoz do centra,ve směru z centra po objízdné trase ul.U Brusnice,ul.Patočkova,ul.Myslbekova a ul.Dlabačov."^^xsd:string ;
-    pragueDi:internalId "5455254"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-745146,-744895,-1042128,-1042666> ;
-    pragueDi:published "2018-01-08T10:00:23+00:00"^^xsd:datetime ;
-    pragueDi:title "ulice Keplerova, mezi křižovatkami ulic Jelení a Pohořelec, Praha 1, směr z centra: Dopravní uzavírky a omezení"^^xsd:string .
-
-pragueDi:f342faab41e6a7d1142ea9849f4169aa a pragueDi:TrafficInfo ;
-    pragueDi:classification "Práce na silnici"^^xsd:string ;
-    pragueDi:description "práce na silnici neprůjezdná komunikace ,"^^xsd:string ;
-    pragueDi:internalId "5231830"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-742231,-742129,-1043975,-1044030> ;
-    pragueDi:published "2017-12-29T22:30:18+00:00"^^xsd:datetime ;
-    pragueDi:title "ulice Vinohradská, mezi křižovatkami ulic Legerova a Wilsonova, Praha 1, Praha: Práce na silnici"^^xsd:string .
-
-pragueDi:f8ff599e89269786b1f29d454d452531 a pragueDi:TrafficInfo ;
-    pragueDi:classification "Parkování"^^xsd:string ;
-    pragueDi:description "10% obsazeno  ,"^^xsd:string ;
-    pragueDi:internalId "5456531"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-752570,-752541,-1045475,-1045547> ;
-    pragueDi:published "2018-01-12T00:37:56+00:00"^^xsd:datetime ;
-    pragueDi:title "P+R Zličín II: Parkování"^^xsd:string .
-
-pragueDi:fad678e575aaf4d5092b2d31450c6bdc a pragueDi:TrafficInfo ;
-    pragueDi:classification "Dopravní uzavírky a omezení"^^xsd:string ;
-    pragueDi:description "uzavřeno, porucha kanalizace  ,"^^xsd:string ;
-    pragueDi:internalId "5457817"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-745296,-745292,-1044423,-1044490> ;
-    pragueDi:published "2018-01-05T17:53:54+00:00"^^xsd:datetime ;
-    pragueDi:title "ulice Erbenova, mezi křižovatkami ulic Vrchlického a Plzeňská, Praha 5, Praha: Dopravní uzavírky a omezení"^^xsd:string .
-
-pragueDi:fb53bb75a7c59923f7f3253dd4f9a545 a pragueDi:TrafficInfo ;
-    pragueDi:classification "Práce na silnici"^^xsd:string ;
-    pragueDi:description "práce na inženýrských sítích  , rekonstrukce kanalizace - Zábor pravého pruhu. Doprava zachována jedním jízdním pruhem., Vydal: Magistrát Hl. města Prahy"^^xsd:string ;
-    pragueDi:internalId "5444746"^^xsd:string ;
-    pragueDi:link <http://www.dopravniinfo.cz/default.aspx?rssdetail=1&e=-745715,-745624,-1044435,-1044441> ;
-    pragueDi:published "2017-12-05T09:00:03+00:00"^^xsd:datetime ;
-    pragueDi:title "ulice Plzeňská, Praha 5: Práce na silnici"^^xsd:string .
-
+Úplná uzavírka vozovky z důvodu provádění rekonstrukce kanalizace. Objízdná trasa směrem do Moskevské ul. bude vedena ulicemi Charkovská, Donská, Francouzská. K zajištění obslužnosti a pro umožnění výjezdu z dotčené oblasti do Košické ul. bude zaveden obousměrný provoz v ul. Černomořská (úsek Na Královce – Černomořská) a v ul. Charkovská (úsek Černomořská – Krymská). V křižovatce Krymská x Charkovská bude umožněn jednosměrný průjezd z Krymské do Charkovské ul., průjezd Košickou ul. v křižovatce Košická x Krymská nebude omezen., Vydal: ÚMČ Praha 10</pragueDi:description>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5459989</pragueDi:internalId>
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-740966,-740946,-1045144,-1045176"/>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ulice Krymská, Praha 10: Dopravní uzavírky a omezení</pragueDi:title>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dopravní uzavírky a omezení</pragueDi:classification>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-12T07:24:25+00:00</pragueDi:published>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/eaaf015283e5e229f5be294df1eff492">
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10% obsazeno  ,</pragueDi:description>
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-735672,-735590,-1039667,-1039773"/>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P+R Letňany: Parkování</pragueDi:title>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5459773</pragueDi:internalId>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-02-01T19:57:01+00:00</pragueDi:published>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parkování</pragueDi:classification>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/3f5dca772e52ff2d599f1300a6da1c96">
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ulice U seřadiště, Praha 10: Práce na silnici</pragueDi:title>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5456110</pragueDi:internalId>
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-740803,-740789,-1046048,-1046052"/>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Práce na silnici</pragueDi:classification>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">práce na údržbě mostu uzavřeno , ulice: U Seřadiště
+v úseku: Bartoškova – Nad Vinným potokem (most přes Botič); Objížďka - Objížďka: Nařizuje se vyznačení objížďky po trase Bartoškova, V Horkách, Kloboučnická, Nuselská, U Plynárny, Nad Vinným potokem</pragueDi:description>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-25T08:47:48+00:00</pragueDi:published>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/921326024deb33b9fe364d6fc4698fab">
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uzavřeno stavební práce , ; Objížďka - bez rozlišení: ulice: Brusinková, Heřmánková, K Průhonicům, Ke kovárně, Ke stráni, Nad mostem, Vydal: ÚMČ Praha 11</pragueDi:description>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5330956</pragueDi:internalId>
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-733822,-733728,-1051486,-1051758"/>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2017-11-21T13:18:26+00:00</pragueDi:published>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dopravní uzavírky a omezení</pragueDi:classification>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ulice K Průhonicům, Praha-Křeslice: Dopravní uzavírky a omezení</pragueDi:title>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/980219edf5b26748acdc613f3348807a">
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Omezení provozu a zákazy</pragueDi:classification>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5463437</pragueDi:internalId>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-19T15:12:33+00:00</pragueDi:published>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">most uzavřen  ; Od 19.1.2018 01:00 do 9.2.2018 23:55; v ulici Libeňský most v obci Praha (7, 8) , délka 357m; most uzavřen; z důvodu technického stavu</pragueDi:description>
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-740019,-739542,-1041616,-1041672"/>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">v ulici Libeňský most v obci Praha (7, 8) , délka 357m: Omezení provozu a zákazy</pragueDi:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/84c5358a222ae892da851fc080e1e31c">
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Práce na silnici</pragueDi:classification>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ulice Dělnická, Praha 7, Praha: Práce na silnici</pragueDi:title>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-30T10:13:38+00:00</pragueDi:published>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-740731,-740697,-1041531,-1041535"/>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5456807</pragueDi:internalId>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">práce na silnici  , Uzavírka části ulice Dělnická v úseku mezi ul. Osadní a Komunardů ve směru od ulice Argentinská - přípojky vody a kanalizace, Jedná se o uzavírku pouze ve směru od ul. Argentinská k ul. Komunardů, v opačném směru je provoz zachován., Vydal: ÚMČ Praha 07</pragueDi:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/d321c057bba491bf893d87b514534bd5">
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-751440,-751363,-1047747,-1047845"/>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uzavřeno stavební práce , Uzavírka ul. Nad schody z důvodu výstavby prodloužení vodovodního řadu., Vydal: ÚMČ Praha 13</pragueDi:description>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">místní komunikace, Nad schody, Praha-Řeporyje: Dopravní uzavírky a omezení</pragueDi:title>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dopravní uzavírky a omezení</pragueDi:classification>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5460297</pragueDi:internalId>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-12T13:17:15+00:00</pragueDi:published>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/a5f793ac946c62d751aa4833b8e3f493">
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5469011</pragueDi:internalId>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nehoda probíhá vyšetřování nehody, nebezpečí havarované vozidlo; Od 1.2.2018 20:40 do 21:45; v ulici Strojnická v obci Praha; nehoda; probíhá vyšetřování nehody, nebezpečí; 2 havarovaná vozidla; 2 x OA bez zranění.</pragueDi:description>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">v ulici Strojnická v obci Praha: Nehody</pragueDi:title>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nehody</pragueDi:classification>
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-742043,-741943,-1041421,-1041507"/>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-02-01T19:41:46+00:00</pragueDi:published>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/ce14d82508de1c4cf6f450117215b56e">
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P+R Černý Most: Parkování</pragueDi:title>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">40% obsazeno  ,</pragueDi:description>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5456312</pragueDi:internalId>
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-731400,-731160,-1042039,-1042074"/>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parkování</pragueDi:classification>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-02-01T20:02:26+00:00</pragueDi:published>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/9ce1e270b56f54a93e2a97e438f94787">
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Práce na silnici</pragueDi:classification>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-742219,-742127,-1043721,-1043853"/>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-31T07:28:40+00:00</pragueDi:published>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5332256</pragueDi:internalId>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">práce na silnici omezení ,</pragueDi:description>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ulice Politických vězňů, Praha 1: Práce na silnici</pragueDi:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/0f659bef3f17697796ab47f5c0fd3532">
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2017-10-19T13:19:16+00:00</pragueDi:published>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">omezení práce na silnici , oprava vozovky</pragueDi:description>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Omezení provozu a zákazy</pragueDi:classification>
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-732922,-731436,-1042352,-1042913"/>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5420317</pragueDi:internalId>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ulice Ocelkova,  v úseku Broumarská - Cíglerova, Praha: Omezení provozu a zákazy</pragueDi:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/b016b541d6613101fe38c1bef8539db4">
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-743964,-743567,-1042597,-1042742"/>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5462124</pragueDi:internalId>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-16T15:58:58+00:00</pragueDi:published>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dopravní uzavírky a omezení</pragueDi:classification>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neprůjezdná komunikace uzavřeno , oprava tramvajové trati, komunikace obousměrně uzavřena</pragueDi:description>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ulice Letenská, mezi křižovatkami ulic Malostranské náměstí a U lužického semináře, Praha 1, Praha: Dopravní uzavírky a omezení</pragueDi:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/0c779d41940dcaf63fd4211b91dca0c8">
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-02-01T20:02:27+00:00</pragueDi:published>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parkování</pragueDi:classification>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">méně než 40 volných parkovacích míst 40% obsazeno ,</pragueDi:description>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P+R Radotín: Parkování</pragueDi:title>
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-748452,-748429,-1053501,-1053543"/>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5463019</pragueDi:internalId>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/bd96e63924a1254a8b630cc6794df8ae">
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dopravní uzavírky a omezení</pragueDi:classification>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5468525</pragueDi:internalId>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-02-01T05:59:07+00:00</pragueDi:published>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ulice Petrohradská, Praha 10: Dopravní uzavírky a omezení</pragueDi:title>
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-740810,-740792,-1046044,-1046051"/>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uzavřeno stavební práce , most přes potok Botič; objížďka po trase Bartoškova, V Horkách, Kloboučnická, Nuselská, U Plynárny, Nad Vinným potokem.; Objížďka - obousměrná: ulice Bartoškova - ulice Nad Vinným potokem, Praha 10, Praha, přes: ulice K podjezdu, ulice U plynárny, Vydal: ÚMČ Praha 10</pragueDi:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/a38d6e1c1a8f3e573da370a0786b4892">
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-02-01T20:02:27+00:00</pragueDi:published>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10% obsazeno  ,</pragueDi:description>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P+R Černý Most II: Parkování</pragueDi:title>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5459888</pragueDi:internalId>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parkování</pragueDi:classification>
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-731023,-730983,-1042032,-1042050"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/40e5676606627a42c5af2b4852872754">
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5468812</pragueDi:internalId>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dopravní uzavírky a omezení</pragueDi:classification>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uzavřeno práce na silnici ,</pragueDi:description>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ulice Ostrovní, Praha 1: Dopravní uzavírky a omezení</pragueDi:title>
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-743215,-743151,-1043720,-1043725"/>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-02-01T10:56:43+00:00</pragueDi:published>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/fd64dcd2bab6379b953a8e30376810dc">
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P+R Skalka: Parkování</pragueDi:title>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-02-01T19:57:01+00:00</pragueDi:published>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5456326</pragueDi:internalId>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">méně než 50 volných parkovacích míst 50% obsazeno ,</pragueDi:description>
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-736980,-736955,-1045801,-1045850"/>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parkování</pragueDi:classification>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/067c61c1d77839e69af0a3d7da5f6974">
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">méně než 20 volných parkovacích míst 80% obsazeno ,</pragueDi:description>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-741057,-741056,-1040803,-1040887"/>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-02-01T20:02:29+00:00</pragueDi:published>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parkování</pragueDi:classification>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P+R Holešovice: Parkování</pragueDi:title>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5456316</pragueDi:internalId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/3f57a6a942a23c292db7bc6c2a083f87">
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P+R Nové Butovice: Parkování</pragueDi:title>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">méně než 40 volných parkovacích míst 30% obsazeno ,</pragueDi:description>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-02-01T20:02:26+00:00</pragueDi:published>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parkování</pragueDi:classification>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5464734</pragueDi:internalId>
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-748410,-748334,-1046394,-1046420"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/0ffe7343fda269669b3b53b963f7ab00">
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20% obsazeno  ,</pragueDi:description>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P+R Zličín: Parkování</pragueDi:title>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-02-01T20:02:28+00:00</pragueDi:published>
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-752651,-752634,-1045314,-1045350"/>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5463672</pragueDi:internalId>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parkování</pragueDi:classification>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/6b9d363c953264cba62c8d4c4f5b8f74">
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-23T09:12:57+00:00</pragueDi:published>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5465125</pragueDi:internalId>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dopravní uzavírky a omezení</pragueDi:classification>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uzavřeno práce na inženýrských sítích , Úplná uzavírka komunikace Dvoudílná mezi křižovatkami ulic Trojmezní a Chrastavská. Objížďka po okolních místních komunikacích Chrastavská, Na Pokraji, Trojmezní, Vydal: ÚMČ Praha 09</pragueDi:description>
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-737987,-737959,-1040041,-1040166"/>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ulice Dvoudílná, Praha 9: Dopravní uzavírky a omezení</pragueDi:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/2bae7fb17f1ce65390c1911313344cf8">
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5453757</pragueDi:internalId>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ulice Pod Čimickým hájem, Praha 8: Dopravní uzavírky a omezení</pragueDi:title>
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-741480,-741190,-1038079,-1038166"/>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-05T10:47:56+00:00</pragueDi:published>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uzavřeno, práce na silnici  , rekonstrukce komunikace</pragueDi:description>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dopravní uzavírky a omezení</pragueDi:classification>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/652fa12c7627c3be8cf92ea6cd859038">
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-05T10:59:49+00:00</pragueDi:published>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dopravní uzavírky a omezení</pragueDi:classification>
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-745053,-744958,-1042016,-1042069"/>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5457672</pragueDi:internalId>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ulice Patočkova mezi ul. Střešovická - U Brusnice, Praha 6, Praha: Dopravní uzavírky a omezení</pragueDi:title>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">práce na silnici, zúžení vozovky na jeden jízdní pruh  , práce na inženýrských sítích</pragueDi:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/756eb2079dc976c5053cf3b8e96870ff">
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dopravní uzavírky a omezení</pragueDi:classification>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ulice Sibeliova, Praha 6: Dopravní uzavírky a omezení</pragueDi:title>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-31T08:48:32+00:00</pragueDi:published>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uzavřeno práce na inženýrských sítích , Uzavření ul. Sibeliova v úseku Střešovická - Na Hubálce z důvodu rekonstrukce kanalizace a obnovy vodovodního řadu., Vydal: ÚMČ Praha 06</pragueDi:description>
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-745477,-745288,-1042087,-1042148"/>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5467580</pragueDi:internalId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/925b24264de329cbc4a8992f5301d69c">
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2017-05-23T21:22:19+00:00</pragueDi:published>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dopravní uzavírky a omezení</pragueDi:classification>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ulice Sekaninova, u ul. Svatoplukova, Praha 2: Dopravní uzavírky a omezení</pragueDi:title>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5234816</pragueDi:internalId>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neprůjezdný levý jízdní pruh práce na silnici , 24B. etapa uzavírka pruhu v souvislosti opravy Nuselského mostu</pragueDi:description>
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-742487,-742438,-1045418,-1045424"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/4c9e98d6f2d92137d08e7ffcc848e2ff">
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uzavřeno stavební práce , , Vydal: ÚMČ Praha 03</pragueDi:description>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5428944</pragueDi:internalId>
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-740287,-740265,-1043469,-1043476"/>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">místní komunikace, Komenského náměstí, Praha 3: Dopravní uzavírky a omezení</pragueDi:title>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2017-11-06T08:49:47+00:00</pragueDi:published>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dopravní uzavírky a omezení</pragueDi:classification>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/a2261aaa6cdbee10587562adc7368f18">
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uzavřeno práce na silnici , Oprava tramvajové trati. - ul. Josefská (dočasně obousměrná) přístupná pouze od Mostecké ulice; ul. Letenská přístupna pouze od Klárova; odjezd z oblasti Malostranského náměstí pouze směrem k Újezdu; objížďka - ul. Karmelitská, Vítězná, Smetanovo nábřeží.</pragueDi:description>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dopravní uzavírky a omezení</pragueDi:classification>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ulice Letenská, Praha 1: Dopravní uzavírky a omezení</pragueDi:title>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5463107</pragueDi:internalId>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-18T07:33:30+00:00</pragueDi:published>
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-743952,-743826,-1042727,-1042742"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/94ec93b7f24ffdce46781ac0b3b776c5">
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ulice Na Vlasačce, Praha-Křeslice: Dopravní uzavírky a omezení</pragueDi:title>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uzavřeno stavební práce , ; Objížďka - bez rozlišení: ulice: Brusinková, Heřmánková, K Průhonicům, Ke kovárně, Ke stráni, Nad mostem, Vydal: ÚMČ Praha 11</pragueDi:description>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5330955</pragueDi:internalId>
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-733749,-733608,-1051572,-1051596"/>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dopravní uzavírky a omezení</pragueDi:classification>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2017-11-21T13:17:59+00:00</pragueDi:published>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/ac4b44929020dabf90fe7471205e940d">
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-744947,-744892,-1045523,-1045532"/>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ulice K vodojemu, Praha 5: Práce na silnici</pragueDi:title>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5467683</pragueDi:internalId>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stavební práce zúžená vozovka na jeden jízdní pruh , Částečná uzavírka komunikace K Vodojemu.; Objížďka - bez rozlišení: ulice K vodojemu - ulice Na Václavce, Vydal: ÚMČ Praha 05</pragueDi:description>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-30T05:38:54+00:00</pragueDi:published>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Práce na silnici</pragueDi:classification>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/047d22ba177910c47781c9685afdc55d">
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Práce na silnici</pragueDi:classification>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5449433</pragueDi:internalId>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2017-12-27T08:15:25+00:00</pragueDi:published>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">práce na silnici  , Umístění stavebního jeřábu - rekonstrukce Negrelliho viaduktu - Štvanice, Komunikace mezi Negrelliho viaduktem a tenisovým areálem, Vydal: ÚMČ Praha 07</pragueDi:description>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">místní komunikace, Praha 7: Práce na silnici</pragueDi:title>
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-741285,-741284,-1042205,-1042222"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/7052f908c4626049443e34b5e757f70a">
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5464378</pragueDi:internalId>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-02-01T20:02:26+00:00</pragueDi:published>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parkování</pragueDi:classification>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20% obsazeno  ,</pragueDi:description>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P+R Hostivař: Parkování</pragueDi:title>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-736184,-736137,-1045119,-1045180"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/ea90c0e317d13fabd34df38770e7a642">
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5456323</pragueDi:internalId>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20% obsazeno  ,</pragueDi:description>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P+R Chodov: Parkování</pragueDi:title>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-738704,-738660,-1049749,-1049836"/>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-02-01T20:02:27+00:00</pragueDi:published>
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parkování</pragueDi:classification>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/prague/ti_di/20705d4957e4374570cc4852694f2de4">
+    <pragueDi:classification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Práce na silnici</pragueDi:classification>
+    <pragueDi:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stavební práce zúžená vozovka na jeden jízdní pruh , půdní nástavba- omezení jízdního pruhu + části chodníku před objektem č. 34, Vydal: Magistrát Hl. města Prahy</pragueDi:description>
+    <pragueDi:internalId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5293598</pragueDi:internalId>
+    <pragueDi:link rdf:resource="http://www.dopravniinfo.cz/default.aspx?rssdetail=1&amp;e=-741431,-741391,-1044463,-1044467"/>
+    <rdf:type rdf:resource="http://publictransportation.cz/prague/ti_di/TrafficInfo"/>
+    <pragueDi:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ulice Slezská, Praha 2, Praha: Práce na silnici</pragueDi:title>
+    <pragueDi:published rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2017-07-03T08:31:50+00:00</pragueDi:published>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,116 +1,760 @@
-@prefix brnoChanges: <http://publictransportation.cz/brno/changes/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-<http://publictransportation.cz/brno/changes/1601a8fb372be7cf062af3909293c34e> a brnoChanges:TrafficChange ;
-    brnoChanges:affecedStop "Starý Lískovec-smyčka"^^xsd:string ;
-    brnoChanges:affectedLines [ a rdf:Bag ;
-            rdf:li "8"^^xsd:string ] ;
-    brnoChanges:classification [ a rdf:Bag ;
-            rdf:li "Mimořádná událost v MHD"^^xsd:string,
-                "Porucha vozidla"^^xsd:string ] ;
-    brnoChanges:delay_amount "5 min"^^xsd:string ;
-    brnoChanges:dirrection "do centra"^^xsd:string ;
-    brnoChanges:ends "2018-04-01T04:45:00"^^xsd:datetime ;
-    brnoChanges:possibleSolution "Cestující převezme záložní tramvaj se zpožděním 7 minut."^^xsd:string ;
-    brnoChanges:reason "Porucha vozidla"^^xsd:string ;
-    brnoChanges:starts "2018-04-01T04:40:00"^^xsd:datetime ;
-    brnoChanges:title "Porucha vozidla - Zastávka Starý Lískovec-smyčka "^^xsd:string .
-
-<http://publictransportation.cz/brno/changes/292ba8d0e82d672da9910584b7b5c118> a brnoChanges:TrafficChange ;
-    brnoChanges:affecedStop "Bílovice nad Svitavou-Žižkova"^^xsd:string ;
-    brnoChanges:affectedLines [ a rdf:Bag ;
-            rdf:li "75"^^xsd:string ] ;
-    brnoChanges:classification [ a rdf:Bag ;
-            rdf:li "Mimořádná událost v MHD"^^xsd:string,
-                "Neprůjezdná komunikace"^^xsd:string ] ;
-    brnoChanges:delay_amount "AKTUALIZACE 15:10: Zastávka Bílovice nad Svitavou-Žižkova oba směry; Doprava uvolněna, linka 75 jede v celé trase až do Bílovic, k železniční stanici."^^xsd:string ;
-    brnoChanges:dirrection "oba směry"^^xsd:string ;
-    brnoChanges:ends "2017-12-15T15:10:00"^^xsd:datetime ;
-    brnoChanges:possibleSolution "Odklízení rozsypaného materiálu z komunikace za asistence hasičů."^^xsd:string ;
-    brnoChanges:reason "Neprůjezdná komunikace"^^xsd:string ;
-    brnoChanges:starts "2017-12-15T14:15:00"^^xsd:datetime ;
-    brnoChanges:title "Neprůjezdná komunikace - Zastávka Bílovice nad Svitavou-Žižkova "^^xsd:string .
-
-<http://publictransportation.cz/brno/changes/55a911b7f7037253365c5e4b68116728> a brnoChanges:TrafficChange ;
-    brnoChanges:affecedStop "Výstaviště - vstup G2"^^xsd:string ;
-    brnoChanges:affectedLines [ a rdf:Bag ;
-            rdf:li "1"^^xsd:string ] ;
-    brnoChanges:classification [ a rdf:Bag ;
-            rdf:li "Mimořádná událost v MHD"^^xsd:string,
-                "Porucha vozidla"^^xsd:string ] ;
-    brnoChanges:delay_amount "5 - 10 min"^^xsd:string ;
-    brnoChanges:dirrection "do centra"^^xsd:string ;
-    brnoChanges:ends "2018-11-01T06:15:00"^^xsd:datetime ;
-    brnoChanges:possibleSolution "Vadná tramvaj zdržela také některé vozy vyjíždějící z vozovny Pisárky na linky 2, 6, 8, 10 a 12."^^xsd:string ;
-    brnoChanges:reason "Porucha vozidla"^^xsd:string ;
-    brnoChanges:starts "2018-11-01T05:57:00"^^xsd:datetime ;
-    brnoChanges:title "Porucha vozidla - Zastávka Výstaviště - vstup G2 "^^xsd:string .
-
-<http://publictransportation.cz/brno/changes/6b444301f9176fe290b034340661313f> a brnoChanges:TrafficChange ;
-    brnoChanges:affecedStop "Obřany-sídliště"^^xsd:string ;
-    brnoChanges:affectedLines [ a rdf:Bag ;
-            rdf:li "57"^^xsd:string ] ;
-    brnoChanges:classification [ a rdf:Bag ;
-            rdf:li "Mimořádná událost v MHD"^^xsd:string,
-                "Porucha vozidla"^^xsd:string ] ;
-    brnoChanges:delay_amount "8 min"^^xsd:string ;
-    brnoChanges:dirrection "Vranov"^^xsd:string ;
-    brnoChanges:ends "2017-12-19T05:51:00"^^xsd:datetime ;
-    brnoChanges:possibleSolution "Z Tomkova náměstí řazen záložní autobus."^^xsd:string ;
-    brnoChanges:reason "Porucha vozidla"^^xsd:string ;
-    brnoChanges:starts "2017-12-19T05:43:00"^^xsd:datetime ;
-    brnoChanges:title "Porucha vozidla - Zastávka Obřany-sídliště "^^xsd:string .
-
-<http://publictransportation.cz/brno/changes/902d3205103299dc86c171f78a005559> a brnoChanges:TrafficChange ;
-    brnoChanges:affecedStop "Ústřední hřbitov - smyčka"^^xsd:string ;
-    brnoChanges:affectedLines [ a rdf:Bag ;
-            rdf:li "5"^^xsd:string ] ;
-    brnoChanges:classification [ a rdf:Bag ;
-            rdf:li "Mimořádná událost v MHD"^^xsd:string,
-                "Porucha vozidla"^^xsd:string ] ;
-    brnoChanges:delay_amount "5 min"^^xsd:string ;
-    brnoChanges:dirrection "do centra"^^xsd:string ;
-    brnoChanges:ends "2018-03-01T15:01:00"^^xsd:datetime ;
-    brnoChanges:possibleSolution "Použijte následující spoj."^^xsd:string ;
-    brnoChanges:reason "Porucha vozidla"^^xsd:string ;
-    brnoChanges:starts "2018-03-01T14:56:00"^^xsd:datetime ;
-    brnoChanges:title "Porucha vozidla - Zastávka Ústřední hřbitov - smyčka "^^xsd:string .
-
-<http://publictransportation.cz/brno/changes/98b3d6ba9596963ec39eb866b4449814> a brnoChanges:TrafficChange ;
-    brnoChanges:affecedStop "Újezd u Brna-městský úřad"^^xsd:string ;
-    brnoChanges:affectedLines [ a rdf:Bag ;
-            rdf:li "40"^^xsd:string ] ;
-    brnoChanges:classification [ a rdf:Bag ;
-            rdf:li "Mimořádná událost v MHD"^^xsd:string,
-                "Porucha vozidla"^^xsd:string ] ;
-    brnoChanges:delay_amount "15 min"^^xsd:string ;
-    brnoChanges:dirrection "do centra"^^xsd:string ;
-    brnoChanges:ends "2017-12-14T09:22:00"^^xsd:datetime ;
-    brnoChanges:possibleSolution "Spoj zajištěn záložním autobusem se zpožděním 15 minut."^^xsd:string ;
-    brnoChanges:reason "Porucha vozidla"^^xsd:string ;
-    brnoChanges:starts "2017-12-14T09:07:00"^^xsd:datetime ;
-    brnoChanges:title "Porucha vozidla - Zastávka Újezd u Brna-městský úřad "^^xsd:string .
-
-<http://publictransportation.cz/brno/changes/9d6931ebf6f2f8264b6b57a702a046bf> a brnoChanges:TrafficChange ;
-    brnoChanges:affectedLines [ a rdf:Bag ;
-            rdf:li "82"^^xsd:string ] ;
-    brnoChanges:classification [ a rdf:Bag ;
-            rdf:li "Dopravní informace"^^xsd:string ] ;
-    brnoChanges:ends "2017-12-15T18:00:00"^^xsd:datetime ;
-    brnoChanges:starts "2017-08-12T08:00:00"^^xsd:datetime ;
-    brnoChanges:title "Obsluha zastávky Výstaviště linkou 82"^^xsd:string .
-
-brnoChanges:d87f9111f847a94c2cda9ece57d3cbed a brnoChanges:TrafficChange ;
-    brnoChanges:affectedLines [ a rdf:Bag ;
-            rdf:li " 57"^^xsd:string,
-                " 75"^^xsd:string,
-                "4"^^xsd:string ] ;
-    brnoChanges:classification [ a rdf:Bag ;
-            rdf:li "Výluka v MHD"^^xsd:string ] ;
-    brnoChanges:ends "2018-10-31T23:00:00"^^xsd:datetime ;
-    brnoChanges:starts "2017-10-09T23:00:00"^^xsd:datetime ;
-    brnoChanges:title "Výluka v ulici Valchařské"^^xsd:string .
-
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:brnoChanges="http://publictransportation.cz/brno/changes/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:nodeID="Naa8519ce2ddc480bb2e4ac08c54bc845">
+    <rdf:_64 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 67</rdf:_64>
+    <rdf:_45 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 61</rdf:_45>
+    <rdf:_37 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 37</rdf:_37>
+    <rdf:_3 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 12</rdf:_3>
+    <rdf:_8 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 58</rdf:_8>
+    <rdf:_61 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 32</rdf:_61>
+    <rdf:_10 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 53</rdf:_10>
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 74</rdf:_1>
+    <rdf:_43 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 78</rdf:_43>
+    <rdf:_12 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> E76</rdf:_12>
+    <rdf:_36 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 6</rdf:_36>
+    <rdf:_54 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> š88</rdf:_54>
+    <rdf:_31 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 9</rdf:_31>
+    <rdf:_32 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 40</rdf:_32>
+    <rdf:_59 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 54</rdf:_59>
+    <rdf:_38 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 65</rdf:_38>
+    <rdf:_68 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> š86</rdf:_68>
+    <rdf:_9 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 30</rdf:_9>
+    <rdf:_30 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 63</rdf:_30>
+    <rdf:_53 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 5</rdf:_53>
+    <rdf:_63 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 11</rdf:_63>
+    <rdf:_48 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 31</rdf:_48>
+    <rdf:_34 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 50</rdf:_34>
+    <rdf:_62 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 33</rdf:_62>
+    <rdf:_42 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 57</rdf:_42>
+    <rdf:_56 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 75</rdf:_56>
+    <rdf:_41 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 27</rdf:_41>
+    <rdf:_33 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 70</rdf:_33>
+    <rdf:_40 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 43</rdf:_40>
+    <rdf:_55 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 3</rdf:_55>
+    <rdf:_51 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 52</rdf:_51>
+    <rdf:_13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 81</rdf:_13>
+    <rdf:_19 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> š85</rdf:_19>
+    <rdf:_66 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 68</rdf:_66>
+    <rdf:_65 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 35</rdf:_65>
+    <rdf:_20 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 55</rdf:_20>
+    <rdf:_25 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 25</rdf:_25>
+    <rdf:_28 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 10</rdf:_28>
+    <rdf:_47 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 77</rdf:_47>
+    <rdf:_46 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> E75</rdf:_46>
+    <rdf:_67 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 4</rdf:_67>
+    <rdf:_24 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 38</rdf:_24>
+    <rdf:_58 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 82</rdf:_58>
+    <rdf:_18 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> E56</rdf:_18>
+    <rdf:_11 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 84</rdf:_11>
+    <rdf:_23 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 8</rdf:_23>
+    <rdf:_57 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 41</rdf:_57>
+    <rdf:_29 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 42</rdf:_29>
+    <rdf:_52 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 73</rdf:_52>
+    <rdf:_17 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 69</rdf:_17>
+    <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 47</rdf:_2>
+    <rdf:_49 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 39</rdf:_49>
+    <rdf:_50 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 48</rdf:_50>
+    <rdf:_22 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 26</rdf:_22>
+    <rdf:_44 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 46</rdf:_44>
+    <rdf:_16 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 64</rdf:_16>
+    <rdf:_21 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 56</rdf:_21>
+    <rdf:_26 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> AVI</rdf:_26>
+    <rdf:_35 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 36</rdf:_35>
+    <rdf:_27 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 2</rdf:_27>
+    <rdf:_60 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</rdf:_60>
+    <rdf:_5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> š87</rdf:_5>
+    <rdf:_7 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 49</rdf:_7>
+    <rdf:_39 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 44</rdf:_39>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+    <rdf:_6 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 60</rdf:_6>
+    <rdf:_15 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 71</rdf:_15>
+    <rdf:_4 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> E50</rdf:_4>
+    <rdf:_14 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 34</rdf:_14>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/brno/changes/7ff2b169bdcd1a8dcd00018c27408b91">
+    <brnoChanges:classification rdf:nodeID="N2b71948576af4f2aae354bc0b161cd9f"/>
+    <brnoChanges:affectedLines rdf:nodeID="Naa8519ce2ddc480bb2e4ac08c54bc845"/>
+    <brnoChanges:starts rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-02-02T00:00:00</brnoChanges:starts>
+    <rdf:type rdf:resource="http://publictransportation.cz/brno/changes/TrafficChange"/>
+    <brnoChanges:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Informace o organizaci dopravy v pracovní dny v období od 2. do 9. února 2018</brnoChanges:title>
+    <brnoChanges:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-09-02T23:59:00</brnoChanges:ends>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/brno/changes/b5af66a9b4bca36c95497c8b188f0185">
+    <brnoChanges:delay_amount rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 min</brnoChanges:delay_amount>
+    <brnoChanges:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-30T14:35:00</brnoChanges:ends>
+    <brnoChanges:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla - Zastávka Hudcova </brnoChanges:title>
+    <brnoChanges:classification rdf:nodeID="N06cc1d20067a459ea2facb04c5b8ceeb"/>
+    <brnoChanges:possibleSolution rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cestující převezme následující spoj.</brnoChanges:possibleSolution>
+    <rdf:type rdf:resource="http://publictransportation.cz/brno/changes/TrafficChange"/>
+    <brnoChanges:dirrection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">z centra</brnoChanges:dirrection>
+    <brnoChanges:starts rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-30T14:35:00</brnoChanges:starts>
+    <brnoChanges:reason rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla</brnoChanges:reason>
+    <brnoChanges:affectedLines rdf:nodeID="Ndbee600e0f5d4dcc9e5f4e2b8867e71f"/>
+    <brnoChanges:affecedStop rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hudcova</brnoChanges:affecedStop>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/brno/changes/8ccaf3d71748adde51570582d570e1cf">
+    <brnoChanges:affectedLines rdf:nodeID="Nb2737fb6b4894c229bc1b10df0c02dfa"/>
+    <brnoChanges:possibleSolution rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spoj linky E50 Slatina, závod (14:47) - Kohoutovice, hájenka (15:19) - Kamechy (15:32) nelze zajistit.</brnoChanges:possibleSolution>
+    <brnoChanges:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla - Zastávka Slatina-závod </brnoChanges:title>
+    <rdf:type rdf:resource="http://publictransportation.cz/brno/changes/TrafficChange"/>
+    <brnoChanges:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-26T15:32:00</brnoChanges:ends>
+    <brnoChanges:delay_amount rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15 min</brnoChanges:delay_amount>
+    <brnoChanges:affecedStop rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Slatina-závod</brnoChanges:affecedStop>
+    <brnoChanges:dirrection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kamechy</brnoChanges:dirrection>
+    <brnoChanges:reason rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla</brnoChanges:reason>
+    <brnoChanges:starts rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-26T14:47:00</brnoChanges:starts>
+    <brnoChanges:classification rdf:nodeID="Nec754c6f8d64408fa5a91954fbe46887"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/brno/changes/4c7b5dbd4f11186dadbfafb5e159ddc0">
+    <brnoChanges:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neprůjezdná komunikace - Zastávka Pod nemocnicí </brnoChanges:title>
+    <brnoChanges:affecedStop rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pod nemocnicí</brnoChanges:affecedStop>
+    <brnoChanges:affectedLines rdf:nodeID="N7dcf616c18964a7c9febce01b845eef7"/>
+    <rdf:type rdf:resource="http://publictransportation.cz/brno/changes/TrafficChange"/>
+    <brnoChanges:reason rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neprůjezdná komunikace</brnoChanges:reason>
+    <brnoChanges:starts rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-29T08:27:00</brnoChanges:starts>
+    <brnoChanges:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-29T09:13:00</brnoChanges:ends>
+    <brnoChanges:possibleSolution rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AKTUALIZACE 09:13: Zastávka Pod nemocnicí oba směry; Doprava uvolněna, linky 25, 37 pokračují po své trase až na Osovou</brnoChanges:possibleSolution>
+    <brnoChanges:classification rdf:nodeID="Nba9fc3aab3ed45f684a80ab638178b00"/>
+    <brnoChanges:delay_amount rdf:datatype="http://www.w3.org/2001/XMLSchema#string">45 min</brnoChanges:delay_amount>
+    <brnoChanges:dirrection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oba směry</brnoChanges:dirrection>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/brno/changes/52036f2e75371bf142ecf0431709b48e">
+    <brnoChanges:delay_amount rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8 min</brnoChanges:delay_amount>
+    <brnoChanges:classification rdf:nodeID="N7a4ea954c67843cca1d135a626433558"/>
+    <brnoChanges:affectedLines rdf:nodeID="N29fb5a85db0d4272b229c910718e4312"/>
+    <brnoChanges:affecedStop rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tomkovo náměstí</brnoChanges:affecedStop>
+    <brnoChanges:dirrection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bez směru</brnoChanges:dirrection>
+    <brnoChanges:reason rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla</brnoChanges:reason>
+    <rdf:type rdf:resource="http://publictransportation.cz/brno/changes/TrafficChange"/>
+    <brnoChanges:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-02T10:00:00</brnoChanges:ends>
+    <brnoChanges:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla - Zastávka Tomkovo náměstí </brnoChanges:title>
+    <brnoChanges:possibleSolution rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cestující převezme následující spoj.</brnoChanges:possibleSolution>
+    <brnoChanges:starts rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-02T09:33:00</brnoChanges:starts>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2db3e79f31f940c39bd724fb5e2c61e7">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+    <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Čekání na příjezd policie</rdf:_2>
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimořádná událost v MHD</rdf:_1>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/brno/changes/fabfb3912470551a22e4b1be183c56ff">
+    <brnoChanges:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-26T09:22:00</brnoChanges:ends>
+    <brnoChanges:classification rdf:nodeID="Ned7f9db182384ec4b39bfb6d0cebbe05"/>
+    <rdf:type rdf:resource="http://publictransportation.cz/brno/changes/TrafficChange"/>
+    <brnoChanges:affectedLines rdf:nodeID="Nbdf7f3fc5a0843b794ffd27616e06a53"/>
+    <brnoChanges:starts rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-26T09:14:00</brnoChanges:starts>
+    <brnoChanges:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla - Zastávka Hlavní nádraží </brnoChanges:title>
+    <brnoChanges:possibleSolution rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cestující převezme se zpožděním záložní autobus.</brnoChanges:possibleSolution>
+    <brnoChanges:delay_amount rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8 min</brnoChanges:delay_amount>
+    <brnoChanges:dirrection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">z centra</brnoChanges:dirrection>
+    <brnoChanges:reason rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla</brnoChanges:reason>
+    <brnoChanges:affecedStop rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hlavní nádraží</brnoChanges:affecedStop>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc18030521c564ae98d21a1fac3ff33c5">
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimořádná událost v MHD</rdf:_1>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+    <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla</rdf:_2>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1032167ac53f480a8d8171694f3bde69">
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">36</rdf:_1>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6e56ac03ab12421dac60746e76fa7bc7">
+    <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimořádná událost v MHD</rdf:_2>
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla</rdf:_1>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/brno/changes/6e13f395645c92cefbdf4db692ef6729">
+    <brnoChanges:affecedStop rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Náměstí Republiky</brnoChanges:affecedStop>
+    <brnoChanges:starts rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-25T14:05:00</brnoChanges:starts>
+    <brnoChanges:classification rdf:nodeID="Ne582a78b547a48148e5a9fc612ed2425"/>
+    <brnoChanges:reason rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neprůjezdná komunikace</brnoChanges:reason>
+    <brnoChanges:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neprůjezdná komunikace - Zastávka Náměstí Republiky </brnoChanges:title>
+    <brnoChanges:possibleSolution rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nevhodně odstavené dodávkové vozidlo, čekáme na uvolnění.</brnoChanges:possibleSolution>
+    <rdf:type rdf:resource="http://publictransportation.cz/brno/changes/TrafficChange"/>
+    <brnoChanges:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-25T14:15:00</brnoChanges:ends>
+    <brnoChanges:delay_amount rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 min</brnoChanges:delay_amount>
+    <brnoChanges:dirrection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">do centra</brnoChanges:dirrection>
+    <brnoChanges:affectedLines rdf:nodeID="N2d5f929ecf9b41f6b218619116c29709"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/brno/changes/d38c5d38c63cbe144d7290089a0a7028">
+    <brnoChanges:possibleSolution rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Linka 4 neprojede v obou směrech.</brnoChanges:possibleSolution>
+    <brnoChanges:affecedStop rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Náměstí Republiky</brnoChanges:affecedStop>
+    <brnoChanges:classification rdf:nodeID="Ne2cc4d966a0f432cbc8755d1f9f62719"/>
+    <brnoChanges:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla - Zastávka Náměstí Republiky </brnoChanges:title>
+    <brnoChanges:dirrection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tomkovo náměstí</brnoChanges:dirrection>
+    <brnoChanges:affectedLines rdf:nodeID="Nfc0ee030d66f411cad1a61cdbb1e752f"/>
+    <rdf:type rdf:resource="http://publictransportation.cz/brno/changes/TrafficChange"/>
+    <brnoChanges:starts rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-26T13:06:00</brnoChanges:starts>
+    <brnoChanges:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-26T13:19:00</brnoChanges:ends>
+    <brnoChanges:reason rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla</brnoChanges:reason>
+    <brnoChanges:delay_amount rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13 min</brnoChanges:delay_amount>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na8e76494c33c4e66b9c6d5f5328222b4">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">25</rdf:_1>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N79b1dc1cba4f46bc944b178dc60a44e7">
+    <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Čekání na příjezd ZZS</rdf:_2>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimořádná událost v MHD</rdf:_1>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/brno/changes/516cd223c59252535c39e748ab6105a7">
+    <brnoChanges:starts rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-26T12:30:00</brnoChanges:starts>
+    <brnoChanges:reason rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla</brnoChanges:reason>
+    <brnoChanges:delay_amount rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 min</brnoChanges:delay_amount>
+    <rdf:type rdf:resource="http://publictransportation.cz/brno/changes/TrafficChange"/>
+    <brnoChanges:affectedLines rdf:nodeID="N1032167ac53f480a8d8171694f3bde69"/>
+    <brnoChanges:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla - Zastávka Komín-sídliště </brnoChanges:title>
+    <brnoChanges:dirrection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">do centra</brnoChanges:dirrection>
+    <brnoChanges:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-26T12:40:00</brnoChanges:ends>
+    <brnoChanges:possibleSolution rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Použijte následující spoj.  Od zastávky Štursova řazen vůz řazen na trasu.</brnoChanges:possibleSolution>
+    <brnoChanges:classification rdf:nodeID="N10fd3b2308cc4cfe88e34af5a1eea78f"/>
+    <brnoChanges:affecedStop rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Komín-sídliště</brnoChanges:affecedStop>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/brno/changes/95e152e45f6e72596dae1b10ddd2b023">
+    <brnoChanges:affectedLines rdf:nodeID="N2b5cdad7a2194b73b41faec99c6a792b"/>
+    <brnoChanges:dirrection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">do centra</brnoChanges:dirrection>
+    <brnoChanges:affecedStop rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jírovcova</brnoChanges:affecedStop>
+    <brnoChanges:possibleSolution rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19:45: Provoz na lince 37 je částečně zajištěn autobusy.</brnoChanges:possibleSolution>
+    <brnoChanges:delay_amount rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 - 30 min</brnoChanges:delay_amount>
+    <brnoChanges:classification rdf:nodeID="N6e56ac03ab12421dac60746e76fa7bc7"/>
+    <brnoChanges:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-25T19:45:00</brnoChanges:ends>
+    <brnoChanges:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla - Zastávka Jírovcova </brnoChanges:title>
+    <brnoChanges:starts rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-25T19:25:00</brnoChanges:starts>
+    <brnoChanges:reason rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla</brnoChanges:reason>
+    <rdf:type rdf:resource="http://publictransportation.cz/brno/changes/TrafficChange"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6b07a3f62c5d4c4f8eaa9ad3033df4cb">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimořádná událost v MHD</rdf:_1>
+    <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla</rdf:_2>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N147a5c7e1632494796fbafc7c8194ff5">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dopravní nehoda</rdf:_1>
+    <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimořádná událost v MHD</rdf:_2>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/brno/changes/ae7da5b2f965fc610a5f4c39795c51e4">
+    <brnoChanges:dirrection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tuřany, smyčka</brnoChanges:dirrection>
+    <rdf:type rdf:resource="http://publictransportation.cz/brno/changes/TrafficChange"/>
+    <brnoChanges:starts rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-31T15:37:00</brnoChanges:starts>
+    <brnoChanges:delay_amount rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 min</brnoChanges:delay_amount>
+    <brnoChanges:affectedLines rdf:nodeID="N2f03b52b731b4193b69dfe4717b0feb8"/>
+    <brnoChanges:affecedStop rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Úzká</brnoChanges:affecedStop>
+    <brnoChanges:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla - Zastávka Úzká </brnoChanges:title>
+    <brnoChanges:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-31T15:57:00</brnoChanges:ends>
+    <brnoChanges:possibleSolution rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spoj linky 40 Úzká (15:37) - Tuřany, smyčka (15:57) nelze zajistit, použijte prosím následující spoj.</brnoChanges:possibleSolution>
+    <brnoChanges:classification rdf:nodeID="N68aa2c36fbeb44ddad23c75b5c729102"/>
+    <brnoChanges:reason rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla</brnoChanges:reason>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/brno/changes/18c248976a355a1c0953a32dc9ac9723">
+    <brnoChanges:possibleSolution rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Použijte následující spoj, případně linku 34.</brnoChanges:possibleSolution>
+    <brnoChanges:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla - Zastávka Klusáčkova </brnoChanges:title>
+    <brnoChanges:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-26T12:02:00</brnoChanges:ends>
+    <brnoChanges:starts rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-26T11:52:00</brnoChanges:starts>
+    <brnoChanges:classification rdf:nodeID="Ne4542117555b41fa8524b7d46c7094f2"/>
+    <rdf:type rdf:resource="http://publictransportation.cz/brno/changes/TrafficChange"/>
+    <brnoChanges:delay_amount rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 min</brnoChanges:delay_amount>
+    <brnoChanges:affecedStop rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Klusáčkova</brnoChanges:affecedStop>
+    <brnoChanges:affectedLines rdf:nodeID="N3ab50e00adf34e9f8078502d38f725d3"/>
+    <brnoChanges:dirrection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">z centra</brnoChanges:dirrection>
+    <brnoChanges:reason rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla</brnoChanges:reason>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7a4ea954c67843cca1d135a626433558">
+    <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla</rdf:_2>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimořádná událost v MHD</rdf:_1>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/brno/changes/17c170a03b83c3a8084f4b1069ce8f57">
+    <brnoChanges:dirrection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Česká</brnoChanges:dirrection>
+    <brnoChanges:affectedLines rdf:nodeID="Ne3631cf3874e4132ab482af8ff664fe5"/>
+    <brnoChanges:classification rdf:nodeID="N6a90006b508e4751b2adddcd7eecfc61"/>
+    <brnoChanges:affecedStop rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Šilingrovo náměstí</brnoChanges:affecedStop>
+    <brnoChanges:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla - Zastávka Šilingrovo náměstí </brnoChanges:title>
+    <brnoChanges:reason rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla</brnoChanges:reason>
+    <rdf:type rdf:resource="http://publictransportation.cz/brno/changes/TrafficChange"/>
+    <brnoChanges:delay_amount rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12 min</brnoChanges:delay_amount>
+    <brnoChanges:starts rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-29T07:22:00</brnoChanges:starts>
+    <brnoChanges:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-29T07:34:00</brnoChanges:ends>
+    <brnoChanges:possibleSolution rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cestující převezme se zpožděním záložní autobus.</brnoChanges:possibleSolution>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/brno/changes/7ae5e0a900934a6e88f7b09011a1e10a">
+    <brnoChanges:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-10-31T23:00:00</brnoChanges:ends>
+    <brnoChanges:classification rdf:nodeID="N179def5f01c64a39a9a0e3ca1b57335c"/>
+    <brnoChanges:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Výluka v ulici Valchařské</brnoChanges:title>
+    <rdf:type rdf:resource="http://publictransportation.cz/brno/changes/TrafficChange"/>
+    <brnoChanges:starts rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2017-10-09T23:00:00</brnoChanges:starts>
+    <brnoChanges:affectedLines rdf:nodeID="Ne64fb9f7f7c1480e8427d362f5b15860"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N96c49a32adb841b29e5ebdc34b9fca25">
+    <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 5</rdf:_2>
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</rdf:_1>
+    <rdf:_3 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 9</rdf:_3>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/brno/changes/824e76ba6a73d5cfd0901067cfd0b104">
+    <brnoChanges:affecedStop rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lesnická</brnoChanges:affecedStop>
+    <brnoChanges:reason rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dopravní nehoda</brnoChanges:reason>
+    <brnoChanges:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dopravní nehoda - Zastávka Lesnická </brnoChanges:title>
+    <brnoChanges:dirrection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">do centra</brnoChanges:dirrection>
+    <brnoChanges:affectedLines rdf:nodeID="Nfa7d51a0d0c74571a6585a995e6ccaf6"/>
+    <brnoChanges:delay_amount rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22 min</brnoChanges:delay_amount>
+    <brnoChanges:classification rdf:nodeID="N147a5c7e1632494796fbafc7c8194ff5"/>
+    <brnoChanges:starts rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-29T16:15:00</brnoChanges:starts>
+    <rdf:type rdf:resource="http://publictransportation.cz/brno/changes/TrafficChange"/>
+    <brnoChanges:possibleSolution rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neprůjezdná ulice Drobného do centra, omezený průjezd veškeré dopravy, probíhá zásah HZS.</brnoChanges:possibleSolution>
+    <brnoChanges:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-29T16:37:00</brnoChanges:ends>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N721eff8d2da940f592eca45c05acb39a">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">57</rdf:_1>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/brno/changes/03991c16b6461e337abaea9904eb0bf3">
+    <brnoChanges:dirrection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">do centra</brnoChanges:dirrection>
+    <brnoChanges:delay_amount rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15 min</brnoChanges:delay_amount>
+    <brnoChanges:affectedLines rdf:nodeID="Ncffe7e8ff2644c8d8f87c5a800b38c95"/>
+    <brnoChanges:classification rdf:nodeID="N376483d5103e4384ad103645763d44bb"/>
+    <rdf:type rdf:resource="http://publictransportation.cz/brno/changes/TrafficChange"/>
+    <brnoChanges:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dopravní nehoda - Zastávka Kuldova </brnoChanges:title>
+    <brnoChanges:reason rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dopravní nehoda</brnoChanges:reason>
+    <brnoChanges:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-27T17:17:00</brnoChanges:ends>
+    <brnoChanges:possibleSolution rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17:17 Odklony linek 2 a 3 zrušeny.</brnoChanges:possibleSolution>
+    <brnoChanges:starts rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-27T17:02:00</brnoChanges:starts>
+    <brnoChanges:affecedStop rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kuldova</brnoChanges:affecedStop>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne582a78b547a48148e5a9fc612ed2425">
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimořádná událost v MHD</rdf:_1>
+    <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neprůjezdná komunikace</rdf:_2>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/brno/changes/c163441dc8fe1dc585e5da7adb06272d">
+    <brnoChanges:starts rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-29T15:20:00</brnoChanges:starts>
+    <brnoChanges:affecedStop rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Körnerova</brnoChanges:affecedStop>
+    <brnoChanges:affectedLines rdf:nodeID="N3873c43438a64f5898b1dced376d0759"/>
+    <rdf:type rdf:resource="http://publictransportation.cz/brno/changes/TrafficChange"/>
+    <brnoChanges:delay_amount rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11 min</brnoChanges:delay_amount>
+    <brnoChanges:dirrection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">z centra</brnoChanges:dirrection>
+    <brnoChanges:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-29T15:31:00</brnoChanges:ends>
+    <brnoChanges:classification rdf:nodeID="N1ba0f66cb1ea4457a7975af42b665231"/>
+    <brnoChanges:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Čekání na příjezd ZZS - Zastávka Körnerova </brnoChanges:title>
+    <brnoChanges:reason rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Čekání na příjezd ZZS</brnoChanges:reason>
+    <brnoChanges:possibleSolution rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15:31: Doprava v ulici Cejl uvolněna, odklony linek 2, 4, 11 zrušeny.</brnoChanges:possibleSolution>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/brno/changes/20b98648926178133defb523e0182913">
+    <brnoChanges:classification rdf:nodeID="Nd1de9e584b1f43e582153d9504459cf9"/>
+    <brnoChanges:delay_amount rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8 min</brnoChanges:delay_amount>
+    <brnoChanges:possibleSolution rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cestující převezme se zpožděním záložní autobus.</brnoChanges:possibleSolution>
+    <brnoChanges:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-30T09:46:00</brnoChanges:ends>
+    <rdf:type rdf:resource="http://publictransportation.cz/brno/changes/TrafficChange"/>
+    <brnoChanges:dirrection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">do centra</brnoChanges:dirrection>
+    <brnoChanges:affecedStop rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Útěchov</brnoChanges:affecedStop>
+    <brnoChanges:reason rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla</brnoChanges:reason>
+    <brnoChanges:starts rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-30T09:38:00</brnoChanges:starts>
+    <brnoChanges:affectedLines rdf:nodeID="N721eff8d2da940f592eca45c05acb39a"/>
+    <brnoChanges:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla - Zastávka Útěchov </brnoChanges:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/brno/changes/6305f4390fbab0b90dab7cb9a71f101f">
+    <brnoChanges:reason rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Čekání na příjezd policie</brnoChanges:reason>
+    <brnoChanges:classification rdf:nodeID="N2db3e79f31f940c39bd724fb5e2c61e7"/>
+    <rdf:type rdf:resource="http://publictransportation.cz/brno/changes/TrafficChange"/>
+    <brnoChanges:affectedLines rdf:nodeID="N4d353f2531fb4a91a0c8e642842cc699"/>
+    <brnoChanges:delay_amount rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 min</brnoChanges:delay_amount>
+    <brnoChanges:starts rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-29T21:14:00</brnoChanges:starts>
+    <brnoChanges:dirrection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prace</brnoChanges:dirrection>
+    <brnoChanges:affecedStop rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Autobusové nádraží</brnoChanges:affecedStop>
+    <brnoChanges:possibleSolution rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Výtržnost ve vozidle; Spoj linky 48 Autobusové nádraží (21:14) - Hanácká (21:30) - Práce (21:45) bude opožděn cca o 10 minut.</brnoChanges:possibleSolution>
+    <brnoChanges:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Čekání na příjezd policie - Zastávka Autobusové nádraží </brnoChanges:title>
+    <brnoChanges:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-29T21:45:00</brnoChanges:ends>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/brno/changes/f7ce538faea5e5220edb6dc44f183c75">
+    <brnoChanges:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Čekání na příjezd ZZS - Zastávka Česká </brnoChanges:title>
+    <brnoChanges:possibleSolution rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AKTUALIZACE:7:30. Linky 5, 6 se vrátily na své trasy.</brnoChanges:possibleSolution>
+    <brnoChanges:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-31T07:30:00</brnoChanges:ends>
+    <rdf:type rdf:resource="http://publictransportation.cz/brno/changes/TrafficChange"/>
+    <brnoChanges:reason rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Čekání na příjezd ZZS</brnoChanges:reason>
+    <brnoChanges:classification rdf:nodeID="N79b1dc1cba4f46bc944b178dc60a44e7"/>
+    <brnoChanges:dirrection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Husova, Veveří</brnoChanges:dirrection>
+    <brnoChanges:affecedStop rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Česká</brnoChanges:affecedStop>
+    <brnoChanges:delay_amount rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13 min</brnoChanges:delay_amount>
+    <brnoChanges:starts rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-31T07:17:00</brnoChanges:starts>
+    <brnoChanges:affectedLines rdf:nodeID="N0f08814f09164cb08bbe5bdb4739d0b0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/brno/changes/6f6ed6ff039c54276ee88ae2b85be97e">
+    <brnoChanges:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla - Zastávka Mendlovo náměstí </brnoChanges:title>
+    <brnoChanges:dirrection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pisárky</brnoChanges:dirrection>
+    <brnoChanges:affectedLines rdf:nodeID="Nc0e88c4cb6e94eb3ace357e47fdb4c82"/>
+    <brnoChanges:starts rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-30T09:03:00</brnoChanges:starts>
+    <brnoChanges:possibleSolution rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Linky 25 a 26 obsluhují na Mendlově náměstí zastávku linky 84. Za linku 37 řazen záložní autobus.</brnoChanges:possibleSolution>
+    <brnoChanges:delay_amount rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8 min</brnoChanges:delay_amount>
+    <brnoChanges:classification rdf:nodeID="N397bc0ee3ec545408660a20954402687"/>
+    <brnoChanges:affecedStop rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mendlovo náměstí</brnoChanges:affecedStop>
+    <brnoChanges:reason rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla</brnoChanges:reason>
+    <brnoChanges:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-30T09:11:00</brnoChanges:ends>
+    <rdf:type rdf:resource="http://publictransportation.cz/brno/changes/TrafficChange"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/brno/changes/f7eb2c9a088a396c3787a684fe7af046">
+    <brnoChanges:possibleSolution rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AKTUALIZACE 19:33: Zdržení se týká pouze linky 8, linka 6 projíždí bez omezení.</brnoChanges:possibleSolution>
+    <brnoChanges:reason rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla</brnoChanges:reason>
+    <brnoChanges:affecedStop rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Běloruská</brnoChanges:affecedStop>
+    <brnoChanges:starts rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-31T19:25:00</brnoChanges:starts>
+    <brnoChanges:classification rdf:nodeID="Ncae1e924f7b444e78ba884700934afd0"/>
+    <brnoChanges:delay_amount rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16 min</brnoChanges:delay_amount>
+    <brnoChanges:dirrection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">do centra</brnoChanges:dirrection>
+    <brnoChanges:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-31T19:41:00</brnoChanges:ends>
+    <brnoChanges:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla - Zastávka Běloruská </brnoChanges:title>
+    <brnoChanges:affectedLines rdf:nodeID="N975ad35046e24893bc45b78422d31a4c"/>
+    <rdf:type rdf:resource="http://publictransportation.cz/brno/changes/TrafficChange"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/brno/changes/ef427b06cd0028dfa881bf932aa8ded6">
+    <brnoChanges:delay_amount rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 min</brnoChanges:delay_amount>
+    <brnoChanges:starts rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-26T07:39:00</brnoChanges:starts>
+    <brnoChanges:possibleSolution rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Za tramvaj jede autobus náhradní dopravy.</brnoChanges:possibleSolution>
+    <brnoChanges:affecedStop rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Čertova rokle</brnoChanges:affecedStop>
+    <brnoChanges:reason rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nepravidelnost provozu</brnoChanges:reason>
+    <brnoChanges:dirrection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">do centra</brnoChanges:dirrection>
+    <brnoChanges:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nepravidelnost provozu - Zastávka Čertova rokle </brnoChanges:title>
+    <brnoChanges:classification rdf:nodeID="N105e158cb74d44a09b61fafc1475fbf6"/>
+    <brnoChanges:affectedLines rdf:nodeID="Nce67037651604fdf9740c00f98696336"/>
+    <rdf:type rdf:resource="http://publictransportation.cz/brno/changes/TrafficChange"/>
+    <brnoChanges:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-26T07:49:00</brnoChanges:ends>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd1de9e584b1f43e582153d9504459cf9">
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimořádná událost v MHD</rdf:_1>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+    <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla</rdf:_2>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/brno/changes/141176b76ee483dc560c941a55c655b4">
+    <brnoChanges:possibleSolution rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spoj linky 8 Mifkova (20:14) - Novolíšeňská (20:19) - Životského (20:28) je zajištěn autobusem ze zastávek náhradní dopravy!</brnoChanges:possibleSolution>
+    <rdf:type rdf:resource="http://publictransportation.cz/brno/changes/TrafficChange"/>
+    <brnoChanges:dirrection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">do centra</brnoChanges:dirrection>
+    <brnoChanges:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-31T20:28:00</brnoChanges:ends>
+    <brnoChanges:delay_amount rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 min</brnoChanges:delay_amount>
+    <brnoChanges:starts rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-31T20:14:00</brnoChanges:starts>
+    <brnoChanges:reason rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla</brnoChanges:reason>
+    <brnoChanges:affectedLines rdf:nodeID="N0f045ee6160d44bb87481d3d5db456d1"/>
+    <brnoChanges:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla - Zastávka Mifkova </brnoChanges:title>
+    <brnoChanges:affecedStop rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mifkova</brnoChanges:affecedStop>
+    <brnoChanges:classification rdf:nodeID="Nc18030521c564ae98d21a1fac3ff33c5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N376483d5103e4384ad103645763d44bb">
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dopravní nehoda</rdf:_1>
+    <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimořádná událost v MHD</rdf:_2>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N03a27e10ac614bbfb02dd70f885174c9">
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dopravní nehoda</rdf:_1>
+    <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimořádná událost v MHD</rdf:_2>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/brno/changes/aaa1d0eff3d4031bd8776bbe6d035398">
+    <brnoChanges:dirrection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">do centra</brnoChanges:dirrection>
+    <brnoChanges:classification rdf:nodeID="Nb0c62b25ebf343c3993e2224692bfb10"/>
+    <brnoChanges:affecedStop rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sušilova</brnoChanges:affecedStop>
+    <brnoChanges:delay_amount rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15 min</brnoChanges:delay_amount>
+    <brnoChanges:possibleSolution rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Použijte následující spoj.</brnoChanges:possibleSolution>
+    <brnoChanges:reason rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla</brnoChanges:reason>
+    <brnoChanges:affectedLines rdf:nodeID="N75cd5968659d42da913d2b8732cad5f4"/>
+    <brnoChanges:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla - Zastávka Sušilova </brnoChanges:title>
+    <brnoChanges:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-27T22:30:00</brnoChanges:ends>
+    <rdf:type rdf:resource="http://publictransportation.cz/brno/changes/TrafficChange"/>
+    <brnoChanges:starts rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-27T22:15:00</brnoChanges:starts>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc0e88c4cb6e94eb3ace357e47fdb4c82">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 26</rdf:_1>
+    <rdf:_3 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 37</rdf:_3>
+    <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">25</rdf:_2>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/brno/changes/6077ce711bc36ed9750e86cbf25e4254">
+    <brnoChanges:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla - Zastávka Královo Pole-nádraží </brnoChanges:title>
+    <brnoChanges:delay_amount rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5 min</brnoChanges:delay_amount>
+    <rdf:type rdf:resource="http://publictransportation.cz/brno/changes/TrafficChange"/>
+    <brnoChanges:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-31T07:43:00</brnoChanges:ends>
+    <brnoChanges:classification rdf:nodeID="Ncee53588d57444369b8d59536dd39743"/>
+    <brnoChanges:starts rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-31T07:38:00</brnoChanges:starts>
+    <brnoChanges:affectedLines rdf:nodeID="Ne74ad56dc29e46fd81bc31f6b3c4da49"/>
+    <brnoChanges:reason rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla</brnoChanges:reason>
+    <brnoChanges:possibleSolution rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Použijte následující spoj.</brnoChanges:possibleSolution>
+    <brnoChanges:affecedStop rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Královo Pole-nádraží</brnoChanges:affecedStop>
+    <brnoChanges:dirrection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Černého</brnoChanges:dirrection>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfa7d51a0d0c74571a6585a995e6ccaf6">
+    <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">25</rdf:_2>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 26</rdf:_1>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ned7f9db182384ec4b39bfb6d0cebbe05">
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimořádná událost v MHD</rdf:_1>
+    <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla</rdf:_2>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4d353f2531fb4a91a0c8e642842cc699">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">48</rdf:_1>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/brno/changes/4b8ef99f5161b9adcf9d727967aff3af">
+    <rdf:type rdf:resource="http://publictransportation.cz/brno/changes/TrafficChange"/>
+    <brnoChanges:delay_amount rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 min</brnoChanges:delay_amount>
+    <brnoChanges:affectedLines rdf:nodeID="N96c49a32adb841b29e5ebdc34b9fca25"/>
+    <brnoChanges:possibleSolution rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cestující převezme se zpožděním záložní autobus.</brnoChanges:possibleSolution>
+    <brnoChanges:affecedStop rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Náměstí 28.října</brnoChanges:affecedStop>
+    <brnoChanges:starts rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-27T16:47:00</brnoChanges:starts>
+    <brnoChanges:reason rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dopravní nehoda</brnoChanges:reason>
+    <brnoChanges:classification rdf:nodeID="N14130148c24c44359c570375e36eb6c2"/>
+    <brnoChanges:dirrection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">z centra</brnoChanges:dirrection>
+    <brnoChanges:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dopravní nehoda - Zastávka Náměstí 28.října </brnoChanges:title>
+    <brnoChanges:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-27T16:58:00</brnoChanges:ends>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfc0ee030d66f411cad1a61cdbb1e752f">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 26</rdf:_1>
+    <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</rdf:_2>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7dcf616c18964a7c9febce01b845eef7">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 37</rdf:_1>
+    <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">25</rdf:_2>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2b5cdad7a2194b73b41faec99c6a792b">
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">37</rdf:_1>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N10fd3b2308cc4cfe88e34af5a1eea78f">
+    <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimořádná událost v MHD</rdf:_2>
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla</rdf:_1>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncffe7e8ff2644c8d8f87c5a800b38c95">
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 3</rdf:_1>
+    <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</rdf:_2>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/brno/changes/be3222efc9ddc036659a8fed36f58f39">
+    <brnoChanges:delay_amount rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 min</brnoChanges:delay_amount>
+    <brnoChanges:affecedStop rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sušilova</brnoChanges:affecedStop>
+    <brnoChanges:classification rdf:nodeID="N03a27e10ac614bbfb02dd70f885174c9"/>
+    <brnoChanges:starts rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-30T08:50:00</brnoChanges:starts>
+    <brnoChanges:reason rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dopravní nehoda</brnoChanges:reason>
+    <brnoChanges:dirrection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">z centra</brnoChanges:dirrection>
+    <brnoChanges:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dopravní nehoda - Zastávka Sušilova </brnoChanges:title>
+    <brnoChanges:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-30T09:00:00</brnoChanges:ends>
+    <brnoChanges:affectedLines rdf:nodeID="N42a144f111d244cb9c7799ce2f3a56d4"/>
+    <brnoChanges:possibleSolution rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Z Podveské řazen záložní autobus,</brnoChanges:possibleSolution>
+    <rdf:type rdf:resource="http://publictransportation.cz/brno/changes/TrafficChange"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1ba0f66cb1ea4457a7975af42b665231">
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Čekání na příjezd ZZS</rdf:_1>
+    <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimořádná událost v MHD</rdf:_2>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/brno/changes/e8ee81cbec5a4c54fb928ec9eea06548">
+    <brnoChanges:affectedLines rdf:nodeID="Nfd6a54fb401141daabcf8bc84e343fc3"/>
+    <brnoChanges:starts rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-28T13:30:00</brnoChanges:starts>
+    <brnoChanges:affecedStop rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zvonařka</brnoChanges:affecedStop>
+    <brnoChanges:dirrection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Univerzitní kampus</brnoChanges:dirrection>
+    <brnoChanges:reason rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla</brnoChanges:reason>
+    <brnoChanges:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla - Zastávka Zvonařka </brnoChanges:title>
+    <brnoChanges:delay_amount rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5 min</brnoChanges:delay_amount>
+    <brnoChanges:possibleSolution rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cestující převezme se zpožděním záložní autobus.</brnoChanges:possibleSolution>
+    <brnoChanges:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-28T13:47:00</brnoChanges:ends>
+    <rdf:type rdf:resource="http://publictransportation.cz/brno/changes/TrafficChange"/>
+    <brnoChanges:classification rdf:nodeID="N006861b782a84cf5a0214dfaf8d7329e"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/brno/changes/d9798fe6b54cd8fda351336dcb2680fb">
+    <brnoChanges:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla - Zastávka Pisárky </brnoChanges:title>
+    <brnoChanges:dirrection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Myslivna</brnoChanges:dirrection>
+    <rdf:type rdf:resource="http://publictransportation.cz/brno/changes/TrafficChange"/>
+    <brnoChanges:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-31T12:36:00</brnoChanges:ends>
+    <brnoChanges:reason rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla</brnoChanges:reason>
+    <brnoChanges:starts rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-31T11:36:00</brnoChanges:starts>
+    <brnoChanges:affectedLines rdf:nodeID="N6b28a6ed3fea4e78b06681318b8fed56"/>
+    <brnoChanges:classification rdf:nodeID="Nd2b9cbd3935f48208e2049b756116c8b"/>
+    <brnoChanges:affecedStop rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pisárky</brnoChanges:affecedStop>
+    <brnoChanges:possibleSolution rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Použijte následující spoj nebo linku 52 do zastávky Šárka.</brnoChanges:possibleSolution>
+    <brnoChanges:delay_amount rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60 min</brnoChanges:delay_amount>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6a90006b508e4751b2adddcd7eecfc61">
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla</rdf:_1>
+    <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimořádná událost v MHD</rdf:_2>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb0c62b25ebf343c3993e2224692bfb10">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla</rdf:_1>
+    <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimořádná událost v MHD</rdf:_2>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbdf7f3fc5a0843b794ffd27616e06a53">
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">33</rdf:_1>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0f08814f09164cb08bbe5bdb4739d0b0">
+    <rdf:_4 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 11</rdf:_4>
+    <rdf:_5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</rdf:_5>
+    <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 5</rdf:_2>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 4</rdf:_1>
+    <rdf:_3 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 6</rdf:_3>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N68aa2c36fbeb44ddad23c75b5c729102">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+    <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimořádná událost v MHD</rdf:_2>
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla</rdf:_1>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb2737fb6b4894c229bc1b10df0c02dfa">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E50</rdf:_1>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N006861b782a84cf5a0214dfaf8d7329e">
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimořádná událost v MHD</rdf:_1>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+    <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla</rdf:_2>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2b71948576af4f2aae354bc0b161cd9f">
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dopravní informace</rdf:_1>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N105e158cb74d44a09b61fafc1475fbf6">
+    <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimořádná událost v MHD</rdf:_2>
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nepravidelnost provozu</rdf:_1>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne4542117555b41fa8524b7d46c7094f2">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+    <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla</rdf:_2>
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimořádná událost v MHD</rdf:_1>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N42a144f111d244cb9c7799ce2f3a56d4">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">36</rdf:_1>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publictransportation.cz/brno/changes/de7dc4bd71fdfbe458344cf636e40520">
+    <rdf:type rdf:resource="http://publictransportation.cz/brno/changes/TrafficChange"/>
+    <brnoChanges:delay_amount rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4 min</brnoChanges:delay_amount>
+    <brnoChanges:starts rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-28T11:21:00</brnoChanges:starts>
+    <brnoChanges:classification rdf:nodeID="N6b07a3f62c5d4c4f8eaa9ad3033df4cb"/>
+    <brnoChanges:reason rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla</brnoChanges:reason>
+    <brnoChanges:affecedStop rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Úvoz</brnoChanges:affecedStop>
+    <brnoChanges:ends rdf:datatype="http://www.w3.org/2001/XMLSchema#datetime">2018-01-28T11:25:00</brnoChanges:ends>
+    <brnoChanges:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla - Zastávka Úvoz </brnoChanges:title>
+    <brnoChanges:affectedLines rdf:nodeID="Na8e76494c33c4e66b9c6d5f5328222b4"/>
+    <brnoChanges:dirrection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Novolíšeňská</brnoChanges:dirrection>
+    <brnoChanges:possibleSolution rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Od zastávky Pionýrská (11:26) řazen záložní autobus.</brnoChanges:possibleSolution>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3ab50e00adf34e9f8078502d38f725d3">
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">36</rdf:_1>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nec754c6f8d64408fa5a91954fbe46887">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla</rdf:_1>
+    <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimořádná událost v MHD</rdf:_2>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd2b9cbd3935f48208e2049b756116c8b">
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla</rdf:_1>
+    <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimořádná událost v MHD</rdf:_2>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N06cc1d20067a459ea2facb04c5b8ceeb">
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla</rdf:_1>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+    <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimořádná událost v MHD</rdf:_2>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne74ad56dc29e46fd81bc31f6b3c4da49">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">30</rdf:_1>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne3631cf3874e4132ab482af8ff664fe5">
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12</rdf:_1>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N75cd5968659d42da913d2b8732cad5f4">
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">36</rdf:_1>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N14130148c24c44359c570375e36eb6c2">
+    <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dopravní nehoda</rdf:_2>
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimořádná událost v MHD</rdf:_1>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2f03b52b731b4193b69dfe4717b0feb8">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">40</rdf:_1>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncae1e924f7b444e78ba884700934afd0">
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimořádná událost v MHD</rdf:_1>
+    <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla</rdf:_2>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne64fb9f7f7c1480e8427d362f5b15860">
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 75</rdf:_1>
+    <rdf:_3 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 57</rdf:_3>
+    <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</rdf:_2>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3873c43438a64f5898b1dced376d0759">
+    <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 4</rdf:_2>
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 11</rdf:_1>
+    <rdf:_3 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</rdf:_3>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2d5f929ecf9b41f6b218619116c29709">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 26</rdf:_1>
+    <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</rdf:_2>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N975ad35046e24893bc45b78422d31a4c">
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8</rdf:_1>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne2cc4d966a0f432cbc8755d1f9f62719">
+    <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla</rdf:_2>
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimořádná událost v MHD</rdf:_1>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nba9fc3aab3ed45f684a80ab638178b00">
+    <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimořádná událost v MHD</rdf:_2>
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neprůjezdná komunikace</rdf:_1>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N397bc0ee3ec545408660a20954402687">
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimořádná událost v MHD</rdf:_1>
+    <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla</rdf:_2>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N179def5f01c64a39a9a0e3ca1b57335c">
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Výluka v MHD</rdf:_1>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nce67037651604fdf9740c00f98696336">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11</rdf:_1>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N29fb5a85db0d4272b229c910718e4312">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</rdf:_1>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfd6a54fb401141daabcf8bc84e343fc3">
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60</rdf:_1>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndbee600e0f5d4dcc9e5f4e2b8867e71f">
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">70</rdf:_1>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6b28a6ed3fea4e78b06681318b8fed56">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">68</rdf:_1>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0f045ee6160d44bb87481d3d5db456d1">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8</rdf:_1>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncee53588d57444369b8d59536dd39743">
+    <rdf:_2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porucha vozidla</rdf:_2>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+    <rdf:_1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mimořádná událost v MHD</rdf:_1>
+  </rdf:Description>
+</rdf:RDF>

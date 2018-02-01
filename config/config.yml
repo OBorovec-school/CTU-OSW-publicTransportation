@@ -12,7 +12,8 @@ data_pipeline:
 
     # RDF output format
     # Options http://rdflib.readthedocs.io/en/stable/plugin_serializers.html
-    rdf_output: turtle
+    # !! GraphDB has a problem to import turtle type
+    rdf_output: xml
 
     # Scheduler - how often crawl new record
     # Supported options:
@@ -22,6 +23,7 @@ data_pipeline:
     scheduling: daily
 
     # Use luigid server for visualization and tracking (True/False)
+    # Default access: localhost:8082
     luigid: True
 
 
