@@ -4,9 +4,9 @@
 
 ## Content
 
-* ptChangesBrno.rdf	 - Changes to public transrtation in Brno
-* ptChangesPilsen.rdf	 - Changes to public transrtation in Pilse	
-* ptChangesPrague.rdf	 - Changes to public transrtation in Prague	
-* ptIrregPrague.rdf	 - Irregularities of public transrtation in Prague	
-* tiBrno.rdf	 - Traffic info irelated to Brno	
-* tiPrague.rdf	 - Traffic info irelated to Prague
+* ptChangesBrno.rdf	 - Changes to public transportation in Brno
+* ptChangesPilsen.rdf	 - Changes to public transportation in Pilse	
+* ptChangesPrague.rdf	 - Changes to public transportation in Prague	
+* ptIrregPrague.rdf	 - Irregularities of public transportation in Prague	
+* tiBrno.rdf	 - Traffic info related to Brno	
+* tiPrague.rdf	 - Traffic info related to Prague
