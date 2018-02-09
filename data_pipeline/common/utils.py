@@ -15,3 +15,10 @@ def add_bag_to_graph(g, el, bag_pred, items, item_type):
     g.add((el, bag_pred, bag))
     for item in items:
         g.add((bag, RDF.li, Literal(item, datatype=item_type)))
+
+
+def rdf_file_ending(type):
+    if type is 'turtle':
+        return 'ttl'
+    else:
+        return 'rdf'

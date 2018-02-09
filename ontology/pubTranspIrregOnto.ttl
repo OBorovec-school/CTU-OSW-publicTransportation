@@ -6,7 +6,7 @@
 @prefix doc-el: <http://kbss.felk.cvut.cz/ontologies/2014/documentation-elements.owl/> .
 @prefix pt: <http://oborovec.cz/ontologies/public_transportation/> .
 @prefix ptEvent: <http://oborovec.cz/ontologies/public_transportation/event/> .
-@prefix ptIrreg: <http://oborovec.cz/ontologies/public_transportation/event/irregularity> .
+@prefix ptIrreg: <http://oborovec.cz/ontologies/public_transportation/event/irregularity/> .
 @base <http://oborovec.cz/ontologies/public_transportation> .
 
 <http://oborovec.cz/ontologies/pt> rdf:type owl:Ontology ;
@@ -84,7 +84,6 @@ ptIrreg:unplanned rdf:type owl:Class ;
 
 ###  http://oborovec.cz/ontologies/public_transportation/effect
 pt:effect rdf:type owl:Class ;
-                     rdfs:subClassOf ;
                      dc:description "Entity of an effect of affected modes of transportation at a location and at a time with a duration." ;
                      rdfs:label "Efect"@cs ,
                                 "Effect"@en .

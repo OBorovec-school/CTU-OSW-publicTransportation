@@ -12,7 +12,6 @@ data_pipeline:
 
     # RDF output format
     # Options http://rdflib.readthedocs.io/en/stable/plugin_serializers.html
-    # !! GraphDB has a problem to import turtle type
     rdf_output: xml
 
     # Scheduler - how often crawl new record
